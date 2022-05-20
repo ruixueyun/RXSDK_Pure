@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RXSDK_Pure'
-  s.version          = '2.0.2'
+  s.version          = '2.0.3'
   s.summary          = 'ruixue main framework.'
 
 # This description is used to generate tags and improve searc results.
@@ -30,7 +30,6 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '6.0'
 
-#  s.source_files = 'RXSDK/Classes/**/*'
    s.source_files = '*.framework/Headers/*.{h,m,plist}'
   
    s.vendored_frameworks = '*.framework'
