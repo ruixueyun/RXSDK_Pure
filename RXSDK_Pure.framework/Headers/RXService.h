@@ -107,6 +107,11 @@ typedef enum {
                   body:(NSMutableDictionary * _Nullable)body
               complete:(void(^)(NSDictionary *response, RXCommonRequestError *error))complete;
 
+/**
+ * 获取当前请求域名
+ */
+- (NSString *)getApiDomain;
+
 @end
 
 NS_ASSUME_NONNULL_END
