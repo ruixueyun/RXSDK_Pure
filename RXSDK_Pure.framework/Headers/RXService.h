@@ -55,13 +55,11 @@ typedef enum {
  * 初始化SDK
  * @param appId  channelId  cpid  下发的各种id
  * @param baseUrlList 请求域名队列
- * @param universalLink 微信universalLink
  */
 - (void)initWithAppId:(NSString *)appId
             channelId:(NSString *)channelId
                  cpid:(NSString *)cpid
-          baseUrlList:(NSArray *)baseUrlList
-        universalLink:(NSString *)universalLink;
+          baseUrlList:(NSArray *)baseUrlList;
 
 /**
  * 登录请求
