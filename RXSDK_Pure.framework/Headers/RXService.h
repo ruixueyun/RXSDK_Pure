@@ -83,15 +83,6 @@ typedef enum {
 - (void)getLegalInfo:(void(^)(NSDictionary *response, RXCommonRequestError *error))complete;
 
 /**
- * 微信登录
- * @param wxAppid 微信登录appid
- */
-/* 调用微信登录 */
-- (void)loginReq_wWithWXAppid:(NSString *)wxAppid;
-/* 检测是否安装微信 */
-- (BOOL)isWXAppInstalled;
-
-/**
  * 苹果登录
  */
 - (void)loginReq_apple;

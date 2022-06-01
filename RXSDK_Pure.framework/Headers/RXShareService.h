@@ -20,11 +20,6 @@ typedef void(^ShareCallBack)(BOOL success);
 + (instancetype)sharedSDK;
 
 /**
- * 处理跳转
- */
-- (BOOL)handleOpenUrl:(NSURL *)url;
-
-/**
  * 获取分享信息
  * @param func 埋点标识  必须
  * @param transmitargs 透传参数，原样返回  非必须
@@ -40,13 +35,6 @@ typedef void(^ShareCallBack)(BOOL success);
                   shareScene:(NSInteger)shareScene
                    urlCustom:(NSDictionary * _Nullable)urlCustom
                     complete:(RequestComplete)complete;
-
-/**
- * 微信分享
- * @param shareInfo 获取分享信息返回的内容  必须
- */
-- (void)shareToWWithShareInfo:(NSDictionary *)shareInfo
-                     complete:(ShareCallBack)complete;
 
 /**
  * 系统分享
