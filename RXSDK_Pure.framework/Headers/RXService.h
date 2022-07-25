@@ -53,13 +53,15 @@ typedef enum {
 
 /**
  * 初始化SDK
- * @param appId  channelId  cpid  下发的各种id
+ * @param productId 产品id
+ * @param channelId 渠道id
+ * @param cpid 客户端id
  * @param baseUrlList 请求域名队列
  */
-- (void)initWithAppId:(NSString *)appId
-            channelId:(NSString *)channelId
-                 cpid:(NSString *)cpid
-          baseUrlList:(NSArray *)baseUrlList;
+- (void)initWithProductId:(NSString *)productId
+                channelId:(NSString *)channelId
+                     cpid:(NSString *)cpid
+              baseUrlList:(NSArray *)baseUrlList;
 
 /**
  * 登录请求

@@ -99,7 +99,7 @@ NS_ASSUME_NONNULL_BEGIN
                        complete:(RequestComplete)complete;
 
 /**
- * 获取自定关系列表
+ * 获取自定义关系列表
  * @param type 自定义关系类型  必须
  */
 - (void)getRelationListWithType:(NSString *)type

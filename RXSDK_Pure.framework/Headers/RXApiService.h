@@ -120,13 +120,6 @@ typedef enum : NSUInteger {
                          complete:(RequestComplete)complete;
 
 /**
- * 获取公告
- * @param region 地区码  必须
- */
-- (void)getNoticeListWithRegion:(NSString *)region
-                       complete:(RequestComplete)complete;
-
-/**
  * 注册
  * @param extDic 扩展字段  非必须
  * @param username 账号注册为账号，手机注册为手机号，邮箱注册为邮箱  必须

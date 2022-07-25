@@ -18,9 +18,22 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (instancetype)sharedSDK;
 
-/** 检测客户端与服务器漏单情况处理*/
+/**
+ * 检测客户端与服务器漏单情况处理
+ */
 + (void)checkOrderStatus:(void (^)(BOOL success))result;
 
+/**
+ * 下单
+ {
+ @"goodsName" : @"商品名称",
+ @"goodsTag" : @"商品标签",
+ @"tradeNo" : @"订单号",
+ @"商品ID" : @"商品ID",
+ @"type" : @"apple",
+ @"sandbox" : @"环境 0正式 1沙盒"
+ }
+ */
 - (void)requestWithDict:(NSDictionary *)dict completeHandle:(RequestComplete)handle;
 
 /**

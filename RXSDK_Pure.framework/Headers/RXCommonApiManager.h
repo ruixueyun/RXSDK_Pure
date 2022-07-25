@@ -104,12 +104,6 @@ NS_ASSUME_NONNULL_BEGIN
 // 获取分享信息 url
 + (NSString *)getShareInfoUrl;
 
-// 获取指定埋点次数信息 url
-+ (NSString *)getShareLimitInfoUrl;
-
-// 分享上报 url
-+ (NSString *)getShareReportUrl;
-
 // 大厅更新检查 url
 + (NSString *)getCheckUpdate_appUrl;
 
@@ -122,14 +116,8 @@ NS_ASSUME_NONNULL_BEGIN
 // 申请注销账号 url
 + (NSString *)getDestroyAccountUrl;
 
-// 查询游戏注销状态 url
-+ (NSString *)getDestroyAccountStatusUrl;
-
 // 撤销注销申请 url
 + (NSString *)getRepealDestroyAccountUrl;
-
-// 获取公告 url
-+ (NSString *)getNoticeListUrl;
 
 // 上传推送配置 url
 + (NSString *)getUploadPushInfoUrl;
@@ -154,6 +142,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 下单 url
 + (NSString *)getPayOrderInfoUrl;
+
+// 获取通路配置 url
++ (NSString *)getSharePlatformsUrl;
 
 @end
 
