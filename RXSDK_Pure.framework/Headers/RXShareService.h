@@ -22,16 +22,16 @@ typedef void(^ShareCallBack)(BOOL success);
 /**
  * 获取分享信息
  * @param func 埋点标识  必须
- * @param platform 分享平台
+ * @param platform 分享平台 wechat
  * @param region 地区码  必须
- * @param shareScene 分享方式 0-好友 1-朋友圈
  * @param transmits 透传参数，原样返回  非必须
+ * @param ext 扩展字段，拼接url用  非必须
  */
 - (void)getShareInfoWithFunc:(NSString *)func
                     platform:(NSString *)platform
                       region:(NSString *)region
-                  shareScene:(NSInteger)shareScene
                    transmits:(NSDictionary * _Nullable)transmits
+                         ext:(NSDictionary * _Nullable)ext
                     complete:(RequestComplete)complete;
 
 /**
@@ -45,6 +45,15 @@ typedef void(^ShareCallBack)(BOOL success);
  * 获取通路配置
  */
 - (void)getSharePlatformsWithComplete:(RequestComplete)complete;
+
+/**
+ * 分享上报
+ * @param distinctId 用户唯一标识，一般为 OpenID（由CP调用时传入）
+ * @param properties 自定义属性
+ */
+- (void)shareReportWithDistinctId:(NSString *)distinctId
+                       properties:(NSDictionary * _Nullable)properties
+                         complete:(RequestComplete)complete;
 
 @end
 
