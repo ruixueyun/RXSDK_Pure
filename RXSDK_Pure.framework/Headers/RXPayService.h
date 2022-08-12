@@ -26,12 +26,15 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * 下单
  {
- @"goodsName" : @"商品名称",
- @"goodsTag" : @"商品标签",
- @"tradeNo" : @"订单号",
- @"商品ID" : @"商品ID",
+ @"currency" : @"币种 默认传: CNY",
+ @"goods_tag" : @"商品标签",
+ @"trade_no" : @"订单号",
+ @"env" : @"是否使用沙盒环境支付 0 正式 1 沙盒",
  @"type" : @"apple",
- @"sandbox" : @"环境 0正式 1沙盒"
+ @"is_debug" : @"是否测试订单 默认0 正式  1为测试订单",
+ @{ext} : @"支付扩展字段 三方支付额外传递参数",
+ @"notify_url" : @"支付成功通知CP发货地址",
+ @"transmit_args" : @"客户端透传参数 非必传"
  }
  */
 - (void)requestWithDict:(NSDictionary *)dict completeHandle:(RequestComplete)handle;

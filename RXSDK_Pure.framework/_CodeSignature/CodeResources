@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/RXCommonApiManager.h</key>
 		<data>
-		3h4t1gc5FMp9pLVSIwJy3YL+2rM=
+		ovRKNoMiGSJEdKEMdlblmUc8sH0=
 		</data>
 		<key>Headers/RXCommonRequestError.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/RXPayService.h</key>
 		<data>
-		HsHpP/E4TOE8UuQMdfpx5MLo9xY=
+		npDnzfq73wFlhhbgOsKRESufl6g=
 		</data>
 		<key>Headers/RXPublicHeader.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Headers/RXService.h</key>
 		<data>
-		dBoSqsnCd6NDxs21RAe66RmOfdY=
+		PX+8R333FU7E5aeLCgYmCSNDYtk=
 		</data>
 		<key>Headers/RXShareService.h</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Jw/hj7qdMsLMq53wQ5Ou229Hu8Q=
+		/AkNowcvPiaAk+3lHvNva/MitE0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -101,11 +101,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3h4t1gc5FMp9pLVSIwJy3YL+2rM=
+			ovRKNoMiGSJEdKEMdlblmUc8sH0=
 			</data>
 			<key>hash2</key>
 			<data>
-			PX7ofNXPu5tb1v/Rt+xNRmgy1g6m1BOhfENcA1pk+gs=
+			Ci7MPJrMfZWnSpoFGWiaxx3HN4prcfdyvoxjiyEWFEM=
 			</data>
 		</dict>
 		<key>Headers/RXCommonRequestError.h</key>
@@ -167,11 +167,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HsHpP/E4TOE8UuQMdfpx5MLo9xY=
+			npDnzfq73wFlhhbgOsKRESufl6g=
 			</data>
 			<key>hash2</key>
 			<data>
-			uL9aVtRFn89KSX69pLpsqiYKTLZF8yyRw5g4GwT63jo=
+			ypKiUshakMPjxHlZP2rt5cZofY0KnWRwzhxf1nyGglY=
 			</data>
 		</dict>
 		<key>Headers/RXPublicHeader.h</key>
@@ -200,11 +200,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dBoSqsnCd6NDxs21RAe66RmOfdY=
+			PX+8R333FU7E5aeLCgYmCSNDYtk=
 			</data>
 			<key>hash2</key>
 			<data>
-			O8geYyGkBnobEzhbRDEW6SEsYX3rSJsdxDvX9/9VLD8=
+			odlNcz/X0lCjWWu0L5x1Rg1lwi055Wk4mQWtrkVpv1A=
 			</data>
 		</dict>
 		<key>Headers/RXShareService.h</key>

@@ -17,6 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 // 登录 url
 + (NSString *)getLoginUrl;
 
+// 二次登录 url
++ (NSString *)getQuickLoginUrl;
+
 // 刷新token url
 + (NSString *)getRefreshTokenUrl;
 

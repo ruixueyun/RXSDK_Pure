@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RXSDK_Pure'
-  s.version          = '2.1.4'
+  s.version          = '2.1.9'
   s.summary          = 'ruixue main framework.'
 
 # This description is used to generate tags and improve searc results.
@@ -45,7 +45,7 @@ TODO: Add long description of the pod here.
   s.libraries = 'sqlite3', 'c++', 'c++abi', 'z'
 #
   s.platform = :ios, '9.0'
-  s.dependency 'AFNetworking'
+  s.dependency 'RXNetworkingKit'
   s.dependency 'YYModel'
   s.dependency 'MBProgressHUD'
   

@@ -68,14 +68,18 @@ typedef enum {
  * @param extDic 扩展字段，可传nil
  * @param username 非账号登录传空，账号注册为账号，手机注册为手机号，邮箱注册为邮箱
  * @param password 非账号登录传空
- * @param loginOpenId 登陆返回的loginopenid字段，二次登录用，可传nil
  * @param loginType 登录类型
  */
 - (void)loginWithExtDic:(NSMutableDictionary * _Nullable)extDic
                username:(NSString * _Nullable)username
                password:(NSString * _Nullable)password
-            loginOpenId:(NSString * _Nullable)loginOpenId
               loginType:(LoginType)loginType;
+
+/**
+ * 二次登录
+ * @param loginOpenId 登录返回的login_openid
+ */
+- (void)loginWithLoginOpenId:(NSString *)loginOpenId;
 
 /**
  * 获取法务配置信息
