@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @param response 返回数据，登录失败返回nil
  * @param error 错误返回，登录成功返回nil
  */
-- (void)rx_LoginCallBackWithResponse:(NSDictionary * _Nullable)response error:(RXCommonRequestError *)error;
+- (void)rx_LoginCallBackWithResponse:(NSDictionary * _Nullable)response error:(RX_CommonRequestError *)error;
 
 /**
  * 防沉迷回调
@@ -84,7 +84,7 @@ typedef enum {
 /**
  * 获取法务配置信息
  */
-- (void)getLegalInfo:(void(^)(NSDictionary *response, RXCommonRequestError *error))complete;
+- (void)getLegalInfo:(void(^)(NSDictionary *response, RX_CommonRequestError *error))complete;
 
 /**
  * 苹果登录
@@ -100,7 +100,7 @@ typedef enum {
 - (void)requestWithUrl:(NSString *)url
                 header:(NSMutableDictionary * _Nullable)header
                   body:(NSMutableDictionary * _Nullable)body
-              complete:(void(^)(NSDictionary *response, RXCommonRequestError *error))complete;
+              complete:(void(^)(NSDictionary *response, RX_CommonRequestError *error))complete;
 
 /**
  * 获取当前请求域名

@@ -9,7 +9,7 @@
 #define RXPublicHeader_h
 
 
-#import "RXCommonRequestError.h"
+#import "RX_CommonRequestError.h"
 
 typedef enum {
     RegistTypeAccount = 1, // 账号注册
@@ -17,7 +17,7 @@ typedef enum {
     RegistTypeEmail  // 邮箱注册
 }RegistType;
 
-typedef void(^RequestComplete)(NSDictionary * _Nullable response, RXCommonRequestError * _Nullable error);
+typedef void(^RequestComplete)(NSDictionary * _Nullable response, RX_CommonRequestError * _Nullable error);
 
 #pragma mark -- 错误码
 /*---- 支付 ----*/
