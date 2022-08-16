@@ -20,10 +20,10 @@ typedef void(^ShareCallBack)(BOOL success);
 + (instancetype)sharedSDK;
 
 /**
- * 获取分享信息
+ * 获取分享信息 （非CP调用）
  * @param func 埋点标识  必须
  * @param platform 分享平台 wechat
- * @param region 地区码  必须
+ * @param region 地区码 非必须
  * @param transmits 透传参数，原样返回  非必须
  * @param ext 扩展字段，拼接url用  非必须
  */
@@ -36,10 +36,17 @@ typedef void(^ShareCallBack)(BOOL success);
 
 /**
  * 系统分享
- * @param shareInfo 获取分享信息返回的内容  必须
- */
-- (void)SystemShareWithShareInfo:(NSDictionary *)shareInfo
-                        complete:(ShareCallBack)complete;
+ * @param func 埋点标识  必须
+ * @param platform 分享平台 wechat
+ * @param region 地区码  非必须
+ * @param transmits 透传参数，原样返回  非必须
+ * @param ext 扩展字段，拼接url用  非必须 */
+- (void)SystemShareWithFunc:(NSString *)func
+                   platform:(NSString *)platform
+                     region:(NSString *)region
+                  transmits:(NSDictionary * _Nullable)transmits
+                        ext:(NSDictionary * _Nullable)ext
+                   complete:(ShareCallBack)complete;
 
 /**
  * 获取通路配置
