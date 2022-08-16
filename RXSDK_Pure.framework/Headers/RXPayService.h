@@ -31,6 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
  @"trade_no" : @"订单号",
  @"env" : @"是否使用沙盒环境支付 0 正式 1 沙盒",
  @"type" : @"apple",
+ @"indulge_auth" : @"是否进行防沉迷验证  0不验证，1验证，默认不验证",
  @"is_debug" : @"是否测试订单 默认0 正式  1为测试订单",
  @{ext} : @"支付扩展字段 三方支付额外传递参数",
  @"notify_url" : @"支付成功通知CP发货地址",

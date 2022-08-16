@@ -78,8 +78,10 @@ typedef enum {
 /**
  * 二次登录
  * @param loginOpenId 登录返回的login_openid
+ * @param extDic 扩展字段，可传nil
  */
-- (void)loginWithLoginOpenId:(NSString *)loginOpenId;
+- (void)loginWithLoginOpenId:(NSString *)loginOpenId
+                      extDic:(NSMutableDictionary * __nullable)extDic;
 
 /**
  * 获取法务配置信息
