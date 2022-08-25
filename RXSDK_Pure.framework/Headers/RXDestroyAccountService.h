@@ -25,6 +25,14 @@ typedef enum : NSUInteger {
  */
 + (instancetype)sharedSDK;
 
+#pragma mark -- <包含UI>
+/**
+ * 游戏注销状态弹框
+ * @param dic 查询游戏注销状态接口返回的数据  必须
+ */
+- (void)setDestroyAccountStatusViewWithDic:(NSDictionary *)dic;
+
+#pragma mark -- <不包含UI>
 /**
  * 申请注销账号
  * @param IDCard 身份证  必须
@@ -35,6 +43,11 @@ typedef enum : NSUInteger {
                         realname:(NSString *)realname
                           cpdata:(NSString * _Nullable)cpdata
                         complete:(RequestComplete)complete;
+
+/**
+ * 查询游戏注销状态
+ */
+- (void)getDestroyAccountStatusWithComplete:(RequestComplete)complete;
 
 /**
  * 撤销注销申请
