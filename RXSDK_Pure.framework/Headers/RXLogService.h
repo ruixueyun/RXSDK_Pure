@@ -27,9 +27,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * 数据埋点
- * @param event 埋点标识  必须
- * @param distinctId 用户唯一标识，一般为 OpenID（由CP调用时传入） 非必须
- * @param properties 自定义属性  非必须
+ * @param event 埋点标识
+ * @param distinctId 用户唯一标识，传空默认为openID
+ * @param properties 自定义属性
  */
 - (void)addLogWithEvent:(NSString *)event
              distinctId:(NSString * _Nullable)distinctId
