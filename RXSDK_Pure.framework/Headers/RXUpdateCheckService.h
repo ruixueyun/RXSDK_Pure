@@ -20,12 +20,25 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)sharedSDK;
 
 /**
- * 大厅更新检查
+ * 大厅更新检查（GET版本，不返回下载地址）
  * @param region 地区码  非必须
  * @param client_version 客户端大厅当前版本  非必须
  */
 - (void)checkUpdate_AppWithRegion:(NSString *)region
                    client_version:(NSString *)client_version
+                         complete:(RequestComplete)complete;
+
+/**
+ * 大厅更新检查（POST版本，返回下载地址）
+ * @param region 地区码  非必须
+ * @param client_version 客户端大厅当前版本  非必须
+ * @param games key客户端游戏id value版本  非必须
+ * @param activities key客户端活动别名 value版本  非必须
+ */
+- (void)checkUpdate_AppWithRegion:(NSString * _Nullable)region
+                   client_version:(NSString * _Nullable)client_version
+                            games:(NSDictionary * _Nullable)games
+                       activities:(NSDictionary * _Nullable)activities
                          complete:(RequestComplete)complete;
 
 /**

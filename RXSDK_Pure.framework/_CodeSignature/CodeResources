@@ -54,7 +54,7 @@
 		</data>
 		<key>Headers/RXUpdateCheckService.h</key>
 		<data>
-		wzGHD7rzZJpHQYtFx27q/gxRnHU=
+		vvySXyJyGEcu4isfMscicj0sKYc=
 		</data>
 		<key>Headers/RX_CommonRequestError.h</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/AkNowcvPiaAk+3lHvNva/MitE0=
+		YsugOoDgBGgf6RLfc5EP4NDx21U=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -211,11 +211,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wzGHD7rzZJpHQYtFx27q/gxRnHU=
+			vvySXyJyGEcu4isfMscicj0sKYc=
 			</data>
 			<key>hash2</key>
 			<data>
-			4MNOmt124CoHRANYYgXWPb/na04eM7a3WXv14QWW46Y=
+			fdl5cpf/qZ5iAMp06yhf/FCJnL6SOmfcqUgfCxqs+Pw=
 			</data>
 		</dict>
 		<key>Headers/RX_CommonRequestError.h</key>
