@@ -24,8 +24,8 @@ NS_ASSUME_NONNULL_BEGIN
  * @param region 地区码  非必须
  * @param client_version 客户端大厅当前版本  非必须
  */
-- (void)checkUpdate_AppWithRegion:(NSString *)region
-                   client_version:(NSString *)client_version
+- (void)checkUpdate_AppWithRegion:(NSString * _Nullable)region
+                   client_version:(NSString * _Nullable)client_version
                          complete:(RequestComplete)complete;
 
 /**

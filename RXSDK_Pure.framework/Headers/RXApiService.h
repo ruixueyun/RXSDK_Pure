@@ -124,7 +124,7 @@ typedef enum : NSUInteger {
  * @param extDic 扩展字段  非必须
  * @param username 账号注册为账号，手机注册为手机号，邮箱注册为邮箱  必须
  * @param password 密码  必须
- * @param captchaCode 验证码  必须
+ * @param captchaCode 验证码  手机或邮箱注册为必须，账号注册非必须
  * @param nickname 昵称  非必须
  * @param avatarUrl 头像地址  非必须
  * @param birthday 出生日期（例2000-01-01）  非必须
@@ -135,7 +135,7 @@ typedef enum : NSUInteger {
 - (void)registWithExtDic:(NSMutableDictionary * _Nullable)extDic
                 username:(NSString *)username
                 password:(NSString *)password
-             captchaCode:(NSString *)captchaCode
+             captchaCode:(NSString * _Nullable)captchaCode
                 nickname:(NSString * _Nullable)nickname
                avatarUrl:(NSString * _Nullable)avatarUrl
                 birthday:(NSString * _Nullable)birthday
