@@ -149,6 +149,9 @@ NS_ASSUME_NONNULL_BEGIN
 // 获取通路配置 url
 + (NSString *)getSharePlatformsUrl;
 
+// 获取用户激活 url
++ (NSString *)getActivatedUrl;
+
 @end
 
 NS_ASSUME_NONNULL_END

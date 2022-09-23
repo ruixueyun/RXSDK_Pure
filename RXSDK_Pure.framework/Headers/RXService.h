@@ -64,6 +64,13 @@ typedef enum {
               baseUrlList:(NSArray *)baseUrlList;
 
 /**
+ * 用户激活
+ * @param sourceAd 客户端采集到的广告相关的信息 非必传，不传则SDK默认取剪贴板内容
+ */
+- (void)requestActivatedWithSourceAd:(NSDictionary * _Nullable)sourceAd
+                            complete:(RequestComplete)complete;
+
+/**
  * 登录请求
  * @param extDic 扩展字段，可传nil
  * @param username 非账号登录传空，账号注册为账号，手机注册为手机号，邮箱注册为邮箱
@@ -108,6 +115,11 @@ typedef enum {
  * 获取当前请求域名
  */
 - (NSString *)getApiDomain;
+
+/**
+ * 获取剪贴板广告信息
+ */
+- (NSDictionary *)getAdInfo;
 
 @end
 
