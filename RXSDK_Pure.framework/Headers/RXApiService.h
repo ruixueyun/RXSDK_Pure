@@ -46,10 +46,12 @@ typedef enum : NSUInteger {
  * @param captchaCode 验证码
  * @param password 密码
  * @param email 邮箱
+ * @param migrate_args 任意合法的 json 类型, 比如 string, nujber，账号迁移用的参数, 调用 CP account-query 及 account-queryandbind 接口时透传给 CP  非必须
  */
 - (void)bindingEmailWithCaptchaCode:(NSString *)captchaCode
                            password:(NSString *)password
                               email:(NSString *)email
+                       migrate_args:(id _Nullable)migrate_args
                            complete:(RequestComplete)complete;
 
 /**
@@ -66,10 +68,12 @@ typedef enum : NSUInteger {
  * @param captchaCode 验证码
  * @param password 密码
  * @param phone 手机号
+ * @param migrate_args 任意合法的 json 类型, 比如 string, nujber，账号迁移用的参数, 调用 CP account-query 及 account-queryandbind 接口时透传给 CP  非必须
  */
 - (void)bindingPhoneWithCaptchaCode:(NSString *)captchaCode
                            password:(NSString *)password
                               phone:(NSString *)phone
+                       migrate_args:(id _Nullable)migrate_args
                            complete:(RequestComplete)complete;
 
 /**
@@ -113,10 +117,12 @@ typedef enum : NSUInteger {
  * @param username 用户名
  * @param password 密码
  * @param captchaCode 验证码
+ * @param migrate_args 任意合法的 json 类型, 比如 string, nujber，账号迁移用的参数, 调用 CP account-query 及 account-queryandbind 接口时透传给 CP  非必须
  */
 - (void)resetPasswordWithUsername:(NSString *)username
                          password:(NSString *)password
                       captchaCode:(NSString *)captchaCode
+                     migrate_args:(id _Nullable)migrate_args
                          complete:(RequestComplete)complete;
 
 /**
@@ -131,6 +137,7 @@ typedef enum : NSUInteger {
  * @param sex 性别,1:男,0:女  非必须
  * @param refereeid 推荐人id  非必须
  * @param registType 注册类型（1-普通账号注册，2-手机号注册，3-邮箱注册）：手机号注册必须填写验证码，邮箱注册必填验证码  必须
+ * @param migrate_args 任意合法的 json 类型, 比如 string, nujber，账号迁移用的参数, 调用 CP account-query 及 account-queryandbind 接口时透传给 CP  非必须
  */
 - (void)registWithExtDic:(NSMutableDictionary * _Nullable)extDic
                 username:(NSString *)username
@@ -142,6 +149,7 @@ typedef enum : NSUInteger {
                      sex:(NSString * _Nullable)sex
                refereeid:(NSString * _Nullable)refereeid
               registType:(RegistType)registType
+            migrate_args:(id _Nullable)migrate_args
                 complete:(RequestComplete)complete;
 
 /**

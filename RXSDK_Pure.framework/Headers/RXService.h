@@ -75,19 +75,25 @@ typedef enum {
  * @param extDic 扩展字段，可传nil
  * @param username 非账号登录传空，账号注册为账号，手机注册为手机号，邮箱注册为邮箱
  * @param password 非账号登录传空
+ * @param sign_fields 指定对登录成功后返回的特定字段, 使用 CPKEY 计算签名. CP 服务器可重新计算签名并与登录返回的签名比对, 作为对瑞雪登录数据的校验. 支持的字段包括: nickname, avatar, openid, region, sex, age, 计算签名的逻辑会对指定字段进行排序, 此处传参与顺序无关  非必须
  * @param loginType 登录类型
+ * @param migrate_args 任意合法的 json 类型, 比如 string, nujber，账号迁移用的参数, 调用 CP account-query 及 account-queryandbind 接口时透传给 CP  非必须
  */
 - (void)loginWithExtDic:(NSMutableDictionary * _Nullable)extDic
                username:(NSString * _Nullable)username
                password:(NSString * _Nullable)password
-              loginType:(LoginType)loginType;
+            sign_fields:(NSString * _Nullable)sign_fields
+              loginType:(LoginType)loginType
+           migrate_args:(id _Nullable)migrate_args;
 
 /**
  * 二次登录
  * @param loginOpenId 登录返回的login_openid
+ * @param sign_fields 指定对登录成功后返回的特定字段, 使用 CPKEY 计算签名. CP 服务器可重新计算签名并与登录返回的签名比对, 作为对瑞雪登录数据的校验. 支持的字段包括: nickname, avatar, openid, region, sex, age, 计算签名的逻辑会对指定字段进行排序, 此处传参与顺序无关  非必须
  * @param extDic 扩展字段，可传nil
  */
 - (void)loginWithLoginOpenId:(NSString *)loginOpenId
+                 sign_fields:(NSString * _Nullable)sign_fields
                       extDic:(NSMutableDictionary * __nullable)extDic;
 
 /**
@@ -97,8 +103,11 @@ typedef enum {
 
 /**
  * 苹果登录
+ * @param migrate_args 任意合法的 json 类型, 比如 string, nujber，账号迁移用的参数, 调用 CP account-query 及 account-queryandbind 接口时透传给 CP  非必须
+ * @param sign_fields 指定对登录成功后返回的特定字段, 使用 CPKEY 计算签名. CP 服务器可重新计算签名并与登录返回的签名比对, 作为对瑞雪登录数据的校验. 支持的字段包括: nickname, avatar, openid, region, sex, age, 计算签名的逻辑会对指定字段进行排序, 此处传参与顺序无关  非必须
  */
-- (void)loginReq_apple;
+- (void)loginReq_appleWithMigrate_args:(id _Nullable)migrate_args
+                           sign_fields:(NSString * _Nullable)sign_fields;
 
 /**
  * 自定义请求
@@ -120,6 +129,11 @@ typedef enum {
  * 获取剪贴板广告信息
  */
 - (NSDictionary *)getAdInfo;
+
+/**
+ * 获取openID
+ */
+- (NSString *)getOpenID;
 
 @end
 
