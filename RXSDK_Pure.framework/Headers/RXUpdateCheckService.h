@@ -24,10 +24,12 @@ NS_ASSUME_NONNULL_BEGIN
  * @param region 地区码  非必须
  * @param client_version 客户端大厅当前版本  非必须
  * @param type 脚本类型，默认lua，可选json，u3d等  非必须
+ * @param json 输出文件后缀，默认lua，可选json  非必须
  */
 - (void)checkUpdate_AppWithRegion:(NSString * _Nullable)region
                    client_version:(NSString * _Nullable)client_version
                              type:(NSString * _Nullable)type
+                             json:(NSString * _Nullable)json
                          complete:(RequestComplete)complete;
 
 /**
@@ -37,12 +39,14 @@ NS_ASSUME_NONNULL_BEGIN
  * @param games key客户端游戏id value版本  非必须
  * @param activities key客户端活动别名 value版本  非必须
  * @param type 脚本类型，默认lua，可选json，u3d等  非必须
+ * @param json 输出文件后缀，默认lua，可选json  非必须
  */
 - (void)checkUpdate_AppWithRegion:(NSString * _Nullable)region
                    client_version:(NSString * _Nullable)client_version
                             games:(NSDictionary * _Nullable)games
                        activities:(NSDictionary * _Nullable)activities
                              type:(NSString * _Nullable)type
+                             json:(NSString * _Nullable)json
                          complete:(RequestComplete)complete;
 
 /**
@@ -51,11 +55,13 @@ NS_ASSUME_NONNULL_BEGIN
  * @param game_check_version 指定游戏版本  非必须
  * @param short_name 活动短名  必须
  * @param type 脚本类型，默认lua，可选json，u3d等  非必须
+ * @param json 输出文件后缀，默认lua，可选json  非必须
  */
 - (void)checkUpdate_ActivityWithGame_version:(NSInteger)game_version
                           game_check_version:(NSString * _Nullable)game_check_version
                                   short_name:(NSString *)short_name
                                         type:(NSString * _Nullable)type
+                                        json:(NSString * _Nullable)json
                                     complete:(RequestComplete)complete;
 
 /**
@@ -64,11 +70,13 @@ NS_ASSUME_NONNULL_BEGIN
  * @param game_version 当前游戏版本  必须
  * @param game_check_version 指定游戏版本  非必须
  * @param type 脚本类型，默认lua，可选json，u3d等  非必须
+ * @param json 输出文件后缀，默认lua，可选json  非必须
  */
 - (void)checkUpdate_GameWithGame_id:(NSInteger)game_id
                        game_version:(NSInteger)game_version
                  game_check_version:(NSString * _Nullable)game_check_version
                                type:(NSString * _Nullable)type
+                               json:(NSString * _Nullable)json
                            complete:(RequestComplete)complete;
 
 @end
