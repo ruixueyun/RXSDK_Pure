@@ -87,7 +87,7 @@ typedef enum {
            migrate_args:(id _Nullable)migrate_args;
 
 /**
- * 登录请求
+ * 登录请求（扩展请求方式）
  * @param loginType 登录类型
  * @param loginInfo 登录数据
  * ！loginInfo参数说明：
