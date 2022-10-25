@@ -30,15 +30,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef enum {
     LoginTypeVisitor,  // 游客登录
-    LoginTypeAccount, // 账号登录
-    LoginTypeEmail,  // 邮箱登录
-    LoginTypeAuth,   // 本机一键登录
-    LoginTypeW, // 微信登录
-    LoginTypeApple,   // 苹果登录
-    LoginTypeQuick,   // 二次登录
-    LoginTypeGoogle,  // 谷歌登录
+    LoginTypeAccount,  // 账号登录
+    LoginTypeEmail,    // 邮箱登录
+    LoginTypeAuth,     // 本机一键登录
+    LoginTypeW,        // 微信登录
+    LoginTypeApple,    // 苹果登录
+    LoginTypeQuick,    // 二次登录
+    LoginTypeGoogle,   // 谷歌登录
     LoginTypeFacebook, // facebook登录
-    LoginTypeVirtual  // 虚拟登录
+    LoginTypeVirtual   // 虚拟登录
 }LoginType;
 
 
