@@ -10,15 +10,15 @@
 		</data>
 		<key>Headers/RXApiService.h</key>
 		<data>
-		uZHzVScVE0MIyHoSIkyHfx85gN0=
+		LX//nagNf8g+iePhdJA6lohSVsI=
 		</data>
 		<key>Headers/RXCommonApiManager.h</key>
 		<data>
-		YlbMv73j1s7iRCgHj5n4qdcjBCw=
+		3oBRGk8lKj+g675WWBJqnXev+bY=
 		</data>
 		<key>Headers/RXContactService.h</key>
 		<data>
-		3Di8RAMnspxVhJ58a1Sui/wbeE0=
+		xPzabL9lT9IT+aViGN3gUaKk0lo=
 		</data>
 		<key>Headers/RXDestroyAccountService.h</key>
 		<data>
@@ -32,13 +32,17 @@
 		<data>
 		84S51va6uk17Jbb/hlYRg9aMz0c=
 		</data>
+		<key>Headers/RXLoginInfo.h</key>
+		<data>
+		DEGSa/ZnvniuMKQNC6k95tGrsOA=
+		</data>
 		<key>Headers/RXPayService.h</key>
 		<data>
 		TRC323ZhORx1aho816c2BLO4PbA=
 		</data>
 		<key>Headers/RXPublicHeader.h</key>
 		<data>
-		Y2JIzCd8TvHumgtlX9VxHd9x9TA=
+		Y+HxCIvALp6gwzjx+W3ihXdSx9k=
 		</data>
 		<key>Headers/RXSDK_Pure.h</key>
 		<data>
@@ -46,15 +50,15 @@
 		</data>
 		<key>Headers/RXService.h</key>
 		<data>
-		yXeoClu8vlEiyrMUcCpLRWf64mw=
+		6Ud/Un7yd7+Th5/ivzxIYDLTgV8=
 		</data>
 		<key>Headers/RXShareService.h</key>
 		<data>
-		moV8uqnhwRAxQR4NJCqfX+Ds2xg=
+		/t5T7MJZ9i8pE+uiL9AXoSdhSTU=
 		</data>
 		<key>Headers/RXUpdateCheckService.h</key>
 		<data>
-		SETymw1jD6DcgkvABBXbKGxUz5A=
+		J65br7hWav+1uonEeOwq4eNKY8Q=
 		</data>
 		<key>Headers/RX_CommonRequestError.h</key>
 		<data>
@@ -90,33 +94,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uZHzVScVE0MIyHoSIkyHfx85gN0=
+			LX//nagNf8g+iePhdJA6lohSVsI=
 			</data>
 			<key>hash2</key>
 			<data>
-			pBcOYRSXqK9YK+funGZf/VqupNYemkH63jnw8bTfPX0=
+			Tuk6CXWmxWbLr2DHpy4HNiqawKOEi9jiN78QH7b/HD0=
 			</data>
 		</dict>
 		<key>Headers/RXCommonApiManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YlbMv73j1s7iRCgHj5n4qdcjBCw=
+			3oBRGk8lKj+g675WWBJqnXev+bY=
 			</data>
 			<key>hash2</key>
 			<data>
-			4RFNjRNDE3UNXbZQ2m8bYPSK8/0ijcBFuz1lN3xErbw=
+			hDRYTikWeNXtzlAm0lTg/uuMl2EazYt0keBobUvJ6NY=
 			</data>
 		</dict>
 		<key>Headers/RXContactService.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3Di8RAMnspxVhJ58a1Sui/wbeE0=
+			xPzabL9lT9IT+aViGN3gUaKk0lo=
 			</data>
 			<key>hash2</key>
 			<data>
-			CZA0HecImY0r5oC1a+1PmVO4rpz+mII3v23YbFPKaB4=
+			0/5y3zpPwgXdmkOFggQaunCJInvEc8PmNGhFbIeKo8Q=
 			</data>
 		</dict>
 		<key>Headers/RXDestroyAccountService.h</key>
@@ -152,6 +156,17 @@
 			TFVe3Wzz4PfRQZjxFsq/WG/nsk/72JVuSiy44yxtMNc=
 			</data>
 		</dict>
+		<key>Headers/RXLoginInfo.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DEGSa/ZnvniuMKQNC6k95tGrsOA=
+			</data>
+			<key>hash2</key>
+			<data>
+			fHO8Rfscw7cNNq1tr6ZTV+JIg558MVkkQfwovzkczEA=
+			</data>
+		</dict>
 		<key>Headers/RXPayService.h</key>
 		<dict>
 			<key>hash</key>
@@ -167,11 +182,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Y2JIzCd8TvHumgtlX9VxHd9x9TA=
+			Y+HxCIvALp6gwzjx+W3ihXdSx9k=
 			</data>
 			<key>hash2</key>
 			<data>
-			WFU7+GX0KHcMlB9ents+MIIRQdB1Pe5O1jyExupGyQg=
+			k8LMWROHyGN0POOue9J5uCIP4bXbtr9kLv0T07SG9Hg=
 			</data>
 		</dict>
 		<key>Headers/RXSDK_Pure.h</key>
@@ -189,33 +204,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yXeoClu8vlEiyrMUcCpLRWf64mw=
+			6Ud/Un7yd7+Th5/ivzxIYDLTgV8=
 			</data>
 			<key>hash2</key>
 			<data>
-			odyz2OUu7CU2z7LHeIb5yjKdqfV/bIby7QjcqASqtpg=
+			izJbCdIrbFStA2SYQiHJEymR8pC+AgECjAfJj1PuouY=
 			</data>
 		</dict>
 		<key>Headers/RXShareService.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			moV8uqnhwRAxQR4NJCqfX+Ds2xg=
+			/t5T7MJZ9i8pE+uiL9AXoSdhSTU=
 			</data>
 			<key>hash2</key>
 			<data>
-			3vXIsZnxekt8ogOmfrvs1ZPLPGhvqagES/s7e87Lzpw=
+			24NI/X5OA7BN9aK11AkmjcnO+XCQwakTC0nnwpzHMm4=
 			</data>
 		</dict>
 		<key>Headers/RXUpdateCheckService.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SETymw1jD6DcgkvABBXbKGxUz5A=
+			J65br7hWav+1uonEeOwq4eNKY8Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			l/IY3NCfiKthfAAbpME//U3p8sF2bShFBX0njHNl6Rc=
+			dmx7LFfCdsN9FnFlnJDimerC39PH65bm2fR8HWHgdBk=
 			</data>
 		</dict>
 		<key>Headers/RX_CommonRequestError.h</key>

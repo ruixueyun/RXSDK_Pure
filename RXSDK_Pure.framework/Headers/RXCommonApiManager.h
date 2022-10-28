@@ -152,6 +152,12 @@ NS_ASSUME_NONNULL_BEGIN
 // 获取用户激活 url
 + (NSString *)getActivatedUrl;
 
+// 获取判断两用户是否为好友 url
++ (NSString *)getIsfriendUrl;
+
+// 获取判断两用户是否存在某自定关系 url
++ (NSString *)getHasRelationUrl;
+
 @end
 
 NS_ASSUME_NONNULL_END

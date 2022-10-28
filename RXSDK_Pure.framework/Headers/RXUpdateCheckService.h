@@ -12,8 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface RXUpdateCheckService : NSObject
 
-@property (nonatomic, assign) BOOL isTest;  // YES测试， NO正式，默认正式
-
 /**
  * 获取SDK实例（单例）
  */

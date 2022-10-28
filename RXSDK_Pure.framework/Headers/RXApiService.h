@@ -27,19 +27,38 @@ typedef enum : NSUInteger {
  * @param type 验证码类型
  * @param target 发送的目标（手机或邮箱）
  * @param purpose 用途
- "register"   // 短信意图-注册
- "bindphone" // 短信意图-绑定手机
- "unbindphone"// 短信意图-解绑手机
- "resetpwd"   // 短信意图-重置密码
- "bindemail" // 验证码意图 绑定邮箱
- "unbindemail"// 验证码意图 解绑邮箱
- "login"// 登录
- "setpwd"// 设置密码
+ "register"           // 注册
+ "bindphone"      // 绑定手机
+ "unbindphone"  // 解绑手机
+ "resetpwd"        // 重置密码
+ "bindemail"       // 绑定邮箱
+ "unbindemail"   // 解绑邮箱
+ "login"               // 登录
+ "setpwd"           // 设置密码
  */
 - (void)getCaptchaCodeWithType:(CaptchaType)type
                         target:(NSString *)target
                        purpose:(NSString *)purpose
                       complete:(RequestComplete)complete;
+
+/**
+ * 获取验证码
+ * @param params 获取验证码请求参数
+ * ！params参数说明：
+ * ！phone 手机号（phone/email二选一，不可同时传入）    #NSString类型
+ * ！email 邮箱（phone/email二选一，不可同时传入）    #NSString类型
+ * ！purpose 用图    #NSString类型
+ "register"           // 注册
+ "bindphone"      // 绑定手机
+ "unbindphone"  // 解绑手机
+ "resetpwd"        // 重置密码
+ "bindemail"       // 绑定邮箱
+ "unbindemail"   // 解绑邮箱
+ "login"               // 登录
+ "setpwd"           // 设置密码
+ */
+- (void)getCaptchaCodeWithParams:(NSDictionary *)params
+                        complete:(RequestComplete)complete;
 
 /**
  * 绑定邮箱
@@ -55,6 +74,18 @@ typedef enum : NSUInteger {
                            complete:(RequestComplete)complete;
 
 /**
+ * 绑定邮箱
+ * @param params 获取验证码请求参数
+ * ！params参数说明：
+ * ！captcha_code 验证码    #NSString类型
+ * ！password 密码    #NSString类型
+ * ！email 邮箱    #NSString类型
+ * ！migrate_args 任意合法的 json 类型, 比如 string, nujber，账号迁移用的参数, 调用 CP account-query 及 account-queryandbind 接口时透传给 CP  非必须
+ */
+- (void)bindingEmailWithParams:(NSDictionary *)params
+                      complete:(RequestComplete)complete;
+
+/**
  * 解绑邮箱
  * @param captchaCode 验证码
  * @param email 邮箱
@@ -62,6 +93,16 @@ typedef enum : NSUInteger {
 - (void)reliveBindingEmailWithCaptchaCode:(NSString *)captchaCode
                                     email:(NSString *)email
                                  complete:(RequestComplete)complete;
+
+/**
+ * 解绑邮箱
+ * @param params 获取验证码请求参数
+ * ！params参数说明：
+ * ！captcha_code 验证码    #NSString类型
+ * ！email 邮箱    #NSString类型
+ */
+- (void)reliveBindingEmailWithParams:(NSDictionary *)params
+                            complete:(RequestComplete)complete;
 
 /**
  * 绑定手机
@@ -77,6 +118,18 @@ typedef enum : NSUInteger {
                            complete:(RequestComplete)complete;
 
 /**
+ * 绑定手机
+ * @param params 获取验证码请求参数
+ * ！params参数说明：
+ * ！phone 手机号    #NSString类型
+ * ！captcha_code 验证码    #NSString类型
+ * ！password 密码    #NSString类型
+ * ！migrate_args 任意合法的 json 类型, 比如 string, nujber，账号迁移用的参数, 调用 CP account-query 及 account-queryandbind 接口时透传给 CP  非必须
+ */
+- (void)bindingPhoneWithParams:(NSDictionary *)params
+                      complete:(RequestComplete)complete;
+
+/**
  * 解绑手机
  * @param captchaCode 验证码
  * @param phone 手机号
@@ -84,6 +137,16 @@ typedef enum : NSUInteger {
 - (void)reliveBindingPhoneWithCaptchaCode:(NSString *)captchaCode
                                     phone:(NSString *)phone
                                  complete:(RequestComplete)complete;
+
+/**
+ * 解绑手机
+ * @param params 获取验证码请求参数
+ * ！params参数说明：
+ * ！phone 手机号    #NSString类型
+ * ！captcha_code 验证码    #NSString类型
+ */
+- (void)reliveBindingPhoneWithParams:(NSDictionary *)params
+                            complete:(RequestComplete)complete;
 
 /**
  * 获取用户信息
@@ -104,12 +167,34 @@ typedef enum : NSUInteger {
                            complete:(RequestComplete)complete;
 
 /**
+ * 修改用户信息
+ * @param params 获取验证码请求参数
+ * ！params参数说明：
+ * ！avatarurl 头像url    #NSString类型
+ * ！nickname 用户昵称    #NSString类型
+ * ！sex 性别 1男 0女    #NSInteger类型
+ * ！wechat_avatarurl 微信原始头像    #NSString类型
+ */
+- (void)updateUserInfoWithParams:(NSDictionary *)params
+                        complete:(RequestComplete)complete;
+
+/**
  * 修改密码
  * @param oldPwd 旧密码
  * @param newPwd 新密码
  */
 - (void)updatePasswordWithOldPwd:(NSString *)oldPwd
                           newPwd:(NSString *)newPwd
+                        complete:(RequestComplete)complete;
+
+/**
+ * 修改密码
+ * @param params 获取验证码请求参数
+ * ！params参数说明：
+ * ！old_password 旧密码    #NSString类型
+ * ！new_password 新密码    #NSString类型
+ */
+- (void)updatePasswordWithParams:(NSDictionary *)params
                         complete:(RequestComplete)complete;
 
 /**
@@ -126,30 +211,49 @@ typedef enum : NSUInteger {
                          complete:(RequestComplete)complete;
 
 /**
+ * 重置密码
+ * @param params 获取验证码请求参数
+ * ！params参数说明：
+ * ！username 用户名    #NSString类型
+ * ！password 密码    #NSString类型
+ * ！captcha_code 验证码    #NSString类型
+ * ！migrate_args 任意合法的 json 类型, 比如 string, nujber，账号迁移用的参数, 调用 CP account-query 及 account-queryandbind 接口时透传给 CP  非必须
+ */
+- (void)resetPasswordWithParams:(NSDictionary *)params
+                       complete:(RequestComplete)complete;
+
+/**
  * 注册
- * @param extDic 扩展字段  非必须
  * @param username 账号注册为账号，手机注册为手机号，邮箱注册为邮箱  必须
  * @param password 密码  必须
  * @param captchaCode 验证码  手机或邮箱注册为必须，账号注册非必须
  * @param nickname 昵称  非必须
  * @param avatarUrl 头像地址  非必须
- * @param birthday 出生日期（例2000-01-01）  非必须
  * @param sex 性别,1:男,0:女  非必须
- * @param refereeid 推荐人id  非必须
- * @param registType 注册类型（1-普通账号注册，2-手机号注册，3-邮箱注册）：手机号注册必须填写验证码，邮箱注册必填验证码  必须
  * @param migrate_args 任意合法的 json 类型, 比如 string, nujber，账号迁移用的参数, 调用 CP account-query 及 account-queryandbind 接口时透传给 CP  非必须
  */
-- (void)registWithExtDic:(NSMutableDictionary * _Nullable)extDic
-                username:(NSString *)username
-                password:(NSString *)password
-             captchaCode:(NSString * _Nullable)captchaCode
-                nickname:(NSString * _Nullable)nickname
-               avatarUrl:(NSString * _Nullable)avatarUrl
-                birthday:(NSString * _Nullable)birthday
-                     sex:(NSString * _Nullable)sex
-               refereeid:(NSString * _Nullable)refereeid
-              registType:(RegistType)registType
-            migrate_args:(id _Nullable)migrate_args
+- (void)registWithUsername:(NSString *)username
+                  password:(NSString *)password
+               captchaCode:(NSString * _Nullable)captchaCode
+                  nickname:(NSString * _Nullable)nickname
+                 avatarUrl:(NSString * _Nullable)avatarUrl
+                       sex:(NSString * _Nullable)sex
+              migrate_args:(id _Nullable)migrate_args
+                  complete:(RequestComplete)complete;
+
+/**
+ * 注册
+ * @param params 获取验证码请求参数
+ * ！params参数说明：
+ * ！username 账号注册为账号，手机注册为手机号，邮箱注册为邮箱    #NSString类型
+ * ！password 密码    #NSString类型
+ * ！nickname 昵称    #NSString类型
+ * ！captcha_code 验证码    #NSString类型
+ * ！avatarUrl 头像地址    #NSString类型
+ * ！sex 性别,1:男,0:女    #NSInteger类型
+ * ！migrate_args 任意合法的 json 类型, 比如 string, nujber，账号迁移用的参数, 调用 CP account-query 及 account-queryandbind 接口时透传给 CP  非必须
+ */
+- (void)registWithParams:(NSDictionary *)params
                 complete:(RequestComplete)complete;
 
 /**
@@ -160,6 +264,16 @@ typedef enum : NSUInteger {
 - (void)approveWithRealName:(NSString *)realName
                      idCard:(NSString *)idCard
                    complete:(RequestComplete)complete;
+
+/**
+ * 实名认证
+ * @param params 获取验证码请求参数
+ * ！params参数说明：
+ * ！realname 真实姓名    #NSString类型
+ * ！idcard 身份证    #NSString类型
+ */
+- (void)approveWithParams:(NSDictionary *)params
+                 complete:(RequestComplete)complete;
 
 /**
  * 获取设备码

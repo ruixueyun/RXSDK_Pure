@@ -28,20 +28,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-typedef enum {
-    LoginTypeVisitor,  // 游客登录
-    LoginTypeAccount,  // 账号登录
-    LoginTypeEmail,    // 邮箱登录
-    LoginTypeAuth,     // 本机一键登录
-    LoginTypeW,        // 微信登录
-    LoginTypeApple,    // 苹果登录
-    LoginTypeQuick,    // 二次登录
-    LoginTypeGoogle,   // 谷歌登录
-    LoginTypeFacebook, // facebook登录
-    LoginTypeVirtual   // 虚拟登录
-}LoginType;
-
-
 @interface RXService : NSObject
 
 @property (nonatomic, weak) id <RXLoginDelegate> loginDelegate;
@@ -77,7 +63,7 @@ typedef enum {
  * @param password 非账号登录传空
  * @param sign_fields 指定对登录成功后返回的特定字段, 使用 CPKEY 计算签名. CP 服务器可重新计算签名并与登录返回的签名比对, 作为对瑞雪登录数据的校验. 支持的字段包括: nickname, avatar, openid, region, sex, age, 计算签名的逻辑会对指定字段进行排序, 此处传参与顺序无关  非必须
  * @param loginType 登录类型
- * @param migrate_args 任意合法的 json 类型, 比如 string, nujber，账号迁移用的参数, 调用 CP account-query 及 account-queryandbind 接口时透传给 CP  非必须
+ * @param migrate_args 任意合法的 json 类型, 比如 string, number，账号迁移用的参数, 调用 CP account-query 及 account-queryandbind 接口时透传给 CP  非必须
  */
 - (void)loginWithExtDic:(NSMutableDictionary * _Nullable)extDic
                username:(NSString * _Nullable)username
@@ -91,14 +77,15 @@ typedef enum {
  * @param loginType 登录类型
  * @param loginInfo 登录数据
  * ！loginInfo参数说明：
- * ！extDic 扩展字段，可传nil
- * ！username 非账号登录传空，账号注册为账号，手机注册为手机号，邮箱注册为邮箱
- * ！password 非账号登录传空
- * ！sign_fields 指定对登录成功后返回的特定字段, 使用 CPKEY 计算签名. CP 服务器可重新计算签名并与登录返回的签名比对, 作为对瑞雪登录数据的校验. 支持的字段包括: nickname, avatar, openid, region, sex, age, 计算签名的逻辑会对指定字段进行排序, 此处传参与顺序无关  非必须
- * ！migrate_args 任意合法的 json 类型, 比如 string, nujber，账号迁移用的参数, 调用 CP account-query 及 account-queryandbind 接口时透传给 CP  非必须
+ * ！extDic 扩展字段，可传nil    #NSDictionary类型
+ * ！username 非账号登录传空，账号注册为账号，手机注册为手机号，邮箱注册为邮箱    #NSString类型
+ * ！password 非账号登录传空    #NSString类型
+ * ！login_openid loginType为LoginTypeQuick二次登录时必传，取登录时返回的login_openid数据    #NSString类型
+ * ！sign_fields 指定对登录成功后返回的特定字段, 使用 CPKEY 计算签名. CP 服务器可重新计算签名并与登录返回的签名比对, 作为对瑞雪登录数据的校验. 支持的字段包括: nickname, avatar, openid, region, sex, age, 计算签名的逻辑会对指定字段进行排序, 此处传参与顺序无关  非必须    #NSString类型
+ * ！migrate_args 任意合法的 json 类型, 比如 string, number，账号迁移用的参数, 调用 CP account-query 及 account-queryandbind 接口时透传给 CP  非必须
  */
-- (void)loginWithLoginInfo:(NSMutableDictionary * _Nullable)loginInfo
-                 loginType:(LoginType)loginType;
+- (void)loginWithParams:(NSDictionary * _Nullable)params
+              loginType:(LoginType)loginType;
 
 /**
  * 二次登录
