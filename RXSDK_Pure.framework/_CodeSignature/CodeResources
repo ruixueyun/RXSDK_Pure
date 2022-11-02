@@ -76,10 +76,6 @@
 		<data>
 		ll11qerF42rF1KIEeXpdZHN04Zc=
 		</data>
-		<key>trailer.mp4</key>
-		<data>
-		m2eIkPuMpAHCjnygkXHsAIoVS5c=
-		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -268,17 +264,6 @@
 			<key>hash2</key>
 			<data>
 			pJ7Z1dfUh9Q7az9G+wGE+yDdFHS9YzLh9v13P5teS+A=
-			</data>
-		</dict>
-		<key>trailer.mp4</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			m2eIkPuMpAHCjnygkXHsAIoVS5c=
-			</data>
-			<key>hash2</key>
-			<data>
-			tnBgL6AJNMonxDUbsO/n6noH+uVyhORCJgJe7tfFElQ=
 			</data>
 		</dict>
 	</dict>
