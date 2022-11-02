@@ -54,7 +54,7 @@
 		</data>
 		<key>Headers/RXShareService.h</key>
 		<data>
-		/t5T7MJZ9i8pE+uiL9AXoSdhSTU=
+		T5wb3YhKJqY46w3AA4cbc+9XFvU=
 		</data>
 		<key>Headers/RXUpdateCheckService.h</key>
 		<data>
@@ -75,6 +75,10 @@
 		<key>Modules/module.modulemap</key>
 		<data>
 		ll11qerF42rF1KIEeXpdZHN04Zc=
+		</data>
+		<key>trailer.mp4</key>
+		<data>
+		m2eIkPuMpAHCjnygkXHsAIoVS5c=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -215,11 +219,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/t5T7MJZ9i8pE+uiL9AXoSdhSTU=
+			T5wb3YhKJqY46w3AA4cbc+9XFvU=
 			</data>
 			<key>hash2</key>
 			<data>
-			24NI/X5OA7BN9aK11AkmjcnO+XCQwakTC0nnwpzHMm4=
+			tFe98rNkNDCEoIN+hilzzkq6QggqWjf25E3heqC/OIQ=
 			</data>
 		</dict>
 		<key>Headers/RXUpdateCheckService.h</key>
@@ -264,6 +268,17 @@
 			<key>hash2</key>
 			<data>
 			pJ7Z1dfUh9Q7az9G+wGE+yDdFHS9YzLh9v13P5teS+A=
+			</data>
+		</dict>
+		<key>trailer.mp4</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			m2eIkPuMpAHCjnygkXHsAIoVS5c=
+			</data>
+			<key>hash2</key>
+			<data>
+			tnBgL6AJNMonxDUbsO/n6noH+uVyhORCJgJe7tfFElQ=
 			</data>
 		</dict>
 	</dict>

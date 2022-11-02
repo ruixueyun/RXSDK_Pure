@@ -54,7 +54,7 @@ typedef void(^ShareCallBack)(BOOL success);
  * @param platform 分享平台 wechat
  * @param region 地区码  非必须
  * @param transmits 透传参数，原样返回， 请使用key=value形式，并对值使用urlencode，返回时会原样返回  非必须
- * @param ext 扩展字段，拼接url用  非必须 、
+ * @param ext 扩展字段，拼接url用  非必须
  */
 - (void)SystemShareWithFunc:(NSString *)func
                    platform:(NSString *)platform
