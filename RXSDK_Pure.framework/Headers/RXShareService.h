@@ -78,7 +78,7 @@ typedef void(^ShareCallBack)(BOOL success);
 
 /**
  * 分享上报
- * @param distinctId 用户唯一标识，一般为 OpenID（由CP调用时传入）
+ * @param distinctId 用户唯一标识，一般为 openid（由CP调用时传入），nil默认为openid
  * @param properties 自定义属性
  */
 - (void)shareReportWithDistinctId:(NSString *)distinctId
