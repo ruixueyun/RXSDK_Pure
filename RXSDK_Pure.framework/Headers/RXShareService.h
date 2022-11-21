@@ -4,6 +4,23 @@
 //
 //  Created by 陈汉 on 2021/12/6.
 //
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
 #import "RXPublicHeader.h"
@@ -33,20 +50,6 @@ typedef void(^ShareCallBack)(BOOL success);
                    transmits:(NSString * _Nullable)transmits
                          ext:(NSDictionary * _Nullable)ext
                     complete:(RequestComplete)complete;
-
-/**
- * 获取分享信息
- * @param params 获取验证码请求参数
- * ！params参数说明：
- * ！func 埋点标识     #NSString类型
- * ！region 地区码     #NSString类型
- * ！platform 分享平台 wechat     #NSString类型
- * ！transmits 透传参数，原样返回， 请使用key=value形式，并对值使用urlencode，返回时会原样返回     #NSString类型
- * ！protocol_android android唤醒协议     #NSString类型
- * ！protocol_ios iOS唤醒协议     #NSString类型
- */
-- (void)getShareInfoWithParams:(NSDictionary *)params
-                      complete:(RequestComplete)complete;
 
 /**
  * 系统分享（直接调用，不需要获取分享信息）
@@ -84,16 +87,6 @@ typedef void(^ShareCallBack)(BOOL success);
 - (void)shareReportWithDistinctId:(NSString *)distinctId
                        properties:(NSDictionary * _Nullable)properties
                          complete:(RequestComplete)complete;
-
-/**
- * 分享上报
- * @param params 获取验证码请求参数
- * ！params参数说明：
- * ！distinctId 用户唯一标识，一般为 OpenID    #NSString类型
- * ！properties 自定义属性    #NSDictionary类型
- */
-- (void)shareReportWithParams:(NSDictionary *)params
-                     complete:(RequestComplete)complete;
 
 @end
 

@@ -4,6 +4,23 @@
 //
 //  Created by 陈汉 on 2021/9/28.
 //
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -51,7 +68,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * 用户激活
- * @param sourceAd 客户端采集到的广告相关的信息 非必传，不传则SDK默认取剪贴板内容
+ * @param sourceAd 扩展信息
+ * ！sourceAd参数说明：
+ * ！source_ad 客户端采集到的广告相关的信息  非必须    #NSDictionary类型
+ * ！user_agent 一种方式获取的 user_agent，若为空，则取 user-agent header 的值  非必须    #NSString类型
+ * ！user_agent1 其他方式获取的 user_agent  非必须    #NSString类型
+ * ！user_agent2 其他方式获取的 user_agent  非必须    #NSString类型
  */
 - (void)requestActivatedWithSourceAd:(NSDictionary * _Nullable)sourceAd
                             complete:(RequestComplete)complete;
@@ -71,21 +93,6 @@ NS_ASSUME_NONNULL_BEGIN
             sign_fields:(NSArray * _Nullable)sign_fields
               loginType:(LoginType)loginType
            migrate_args:(id _Nullable)migrate_args;
-
-/**
- * 登录请求（扩展请求方式）
- * @param loginType 登录类型
- * @param loginInfo 登录数据
- * ！loginInfo参数说明：
- * ！extDic 扩展字段，可传nil    #NSDictionary类型
- * ！username 非账号登录传空，账号注册为账号，手机注册为手机号，邮箱注册为邮箱    #NSString类型
- * ！password 非账号登录传空    #NSString类型
- * ！login_openid loginType为LoginTypeQuick二次登录时必传，取登录时返回的login_openid数据    #NSString类型
- * ！sign_fields 指定对登录成功后返回的特定字段, 使用 CPKEY 计算签名. CP 服务器可重新计算签名并与登录返回的签名比对, 作为对瑞雪登录数据的校验. 支持的字段包括: nickname, avatar, openid, region, sex, age, 计算签名的逻辑会对指定字段进行排序, 此处传参与顺序无关。类型为字符串数组 @[@"nickname",@"avatar"]   非必须    #NSArray类型
- * ！migrate_args 任意合法的 json 类型, 比如 string, number，账号迁移用的参数, 调用 CP account-query 及 account-queryandbind 接口时透传给 CP  非必须
- */
-- (void)loginWithParams:(NSDictionary * _Nullable)params
-              loginType:(LoginType)loginType;
 
 /**
  * 二次登录
