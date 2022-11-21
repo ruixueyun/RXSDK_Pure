@@ -7,7 +7,6 @@
 
 #import <Foundation/Foundation.h>
 #import "RX_CommonNetworkExcute.h"
-#import "RXCommonApiManager.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
