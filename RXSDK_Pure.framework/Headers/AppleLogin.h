@@ -26,7 +26,6 @@ typedef NS_ENUM(NSUInteger, AppleLoginType) {
 /// @param view <#view description#>
 /// @param rect <#rect description#>
 /// @param block <#block description#>
-//+(instancetype)appLogoinFromUser:(NSString *)user block:(void(^)(NSInteger state,NSString *msg,id data))block;
 - (void)singInLogin:(NSString *)user block:(void(^)(NSInteger state,NSString *msg,id data))block;
 @end
  
