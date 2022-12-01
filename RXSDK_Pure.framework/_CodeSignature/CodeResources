@@ -81,10 +81,6 @@
 	<dict>
 		<key>Headers/AppleLogin.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ysjFEeWJSDd7L0IxczjQNhDJ5kc=
-			</data>
 			<key>hash2</key>
 			<data>
 			GPYghTOVN+Zzx2UvAR+3rbgC3YyiV/wlvaYH6H1s838=
@@ -92,10 +88,6 @@
 		</dict>
 		<key>Headers/RXApiService.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Gw+ZEJ/D7Pv/8Cg18j8QlZGoRWk=
-			</data>
 			<key>hash2</key>
 			<data>
 			BOmaVVMI9jEUKOX/9lYy8gQzFAAFGM2ie3EK0gdG0zQ=
@@ -103,10 +95,6 @@
 		</dict>
 		<key>Headers/RXConfig.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			vp99XxXw7FjlCwnltE4tvmdMzCs=
-			</data>
 			<key>hash2</key>
 			<data>
 			ytC4D6fSMtBsXrVnErbb7lt6onxCyu2sOuk1TL7Cepg=
@@ -114,10 +102,6 @@
 		</dict>
 		<key>Headers/RXDestroyAccountService.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			wphdOnSk247hfXeCbDUQJ7CvbDE=
-			</data>
 			<key>hash2</key>
 			<data>
 			Uehk0PICdU1gt1nvKVfP/+epTCadvskijU9lymB3x5A=
@@ -125,10 +109,6 @@
 		</dict>
 		<key>Headers/RXLogService.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			9N3YGZpfcpTuUiwaLo1uyQn9m2E=
-			</data>
 			<key>hash2</key>
 			<data>
 			B92wgUlGxowRf4KXs8+yCDEntn3yh+8nOllhzVNhuKg=
@@ -136,10 +116,6 @@
 		</dict>
 		<key>Headers/RXPayService.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Gt38kGm/rI1cj84U2Gpgk1uPJ8A=
-			</data>
 			<key>hash2</key>
 			<data>
 			g96T4dh918MKKrRuT57yhyXkVs/cSvH2JqoqIMVY9dA=
@@ -147,10 +123,6 @@
 		</dict>
 		<key>Headers/RXPublicHeader.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			djTsmv7+0zoYbZx/BZgCoxNR2PE=
-			</data>
 			<key>hash2</key>
 			<data>
 			rJ5hj/xIqve3dRv7lHyk9+805p+XqKaTjZG4/x2opYY=
@@ -158,10 +130,6 @@
 		</dict>
 		<key>Headers/RXSDK_Pure.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/AYLlGQ6H57LCsQbWIDn/Nni6pU=
-			</data>
 			<key>hash2</key>
 			<data>
 			6QJO7CWfPr8PAs6NhAMF3aozG8d35LuCSHjrTtuMY3Y=
@@ -169,10 +137,6 @@
 		</dict>
 		<key>Headers/RXService.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			wDeXV2FtiGRyUtJ3HauQ2bYLy+U=
-			</data>
 			<key>hash2</key>
 			<data>
 			cxGm8F9SKEsr5HGZgVlBhL1vuLNcfIdemcW/5NtakgA=
@@ -180,10 +144,6 @@
 		</dict>
 		<key>Headers/RXShareService.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			BLbnO7fvO6oMThcFWdDcFOXeBV8=
-			</data>
 			<key>hash2</key>
 			<data>
 			3b8KjcCE+aVQW1QM0rgPZhxjPUmLoxA/qc3BMdsvX3k=
@@ -191,10 +151,6 @@
 		</dict>
 		<key>Headers/RXUpdateCheckService.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			NghelFJwlrvKPpdsWvecHotzpuY=
-			</data>
 			<key>hash2</key>
 			<data>
 			+9GRlvuwKKfwYF/VXTsQROyg6ZTPsoWCB3DspZcYs4k=
@@ -202,10 +158,6 @@
 		</dict>
 		<key>Headers/RX_CommonNetworkExcute.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			3VLX07ufokE+/qXAM1amOWSy/d0=
-			</data>
 			<key>hash2</key>
 			<data>
 			rnNIjvlaOanO+Ddb+m3adI8D3hqFjyLDEsafDz/A6dI=
@@ -213,10 +165,6 @@
 		</dict>
 		<key>Headers/RX_CommonNetworkExcuteManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			yBt4SinOdIAE/xqRLxoGRD+WSlI=
-			</data>
 			<key>hash2</key>
 			<data>
 			6+BsNwEt6NrSJ5MxTIMPVIFaJAhnOK7CrjeVwfnkqcI=
@@ -224,10 +172,6 @@
 		</dict>
 		<key>Headers/RX_CommonRequest.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			nsTwwkZKmhtAZh6SOCcTlQU1RtI=
-			</data>
 			<key>hash2</key>
 			<data>
 			rGRKCwDXnBSGrzQjWlR4r+zEguFeyXYCFvGk68PS0Hc=
@@ -235,10 +179,6 @@
 		</dict>
 		<key>Headers/RX_CommonRequestConfigure.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			EsmcvrigdHjQBuEA7DgTTLbEZl8=
-			</data>
 			<key>hash2</key>
 			<data>
 			89pdIzNqyU/lQtOGAfwAbguNoeri5mklpFyCgE+AugA=
@@ -246,10 +186,6 @@
 		</dict>
 		<key>Headers/RX_CommonRequestError.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			DjwVFsA5IvfXs+Am2VmtOw7h8Qc=
-			</data>
 			<key>hash2</key>
 			<data>
 			qCAPd/Hvn7LSWBZqEi1CpmFndBQaST224BaE2Pvcu3A=
@@ -257,10 +193,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ll11qerF42rF1KIEeXpdZHN04Zc=
-			</data>
 			<key>hash2</key>
 			<data>
 			pJ7Z1dfUh9Q7az9G+wGE+yDdFHS9YzLh9v13P5teS+A=
