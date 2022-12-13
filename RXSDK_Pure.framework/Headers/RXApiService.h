@@ -44,14 +44,13 @@ typedef enum : NSUInteger {
  * @param type 验证码类型
  * @param target 发送的目标（手机或邮箱）
  * @param purpose 用途
- "register"           // 注册
- "bindphone"      // 绑定手机
- "unbindphone"  // 解绑手机
- "resetpwd"        // 重置密码
- "bindemail"       // 绑定邮箱
- "unbindemail"   // 解绑邮箱
- "login"               // 登录
- "setpwd"           // 设置密码
+ * ！register           // 注册
+ * ！bindphone      // 绑定手机
+ * ！unbindphone  // 解绑手机
+ * ！resetpwd        // 重置密码
+ * ！bindemail       // 绑定邮箱
+ * ！unbindemail   // 解绑邮箱
+ * ！login               // 登录
  */
 - (void)getCaptchaCodeWithType:(CaptchaType)type
                         target:(NSString *)target
