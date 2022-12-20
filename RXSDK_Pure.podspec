@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RXSDK_Pure'
-  s.version          = '3.0.6.5'
+  s.version          = '3.0.6.6'
   s.summary          = 'ruixue main framework.'
 
 # This description is used to generate tags and improve searc results.

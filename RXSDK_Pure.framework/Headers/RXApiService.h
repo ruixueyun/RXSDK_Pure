@@ -146,18 +146,17 @@ typedef enum : NSUInteger {
  * @param username 账号注册为账号，手机注册为手机号，邮箱注册为邮箱  必须
  * @param password 密码  必须
  * @param captchaCode 验证码  手机或邮箱注册为必须，账号注册非必须
- * @param nickname 昵称  非必须
- * @param avatarUrl 头像地址  非必须
- * @param sex 性别,1:男,0:女  非必须
- * @param migrate_args 任意合法的 json 类型, 比如 string, nujber，账号迁移用的参数, 调用 CP account-query 及 account-queryandbind 接口时透传给 CP  非必须
+ * @param ext 扩展字段
+ * ！ext参数说明：
+ * ！nickname 昵称  非必须    #NSString类型
+ * ！avatarUrl 头像地址  非必须    #NSString类型
+ * ！sex 性别,1:男,0:女  非必须    #NSString类型
+ * ！migrate_args 任意合法的 json 类型, 比如 string, nujber，账号迁移用的参数, 调用 CP account-query 及 account-queryandbind 接口时透传给 CP  非必须
  */
 - (void)registWithUsername:(NSString *)username
                   password:(NSString *)password
                captchaCode:(NSString * _Nullable)captchaCode
-                  nickname:(NSString * _Nullable)nickname
-                 avatarUrl:(NSString * _Nullable)avatarUrl
-                       sex:(NSString * _Nullable)sex
-              migrate_args:(id _Nullable)migrate_args
+                       ext:(NSDictionary * _Nullable)ext
                   complete:(RequestComplete)complete;
 
 /**
