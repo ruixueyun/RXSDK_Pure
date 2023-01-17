@@ -42,7 +42,7 @@ typedef enum : NSUInteger {
 /**
  * 获取验证码
  * @param type 验证码类型
- * @param target 发送的目标（手机或邮箱）
+ * @param target 发送的目标（手机或邮箱），传空或nil默认为当前绑定的手机或邮箱
  * @param purpose 用途
  * ！register           // 注册
  * ！bindphone      // 绑定手机
@@ -100,6 +100,19 @@ typedef enum : NSUInteger {
 - (void)reliveBindingPhoneWithCaptchaCode:(NSString *)captchaCode
                                     phone:(NSString *)phone
                                  complete:(RequestComplete)complete;
+
+/**
+ * 修改手机号
+ * @param oldphone_captcha 当前登录的手机号的 unbindphone 验证码
+ * @param newphone 新的手机号
+ * @param newphone_captcha 新手机号的 bindphone 验证码
+ * @param migrate_args 任意合法的 json 类型, 比如 string, nujber，账号迁移用的参数, 调用 CP account-query 及 account-queryandbind 接口时透传给 CP  非必须
+ */
+- (void)changePhoneWithOldphone_captcha:(NSString *)oldphone_captcha
+                               newphone:(NSString *)newphone
+                       newphone_captcha:(NSString *)newphone_captcha
+                           migrate_args:(id _Nullable)migrate_args
+                               complete:(RequestComplete)complete;
 
 /**
  * 获取用户信息
