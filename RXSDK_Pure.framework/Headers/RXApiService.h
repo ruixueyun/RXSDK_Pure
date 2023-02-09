@@ -182,6 +182,17 @@ typedef enum : NSUInteger {
                    complete:(RequestComplete)complete;
 
 /**
+ * 查询用户拥有的账号
+ * 当用户无法提供正常的凭证登录某些账号时，可以调用本接口，提供该账号相关的其他用户信息进行查询，然后通过其他接口创建新的账号绑定这个旧账号的用户
+ * @param method 登录方式，对应"登录/绑定三方账号" 接口参数中的 method 字段。
+ * @param states 账号的位标记，各个位的含义如下（由低到高，最低位为第 0 位）：
+ * ！第 0 位：表示该账号由于某些原因，用户已经无法提供登录的凭证
+ */
+- (void)searchHasAccountsWithMethod:(NSString *)method
+                             states:(NSInteger)states
+                           complete:(RequestComplete)complete;
+
+/**
  * 获取设备码
  */
 - (NSString *)getDeviceIDInKeychain;
