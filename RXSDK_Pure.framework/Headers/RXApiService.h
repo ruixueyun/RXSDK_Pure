@@ -166,8 +166,8 @@ typedef enum : NSUInteger {
  * ！sex 性别,1:男,0:女  非必须    #NSString类型
  * ！migrate_args 任意合法的 json 类型, 比如 string, nujber，账号迁移用的参数, 调用 CP account-query 及 account-queryandbind 接口时透传给 CP  非必须
  */
-- (void)registWithUsername:(NSString *)username
-                  password:(NSString *)password
+- (void)registWithUsername:(NSString * _Nullable)username
+                  password:(NSString * _Nullable)password
                captchaCode:(NSString * _Nullable)captchaCode
                        ext:(NSDictionary * _Nullable)ext
                   complete:(RequestComplete)complete;
@@ -185,10 +185,12 @@ typedef enum : NSUInteger {
  * 查询用户拥有的账号
  * 当用户无法提供正常的凭证登录某些账号时，可以调用本接口，提供该账号相关的其他用户信息进行查询，然后通过其他接口创建新的账号绑定这个旧账号的用户
  * @param method 登录方式，对应"登录/绑定三方账号" 接口参数中的 method 字段。
+ * @param devicecode 设备码，不传默认取当前设备码。
  * @param states 账号的位标记，各个位的含义如下（由低到高，最低位为第 0 位）：
  * ！第 0 位：表示该账号由于某些原因，用户已经无法提供登录的凭证
  */
 - (void)searchHasAccountsWithMethod:(NSString *)method
+                         devicecode:(NSString * _Nullable)devicecode
                              states:(NSInteger)states
                            complete:(RequestComplete)complete;
 
