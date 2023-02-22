@@ -150,6 +150,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (NSString *)getOpenID;
 
+/**
+ * 获取当前baseUrl
+ */
+- (NSString *)getFirstBaseUrl;
+
 @end
 
 NS_ASSUME_NONNULL_END
