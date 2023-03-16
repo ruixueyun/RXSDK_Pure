@@ -45,7 +45,8 @@ typedef enum {
     LoginTypeGoogle,   // 谷歌登录
     LoginTypeFacebook, // facebook登录
     LoginTypeVirtual,  // 虚拟登录
-    LoginTypeCapCode   // 验证码登录
+    LoginTypeCapCode,  // 验证码登录
+    LoginTypeLine      // line登录
 }LoginType;
 
 
