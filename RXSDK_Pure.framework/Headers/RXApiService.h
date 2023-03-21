@@ -58,6 +58,26 @@ typedef enum : NSUInteger {
                       complete:(RequestComplete)complete;
 
 /**
+ * 校验验证码
+ * @param type 验证码类型
+ * @param target 发送的目标（手机或邮箱），传空或nil默认为当前绑定的手机或邮箱
+ * @param captcha_code 验证码
+ * @param purpose 用途
+ * ！register           // 注册
+ * ！bindphone      // 绑定手机
+ * ！unbindphone  // 解绑手机
+ * ！resetpwd        // 重置密码
+ * ！bindemail       // 绑定邮箱
+ * ！unbindemail   // 解绑邮箱
+ * ！login               // 登录
+ */
+- (void)verifyCaptchaCodeWithType:(CaptchaType)type
+                           target:(NSString *)target
+                          purpose:(NSString *)purpose
+                     captcha_code:(NSString *)captcha_code
+                         complete:(RequestComplete)complete;
+
+/**
  * 绑定邮箱
  * @param captchaCode 验证码
  * @param password 密码
