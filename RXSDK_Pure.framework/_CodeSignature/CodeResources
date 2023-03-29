@@ -20,6 +20,10 @@
 		<data>
 		wphdOnSk247hfXeCbDUQJ7CvbDE=
 		</data>
+		<key>Headers/RXError.h</key>
+		<data>
+		jcEkc8Q5nLJ3oDZdgE1/gpfce9o=
+		</data>
 		<key>Headers/RXLogService.h</key>
 		<data>
 		9N3YGZpfcpTuUiwaLo1uyQn9m2E=
@@ -38,7 +42,7 @@
 		</data>
 		<key>Headers/RXService.h</key>
 		<data>
-		JHR00zZKMKU9H5D2D7fmJlrdC9Q=
+		ZpzCYYYtYH884K9KmIU9N2NON5Q=
 		</data>
 		<key>Headers/RXShareService.h</key>
 		<data>
@@ -107,6 +111,13 @@
 			Uehk0PICdU1gt1nvKVfP/+epTCadvskijU9lymB3x5A=
 			</data>
 		</dict>
+		<key>Headers/RXError.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Kjqvst+pwcx2tAqmYMUHO7HGHuar/WDbvwL5NtPpHKQ=
+			</data>
+		</dict>
 		<key>Headers/RXLogService.h</key>
 		<dict>
 			<key>hash2</key>
@@ -139,7 +150,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			B0YRKtJVBhJWJ3MkUFV7BNYzcBV/FtwDNKuIHp+DUqo=
+			HBriyfN2ITHoe5fZG8daPh+X3XRqFg/aN0550vDgMW8=
 			</data>
 		</dict>
 		<key>Headers/RXShareService.h</key>

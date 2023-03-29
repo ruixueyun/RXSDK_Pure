@@ -25,6 +25,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "RXPublicHeader.h"
+#import "RXError.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -121,14 +122,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * 自定义请求
- * @param url 接口名
+ * @param url 接口名，可传路径或完整url，传路径则拼接初始化的baseUrl
  * @param header 请求头
  * @param body 请求参数
+ * @param method 请求类型  1 Post请求，2 Get请求
+ * @param needLogin 接口是否需要登录，不需要登录则请求头中的ruixue-accesstoken会被清空
  */
-- (void)requestWithUrl:(NSString *)url
-                header:(NSMutableDictionary * _Nullable)header
-                  body:(NSMutableDictionary * _Nullable)body
-              complete:(void(^)(NSDictionary *response, RX_CommonRequestError *error))complete;
+- (void)createRequestWithUrl:(NSString *)url
+                      header:(NSMutableDictionary * _Nullable)header
+                        body:(NSMutableDictionary * _Nullable)body
+                      method:(NSInteger)method
+                   needLogin:(BOOL)needLogin
+                    complete:(void(^)(NSDictionary *response, RX_CommonRequestError *error))complete;
 
 /**
  * 获取当前请求域名
