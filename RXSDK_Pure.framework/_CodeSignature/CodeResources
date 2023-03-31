@@ -24,17 +24,21 @@
 		<data>
 		jcEkc8Q5nLJ3oDZdgE1/gpfce9o=
 		</data>
+		<key>Headers/RXErrorTool.h</key>
+		<data>
+		WypQS9itmkBIFIOz/6IHBBHdOf4=
+		</data>
 		<key>Headers/RXLogService.h</key>
 		<data>
 		9N3YGZpfcpTuUiwaLo1uyQn9m2E=
 		</data>
 		<key>Headers/RXPayService.h</key>
 		<data>
-		Gt38kGm/rI1cj84U2Gpgk1uPJ8A=
+		a6PD1+Vdfwqi6NI93ZbBk7AJNWE=
 		</data>
 		<key>Headers/RXPublicHeader.h</key>
 		<data>
-		WOLuRrrLEZo7Z8i6vs+pnJcOEGs=
+		ak6IyWADJodfncVIyvySBKTvW94=
 		</data>
 		<key>Headers/RXSDK_Pure.h</key>
 		<data>
@@ -118,6 +122,13 @@
 			Kjqvst+pwcx2tAqmYMUHO7HGHuar/WDbvwL5NtPpHKQ=
 			</data>
 		</dict>
+		<key>Headers/RXErrorTool.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rRC3iR2wBdkwjQD+s5wZa/rWOE3CohnRjZL88dsA8so=
+			</data>
+		</dict>
 		<key>Headers/RXLogService.h</key>
 		<dict>
 			<key>hash2</key>
@@ -129,14 +140,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			g96T4dh918MKKrRuT57yhyXkVs/cSvH2JqoqIMVY9dA=
+			Y2p0HlcxT/Ak2zX9nCT8H0IwGm4KeGjmpDsIRJrmBG8=
 			</data>
 		</dict>
 		<key>Headers/RXPublicHeader.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7jFZL3Z1EAfcJm/5oI6+LT2QeM4MK9uUa6HVRl4B/bI=
+			EEENInxzNi2axgU2DcsDPcv+eCIQkukDmPRge5yj/Ws=
 			</data>
 		</dict>
 		<key>Headers/RXSDK_Pure.h</key>

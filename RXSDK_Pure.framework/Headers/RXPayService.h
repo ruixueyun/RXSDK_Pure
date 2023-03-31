@@ -36,6 +36,12 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)sharedSDK;
 
 /**
+ * 设置重复下单间隔，单位秒（s），默认300s
+ * 防止支付结果回调前重复下单导致订单验证错误
+ */
+- (void)setPayInterval:(NSInteger)interval;
+
+/**
  * 下单
  {
  @"currency" : @"币种 默认传: CNY",

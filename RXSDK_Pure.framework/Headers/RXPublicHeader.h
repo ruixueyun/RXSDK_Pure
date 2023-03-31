@@ -52,10 +52,4 @@ typedef enum {
 
 typedef void(^RequestComplete)(NSDictionary * _Nullable response, RX_CommonRequestError * _Nullable error);
 
-#pragma mark -- 错误码
-/*---- 支付 ----*/
-#define CHECKORDERFAILED -10000  // 补单失败
-#define NOPRODUCT        -10001  // 没有商品
-#define IAPFAILED        -10002  // 苹果支付异常
-
 #endif /* RXPublicHeader_h */
