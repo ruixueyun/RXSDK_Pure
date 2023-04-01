@@ -38,7 +38,6 @@ static NSInteger RXPayError_repeat = 4100;          // 重复下单
 static NSInteger RXPayError_iapFail = 4200;         // 苹果支付异常
 static NSInteger RXPayError_repayFail = 4201;       // 补单失败
 static NSInteger RXPayError_noProducts = 4202;      // 没有商品
-static NSInteger RXPayError_unablePay = 4203;       // 不支持内购
 
 
 /* 分享错误码 */
