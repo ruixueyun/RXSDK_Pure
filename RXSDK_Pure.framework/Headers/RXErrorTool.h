@@ -6,7 +6,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RXCommonHeader.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -14,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 static NSInteger RXNetworkError_default = 1100;          // 网络连接错误
 static NSInteger RXNetworkError_certificateBad = 1110;   // 证书错误
 static NSInteger RXNetworkError_certificateValid = 1111; // 证书验证错误
-static NSInteger RXNetworkError_noNetwork = 1120;        // 证书验证错误
+static NSInteger RXNetworkError_noNetwork = 1120;        // 未知主机错误，检查网络连通性
 static NSInteger RXNetworkError_connectionLost = 1130;   // 网络中断
 static NSInteger RXNetworkError_timeOut = 1131;          // 超时错误，连接或请求数据超时
 
