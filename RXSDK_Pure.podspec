@@ -41,7 +41,7 @@ TODO: Add long description of the pod here.
   s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
   
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'AdSupport', 'iAd', 'Foundation', 'UIKit'
+  s.frameworks = 'AdSupport', 'iAd', 'Foundation', 'UIKit', 'AuthenticationServices'
   s.libraries = 'sqlite3', 'c++', 'c++abi', 'z'
 #
   s.platform = :ios, '9.0'
