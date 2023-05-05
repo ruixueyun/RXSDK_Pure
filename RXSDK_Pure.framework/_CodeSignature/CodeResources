@@ -8,9 +8,13 @@
 		<data>
 		ysjFEeWJSDd7L0IxczjQNhDJ5kc=
 		</data>
+		<key>Headers/CHDownImage.h</key>
+		<data>
+		oRWxY67jIvvw0qBJ27pFjuvYIkg=
+		</data>
 		<key>Headers/RXApiService.h</key>
 		<data>
-		CiA4xMafM1J5XfVK4lGbomhr6XI=
+		+x0gowWgdHXv3pyjoxA8pD+duVo=
 		</data>
 		<key>Headers/RXConfig.h</key>
 		<data>
@@ -94,11 +98,18 @@
 			GPYghTOVN+Zzx2UvAR+3rbgC3YyiV/wlvaYH6H1s838=
 			</data>
 		</dict>
+		<key>Headers/CHDownImage.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5t+QtqePEwJes9PxjwNO+R7ynaLZQDuO/yzuJlvYUdg=
+			</data>
+		</dict>
 		<key>Headers/RXApiService.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XZthCWZuci7zgeEV+TrQhGKiQyA8dJvvzrvBCSs2bvE=
+			VDI2KZGQWFq7wtgLg7j8Nq//blXOGkliSlAoBor/fgM=
 			</data>
 		</dict>
 		<key>Headers/RXConfig.h</key>

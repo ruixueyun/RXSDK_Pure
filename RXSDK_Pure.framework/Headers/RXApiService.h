@@ -219,6 +219,16 @@ typedef enum : NSUInteger {
  */
 - (NSString *)getDeviceIDInKeychain;
 
+/**
+ * 获取当前时区与UTC时差
+ */
+- (NSString *)getTimeZoneOffset;
+
+/**
+ * 获取当前手机语言
+ */
+- (NSString *)getSystemLanguage;
+
 @end
 
 NS_ASSUME_NONNULL_END
