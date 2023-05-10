@@ -53,6 +53,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) RequestHelloTimeOut helloBlock;
 @property (nonatomic, strong) RequestTokenExpired tokenBlock;
 @property (nonatomic, strong) RequestTimeExpend timeBlock;
+@property (nonatomic, strong) NSString *subVersion;
 
 /**
  初始化单例
@@ -60,7 +61,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param configure 网络请求配置对象
  @return 网络请求管理类
  */
-+ (instancetype) shareInstanceWithConfig:(RX_CommonRequestConfigure *)configure;
++ (instancetype) shareInstance;
 //代理返回的请求
 /**
  普通POST GET 请求

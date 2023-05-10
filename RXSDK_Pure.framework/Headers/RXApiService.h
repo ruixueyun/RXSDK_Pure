@@ -28,8 +28,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef enum : NSUInteger {
-    CaptchaType_email, // 邮箱
-    CaptchaType_phone // 手机
+    CaptchaType_email,  // 邮箱
+    CaptchaType_phone,   // 手机
 } CaptchaType; // 验证码类型
 
 @interface RXApiService : NSObject
@@ -48,6 +48,7 @@ typedef enum : NSUInteger {
  * ！bindphone      // 绑定手机
  * ！unbindphone  // 解绑手机
  * ！resetpwd        // 重置密码
+ * ！changepwd    // 修改密码
  * ！bindemail       // 绑定邮箱
  * ！unbindemail   // 解绑邮箱
  * ！login               // 登录
@@ -67,6 +68,7 @@ typedef enum : NSUInteger {
  * ！bindphone      // 绑定手机
  * ！unbindphone  // 解绑手机
  * ！resetpwd        // 重置密码
+ * ！changepwd    // 修改密码
  * ！bindemail       // 绑定邮箱
  * ！unbindemail   // 解绑邮箱
  * ！login               // 登录
