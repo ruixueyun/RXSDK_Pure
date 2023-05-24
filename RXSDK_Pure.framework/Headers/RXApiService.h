@@ -217,6 +217,15 @@ typedef enum : NSUInteger {
                            complete:(RequestComplete)complete;
 
 /**
+ * 媒体平台自定义行为上报
+ * @param params 上报数据
+ * ！params 参数说明：
+ * ！action 自定义行为
+ */
+- (void)addAttributionWithParams:(NSDictionary *)params
+                        complete:(RequestComplete)complete;
+
+/**
  * 获取设备码
  */
 - (NSString *)getDeviceIDInKeychain;

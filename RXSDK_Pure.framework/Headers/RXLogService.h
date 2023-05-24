@@ -23,6 +23,7 @@
 // THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
+#import "RXPublicHeader.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -43,7 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
                     maxCount:(NSInteger)maxCount;
 
 /**
- * 数据埋点
+ * 数据埋点（批量上报）
  * @param event 埋点标识
  * @param distinctId 用户唯一标识
  * ！！注：登录后SDK会将openID保存，distinctId传空默认为openID。首次登录前需先调用getDistinctId获取distinctId作为标识。
@@ -53,6 +54,17 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)addLogWithEvent:(NSString *)event
              distinctId:(NSString * _Nullable)distinctId
              properties:(NSDictionary * _Nullable)properties;
+
+/**
+ * 数据埋点（逐条上报）
+ * @param event 埋点标识
+ * @param distinctId 用户唯一标识，传空默认为openID
+ * @param properties 自定义属性
+ */
+- (void)addLogSingleWithEvent:(NSString *)event
+                   distinctId:(NSString * _Nullable)distinctId
+                   properties:(NSDictionary * _Nullable)properties
+                     complete:(RequestComplete)complete;
 
 /**
  * 获取distinctId

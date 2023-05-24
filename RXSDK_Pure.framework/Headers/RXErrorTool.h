@@ -29,6 +29,7 @@ static NSInteger RXLoginError_cancel = 3001;              // 登录取消或没�
 static NSInteger RXLoginError_third = 3002;               // 三方登录错误
 static NSInteger RXLoginError_passwordRuleFail = 3100;    // 密码正则验证错误
 static NSInteger RXLoginError_passwordEmpty = 3101;       // 密码不能为空
+static NSInteger RXLoginError_passwordFit = 3102;         // 新旧密码不一致
 
 
 /* 支付错误码 */
