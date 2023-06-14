@@ -23,3 +23,5 @@ FOUNDATION_EXPORT const unsigned char RXSDK_PureVersionString[];
 #import <RXSDK_Pure/RXUpdateCheckService.h>
 #import <RXSDK_Pure/RXLogService.h>
 #import <RXSDK_Pure/RXPayService.h>
+#import <RXSDK_Pure/RXErrorTool.h>
+#import <RXSDK_Pure/RXBusinessService.h>

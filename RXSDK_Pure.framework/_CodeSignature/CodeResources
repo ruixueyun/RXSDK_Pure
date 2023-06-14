@@ -14,7 +14,11 @@
 		</data>
 		<key>Headers/RXApiService.h</key>
 		<data>
-		213wTQWKlv24fZG5ve7qCIuO9eI=
+		rsCVU5sQWaRwSQZPw6ktbRRo29E=
+		</data>
+		<key>Headers/RXBusinessService.h</key>
+		<data>
+		ykrT53/EzWdfKuMPoL4zZ8FRcsI=
 		</data>
 		<key>Headers/RXConfig.h</key>
 		<data>
@@ -30,31 +34,35 @@
 		</data>
 		<key>Headers/RXErrorTool.h</key>
 		<data>
-		RhaK13+HBBIUwlTP2fDXWC4UjCI=
+		jOYmI/iwIuMZGHMIq4o1XsREXNY=
 		</data>
 		<key>Headers/RXLogService.h</key>
 		<data>
-		+B2w2yL3UtdnJML10tjoIQV02Ew=
+		9b425c2XMj1mvzUE6AOt5T0pfew=
 		</data>
 		<key>Headers/RXPayService.h</key>
 		<data>
-		a6PD1+Vdfwqi6NI93ZbBk7AJNWE=
+		Dtd1AjxyePfdsqhnFmZWFQ0nVy8=
 		</data>
 		<key>Headers/RXPublicHeader.h</key>
 		<data>
-		ak6IyWADJodfncVIyvySBKTvW94=
+		VdvX6VEcGmMo7GM3jmyZX3Z5swQ=
+		</data>
+		<key>Headers/RXSDK_Pure-Swift.h</key>
+		<data>
+		gTMmQgqj/iAj0I+BhRuJ4DFURD4=
 		</data>
 		<key>Headers/RXSDK_Pure.h</key>
 		<data>
-		/AYLlGQ6H57LCsQbWIDn/Nni6pU=
+		vKu11sKeTLKqmMfVHN1k0RMeWLA=
 		</data>
 		<key>Headers/RXService.h</key>
 		<data>
-		ZpzCYYYtYH884K9KmIU9N2NON5Q=
+		ZipLr9AX1v6lcXcgxljD3F60TAo=
 		</data>
 		<key>Headers/RXShareService.h</key>
 		<data>
-		BLbnO7fvO6oMThcFWdDcFOXeBV8=
+		S+5hvDDIAxL+2W7wpDc/pEyui/A=
 		</data>
 		<key>Headers/RXUpdateCheckService.h</key>
 		<data>
@@ -84,9 +92,25 @@
 		<data>
 		VIBRlNHv/K0sE3kEo+7ncw8g5OE=
 		</data>
+		<key>Modules/RXSDK_Pure.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
+		<data>
+		LfeJlUVqsJWariCsYuutI6xCVsI=
+		</data>
+		<key>Modules/RXSDK_Pure.swiftmodule/arm64-apple-ios.abi.json</key>
+		<data>
+		FSPnLbho3G+LL9smI3XgVOqBIQ4=
+		</data>
+		<key>Modules/RXSDK_Pure.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<data>
+		hUPjWP7IUzyCoB92YqDWT2TQ9MQ=
+		</data>
+		<key>Modules/RXSDK_Pure.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<data>
+		FyyVyI6vnflm6OPIr/DLGsCYZIg=
+		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		ll11qerF42rF1KIEeXpdZHN04Zc=
+		q3T+J+PAWzLaKPwqEKoyy5M8vRA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -109,7 +133,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NPG/Nzq0ERrpmYiKgcRr44fo1RksxgRJVzNXQWsIzqA=
+			fanvjk+681HCzZokhWnsswytVk+dwfbV4xckMFC6Qos=
+			</data>
+		</dict>
+		<key>Headers/RXBusinessService.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QUMe6gyaDUisc7We1rO0F3Oib4u42I3p7cq6/LwLEFQ=
 			</data>
 		</dict>
 		<key>Headers/RXConfig.h</key>
@@ -137,49 +168,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			akyp9Jv/HxGLIpNMPt4+iJLV/CHud5Iv2ml6iticBUU=
+			3Uj2qW3R1MsZnP2w208gy+HwzPdsa9WEYLGA6uCPPzs=
 			</data>
 		</dict>
 		<key>Headers/RXLogService.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vyvwRkm1pdO4tKRaHWklIwSUQgv35huzsE453Tn5Hzs=
+			I52Q9b6x669X3wgoZ8WfTHhoOCwrYQUVLBzKDffQyw4=
 			</data>
 		</dict>
 		<key>Headers/RXPayService.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y2p0HlcxT/Ak2zX9nCT8H0IwGm4KeGjmpDsIRJrmBG8=
+			8EADfbDXJgPlwChXTr454V66S7MZZJ3uCVZAuORugRs=
 			</data>
 		</dict>
 		<key>Headers/RXPublicHeader.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EEENInxzNi2axgU2DcsDPcv+eCIQkukDmPRge5yj/Ws=
+			ll8CrQRR63/SdRuz2UN4X1LIGntN6KCr64nXj1v0QZY=
+			</data>
+		</dict>
+		<key>Headers/RXSDK_Pure-Swift.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IFEQ0+YoucGvX+wnDz7iC8NvFxPHjQk/gRcj3Sf8sv0=
 			</data>
 		</dict>
 		<key>Headers/RXSDK_Pure.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6QJO7CWfPr8PAs6NhAMF3aozG8d35LuCSHjrTtuMY3Y=
+			kVi3LrF7NRdRskKiZYcZCxCGuK6+IBkLNDJQoJ5Kp/g=
 			</data>
 		</dict>
 		<key>Headers/RXService.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HBriyfN2ITHoe5fZG8daPh+X3XRqFg/aN0550vDgMW8=
+			Tr2FUOjBJUdD65nSK5uDl9QoKgXrn6riryX9rgtgNQc=
 			</data>
 		</dict>
 		<key>Headers/RXShareService.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3b8KjcCE+aVQW1QM0rgPZhxjPUmLoxA/qc3BMdsvX3k=
+			0btO74o0+xfgAFhZnGhFMIadfo/BfqjciPhMjBZe25E=
 			</data>
 		</dict>
 		<key>Headers/RXUpdateCheckService.h</key>
@@ -224,11 +262,39 @@
 			qCAPd/Hvn7LSWBZqEi1CpmFndBQaST224BaE2Pvcu3A=
 			</data>
 		</dict>
+		<key>Modules/RXSDK_Pure.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			moj+tR3Lsnd6LUeJpozNoPnwZKRyiKjF8AA1VSbJhv0=
+			</data>
+		</dict>
+		<key>Modules/RXSDK_Pure.swiftmodule/arm64-apple-ios.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
+			</data>
+		</dict>
+		<key>Modules/RXSDK_Pure.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OjfighEZVnp2vc53OGjLI/B6c7DimL3p004mG+tjuho=
+			</data>
+		</dict>
+		<key>Modules/RXSDK_Pure.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/hkhEXBI1/lx8XuG0omHMjmtTxQE29WsTfFv0g6L1Zw=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pJ7Z1dfUh9Q7az9G+wGE+yDdFHS9YzLh9v13P5teS+A=
+			vWoWkfQd9AlFpS0yEUKFIeqk9MnV/HdDfHv3T2FNGtM=
 			</data>
 		</dict>
 	</dict>
