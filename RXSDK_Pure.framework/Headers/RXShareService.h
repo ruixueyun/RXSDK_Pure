@@ -71,6 +71,13 @@ typedef void(^ShareCallBack)(BOOL success);
                        properties:(NSDictionary * _Nullable)properties
                          complete:(RequestComplete)complete;
 
+/**
+ * 广告结果上报
+ * @param strategyId 调度策略id， 获取分享数据接口为广告时下发
+ */
+- (void)schedulingReportWithStrategyId:(NSString *)strategyId
+                              complete:(RequestComplete)complete;
+
 @end
 
 NS_ASSUME_NONNULL_END

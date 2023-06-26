@@ -45,6 +45,17 @@ NS_ASSUME_NONNULL_BEGIN
                          before_event:(NSString * _Nullable)before_event;
 
 /**
+ * 获取商业化窗口数据，数据通过block回调
+ * @param window_key 窗口key
+ * @param event 事件
+ * @param before_event 前置事件
+ */
+- (void)getBusinessDataWithWindow_key:(NSString *)window_key
+                                event:(NSString *)event
+                         before_event:(NSString * _Nullable)before_event
+                             complete:(RequestComplete)complete;
+
+/**
  * 更新商业化窗口数据
  * 用于立即更新商业化窗口数据
  * ！！！商业化窗口数据会定时更新，请谨慎使用本接口，避免造成资源浪费！！！

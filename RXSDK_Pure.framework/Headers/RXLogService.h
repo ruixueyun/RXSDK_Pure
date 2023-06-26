@@ -49,6 +49,27 @@ NS_ASSUME_NONNULL_BEGIN
                    properties:(NSDictionary * _Nullable)properties;
 
 /**
+ * 设置公共属性
+ * 设置后由SDK填入自定义属性中进行上报，设置后SDK进行缓存，多次设置则会覆盖
+ * @properties 公共属性
+ */
+- (void)setPublicProperties:(NSDictionary *)properties;
+
+/**
+ * 修改公共属性
+ * 修改的属性会将原有属性覆盖，未设置的属性则会补入缓存中
+ * @properties 公共属性
+ */
+- (void)updatePublicProperties:(NSDictionary *)properties;
+
+/**
+ * 删除公共属性
+ * 删除缓存的某个公共属性
+ * @properties 公共属性key
+ */
+- (void)deletePublicProperties:(NSArray *)properties;
+
+/**
  * 获取distinctId
  */
 - (NSString *)getDistinctId;
