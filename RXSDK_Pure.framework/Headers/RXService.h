@@ -150,6 +150,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (NSString *)getFirstBaseUrl;
 
+/**
+ * 设置当前语言
+ * @param language  语言需符合标准格式，如en、cn等
+ */
+- (void)setLanguage:(NSString *)language;
+
 @end
 
 NS_ASSUME_NONNULL_END

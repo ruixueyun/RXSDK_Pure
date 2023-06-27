@@ -32,6 +32,7 @@ typedef enum : NSUInteger {
     DestroyClickType_normal,  // 知道了
     DestroyClickType_repeal,  // 撤销
     DestroyClickType_login,   // 继续登录
+    DestroyClickType_logout,  // 退出登录
 } DestroyClickType;
 
 
