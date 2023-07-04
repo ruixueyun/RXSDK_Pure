@@ -94,7 +94,7 @@
 		</data>
 		<key>Modules/RXSDK_Pure.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		LfeJlUVqsJWariCsYuutI6xCVsI=
+		cNQ0I/3NzxnZTHFRTtilJJQsiWY=
 		</data>
 		<key>Modules/RXSDK_Pure.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -111,6 +111,14 @@
 		<key>Modules/module.modulemap</key>
 		<data>
 		q3T+J+PAWzLaKPwqEKoyy5M8vRA=
+		</data>
+		<key>RXLocationEN.plist</key>
+		<data>
+		UFEfe+IFfVcKL7S9tOGiqZHsr0I=
+		</data>
+		<key>RXLocationJP.plist</key>
+		<data>
+		gPzG1wYcTpBtZSxQpnt8prsHq/s=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -266,7 +274,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			moj+tR3Lsnd6LUeJpozNoPnwZKRyiKjF8AA1VSbJhv0=
+			ZHgX6ZiMVkl8T/DVrZYRhD1PLxhTHAOf5/vGgHW8Pd0=
 			</data>
 		</dict>
 		<key>Modules/RXSDK_Pure.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -295,6 +303,20 @@
 			<key>hash2</key>
 			<data>
 			vWoWkfQd9AlFpS0yEUKFIeqk9MnV/HdDfHv3T2FNGtM=
+			</data>
+		</dict>
+		<key>RXLocationEN.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			j32Xeajk+3hC4NUkbnVQbZIGpyG8W7tWiIilJIadeWU=
+			</data>
+		</dict>
+		<key>RXLocationJP.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			aa5a8jZ1wh/hFD/zEQzGb5rWUVLvDAyFxLBBZ7hYzxs=
 			</data>
 		</dict>
 	</dict>
