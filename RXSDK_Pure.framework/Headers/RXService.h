@@ -43,11 +43,13 @@ NS_ASSUME_NONNULL_BEGIN
  * @param productId 产品id
  * @param channelId 渠道id
  * @param cpid 客户端id
+ * @param ipv4Url 获取ipv4域名
  * @param baseUrlList 请求域名队列
  */
 - (void)initWithProductId:(NSString *)productId
                 channelId:(NSString *)channelId
                      cpid:(NSString *)cpid
+                  ipv4Url:(NSString *)ipv4Url
               baseUrlList:(NSArray *)baseUrlList;
 
 /**
