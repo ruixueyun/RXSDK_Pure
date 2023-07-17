@@ -54,7 +54,7 @@
 		</data>
 		<key>Headers/RXSDK_Pure.h</key>
 		<data>
-		vKu11sKeTLKqmMfVHN1k0RMeWLA=
+		uiINn37OlTaYnfgOUqSR021HQ/4=
 		</data>
 		<key>Headers/RXService.h</key>
 		<data>
@@ -63,6 +63,10 @@
 		<key>Headers/RXShareService.h</key>
 		<data>
 		EcqiHpfo2k/GWUW/XryqzE/tqw8=
+		</data>
+		<key>Headers/RXStoreKitService.h</key>
+		<data>
+		jSjAo1sfBfNIN0Yr0KfTnNAzwIc=
 		</data>
 		<key>Headers/RXUpdateCheckService.h</key>
 		<data>
@@ -211,7 +215,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kVi3LrF7NRdRskKiZYcZCxCGuK6+IBkLNDJQoJ5Kp/g=
+			O7E8VQp6Q8yvN3CCpOH4uQZbpyAFccN+YNunhW8Zr08=
 			</data>
 		</dict>
 		<key>Headers/RXService.h</key>
@@ -226,6 +230,13 @@
 			<key>hash2</key>
 			<data>
 			y1iVSSQc0VquO4uYqzpLxe6nZPXsqLz14iylqUBcUos=
+			</data>
+		</dict>
+		<key>Headers/RXStoreKitService.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Bpxpv/fYiUXWDkexyQVz2ENdO9FO8KdcNYCUZ1H/V0E=
 			</data>
 		</dict>
 		<key>Headers/RXUpdateCheckService.h</key>
