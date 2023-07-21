@@ -36,6 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * 获取指定商业化窗口数据，数据通过delegate回调
+ * 数据量大建议使用block回调方式，避免delegate回调无序
  * @param window_key 窗口key
  * @param event 事件
  * @param before_event 前置事件
@@ -61,6 +62,15 @@ NS_ASSUME_NONNULL_BEGIN
  * ！！！商业化窗口数据会定时更新，请谨慎使用本接口，避免造成资源浪费！！！
  */
 - (void)refreshBusinessData;
+
+/**
+ * 商业化下单
+ * @param trade_no CP订单号
+ * @param sign 获取商业化数据返回的sign
+ */
+- (void)requestBusinessOrderWithTrade_no:(NSString *)trade_no
+                                    sign:(NSString *)sign
+                                complete:(RequestComplete)complete;
 
 @end
 
