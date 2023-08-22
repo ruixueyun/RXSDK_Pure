@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/RXApiService.h</key>
 		<data>
-		rsCVU5sQWaRwSQZPw6ktbRRo29E=
+		sFUFUvy91zfegyhjbFu6o4BZuNM=
 		</data>
 		<key>Headers/RXBusinessService.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/RXLogService.h</key>
 		<data>
-		n0+9d847GCVaNP9QvleAiTFRHsM=
+		jsM9lueD2K1uj9v4IURZO6Ivq5Y=
 		</data>
 		<key>Headers/RXPayService.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Headers/RXPublicHeader.h</key>
 		<data>
-		VdvX6VEcGmMo7GM3jmyZX3Z5swQ=
+		qnX9wGFC4KryzB9AiOU9CwErlMg=
 		</data>
 		<key>Headers/RXSDK_Pure-Swift.h</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Headers/RXService.h</key>
 		<data>
-		Gv8PVbnlgz+KDbXjuHcoQUJMH3Q=
+		STWLziLpVTmz0bYik92C2flaCFI=
 		</data>
 		<key>Headers/RXShareService.h</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Headers/RXStoreKitService.h</key>
 		<data>
-		jSjAo1sfBfNIN0Yr0KfTnNAzwIc=
+		iHheYm/mxueNuRb/+1jRybuPpYU=
 		</data>
 		<key>Headers/RXUpdateCheckService.h</key>
 		<data>
@@ -116,14 +116,6 @@
 		<data>
 		q3T+J+PAWzLaKPwqEKoyy5M8vRA=
 		</data>
-		<key>RXLocationEN.plist</key>
-		<data>
-		UFEfe+IFfVcKL7S9tOGiqZHsr0I=
-		</data>
-		<key>RXLocationJP.plist</key>
-		<data>
-		6LQwv+sIpZT11cxzxJSg2XbvOEc=
-		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -145,7 +137,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fanvjk+681HCzZokhWnsswytVk+dwfbV4xckMFC6Qos=
+			yIKQuTt7T/hXiCdQpBWe1oZcQR42Nq9E3Lva97Qq/7Q=
 			</data>
 		</dict>
 		<key>Headers/RXBusinessService.h</key>
@@ -187,7 +179,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bZDjCINH3OeP98BH5aOFLMCM66ndsb9Xfu4fEwOrBsA=
+			9x32j7hb1UAI7VJit4tvSshvBYtyl1okmN/CDvXmwmU=
 			</data>
 		</dict>
 		<key>Headers/RXPayService.h</key>
@@ -201,7 +193,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ll8CrQRR63/SdRuz2UN4X1LIGntN6KCr64nXj1v0QZY=
+			+Oml8DNxXVh15zR6znevI6E9EinDdYW/Frn4NBBsV4s=
 			</data>
 		</dict>
 		<key>Headers/RXSDK_Pure-Swift.h</key>
@@ -222,7 +214,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			18vR0o5zLUexUkS8m0OZq1EobpTx0TRBGaomGvJVYIE=
+			q0nM6gMiD67iSvkHdUc5OQGd+O7xXk67EUsHIEz27U0=
 			</data>
 		</dict>
 		<key>Headers/RXShareService.h</key>
@@ -236,7 +228,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bpxpv/fYiUXWDkexyQVz2ENdO9FO8KdcNYCUZ1H/V0E=
+			nzVZR75cTN9Wa1y0USsuI0y5NkmOpmMaSo2lJzeoWH8=
 			</data>
 		</dict>
 		<key>Headers/RXUpdateCheckService.h</key>
@@ -314,20 +306,6 @@
 			<key>hash2</key>
 			<data>
 			vWoWkfQd9AlFpS0yEUKFIeqk9MnV/HdDfHv3T2FNGtM=
-			</data>
-		</dict>
-		<key>RXLocationEN.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			j32Xeajk+3hC4NUkbnVQbZIGpyG8W7tWiIilJIadeWU=
-			</data>
-		</dict>
-		<key>RXLocationJP.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			pApb8BWYyncCYPVXIcQwDJn0rO4tttn0EJi4PRvpDto=
 			</data>
 		</dict>
 	</dict>

@@ -31,7 +31,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)toAppStoreReview:(NSString *)appid
              writeReview:(BOOL)writeReview;
 
-
 /**
  * 应用内评分弹框
  */

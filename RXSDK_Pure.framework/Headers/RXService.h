@@ -160,6 +160,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)setLanguage:(NSString *)language;
 
+/**
+ * 设置密码等级
+ * @param type 密码强度等级枚举
+ */
+- (void)setPasswordStrength:(RXPasswordStrength)type;
+
 @end
 
 NS_ASSUME_NONNULL_END

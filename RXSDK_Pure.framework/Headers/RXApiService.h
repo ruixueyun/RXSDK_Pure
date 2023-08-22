@@ -135,7 +135,20 @@ typedef enum : NSUInteger {
                            nickname:(NSString *)nickname
                                 sex:(NSString *)sex
                         w_avatarurl:(NSString *)w_avatarurl
-                           complete:(RequestComplete)complete;
+                           complete:(RequestComplete)complete DEPRECATED_MSG_ATTRIBUTE("use updateUserInfo:nickname:sex:region:complete instead");
+
+/**
+ * 修改用户信息
+ * @param avatarUrl 头像url 非必传
+ * @param nickname 用户昵称 非必传
+ * @param sex 性别 1男 0女 非必传
+ * @param region 地区码 非必传
+ */
+- (void)updateUserInfo:(NSString *)avatarUrl
+              nickname:(NSString *)nickname
+                   sex:(NSString *)sex
+                region:(NSString *)region
+              complete:(RequestComplete)complete;
 
 /**
  * 修改密码
@@ -212,8 +225,8 @@ typedef enum : NSUInteger {
  * 同步三方授权信息
  * @param params 与登录的ext结构相同
  */
-- (void)syncThirdInfoWithParams:(NSDictionary *)params
-                       complete:(RequestComplete)complete;
+- (void)syncInfoWithParams:(NSDictionary *)params
+                  complete:(RequestComplete)complete;
 
 /**
  * 获取设备码

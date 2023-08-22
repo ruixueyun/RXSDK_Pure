@@ -16,7 +16,7 @@ typedef enum {
     RegistTypeAccount = 1, // 账号注册
     RegistTypePhone,  // 手机号注册
     RegistTypeEmail  // 邮箱注册
-}RegistType;
+} RegistType;
 
 typedef enum {
     LoginTypeVisitor,  // 游客登录
@@ -31,8 +31,14 @@ typedef enum {
     LoginTypeVirtual,  // 虚拟登录
     LoginTypeCapCode,  // 验证码登录
     LoginTypeLine      // line登录
-}LoginType;
+} LoginType;
 
+typedef enum : NSUInteger {
+    Default = 0,      // 默认 6-32 位任意字符
+    Custom = 1,       // 自定义密码正则
+    Average = 2,      // 简易密码， 6-32 位任意字符
+    Strong = 3,       // 强密码，  6-32 位，包含数字+字母+特殊符号
+} RXPasswordStrength;
 
 typedef void(^RequestComplete)(NSDictionary * _Nullable response, RX_CommonRequestError * _Nullable error);
 
