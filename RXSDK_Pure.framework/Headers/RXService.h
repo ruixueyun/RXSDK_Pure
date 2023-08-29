@@ -40,6 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * 初始化SDK
+ * 初始化后会 SDK 会自动激活
  * @param productId 产品id
  * @param channelId 渠道id
  * @param cpid 客户端id
@@ -55,7 +56,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * 初始化SDK
  * @param profile 初始化配置表，需要符合 jsonString 格式
- * ！！注意：此方法和 initWithProductId 只会生效一种，后调用的会将前一份数据覆盖
+ * @note 注意：此方法和 initWithProductId 只会生效一种，后调用的会将前一份数据覆盖
  */
 - (void)initWithProfile:(NSString *)profile;
 
@@ -70,6 +71,21 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)requestActivatedWithSourceAd:(NSDictionary * _Nullable)sourceAd
                             complete:(RequestComplete)complete;
+
+/**
+ * 初始化SDK
+ * @note 调用后只保存初始化参数，不做激活等流程
+ * @param productId 产品id
+ * @param channelId 渠道id
+ * @param cpid 客户端id
+ * @param ipv4Url 获取ipv4域名
+ * @param baseUrlList 请求域名队列
+ */
+- (void)setInitParamsWithProductId:(NSString *)productId
+                         channelId:(NSString *)channelId
+                              cpid:(NSString *)cpid
+                           ipv4Url:(NSString *)ipv4Url
+                       baseUrlList:(NSArray *)baseUrlList;
 
 /**
  * 登录请求
