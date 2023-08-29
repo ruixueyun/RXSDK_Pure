@@ -44,7 +44,7 @@ TODO: Add long description of the pod here.
   s.frameworks = 'AdSupport', 'iAd', 'Foundation', 'UIKit', 'AuthenticationServices'
   s.libraries = 'sqlite3', 'c++', 'c++abi', 'z'
 #
-  s.platform = :ios, '10.0'
+  s.platform = :ios, '11.0'
   s.dependency 'RXLanguageKit'
   
 end
