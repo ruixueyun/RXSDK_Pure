@@ -243,6 +243,11 @@ typedef enum : NSUInteger {
  */
 - (NSString *)getSystemLanguage;
 
+/**
+ * 刷新token
+ */
+- (void)refreshTokenWithComplete:(void(^)(NSDictionary *response, RX_CommonRequestError *error))complete;
+
 @end
 
 NS_ASSUME_NONNULL_END

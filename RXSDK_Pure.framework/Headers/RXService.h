@@ -73,7 +73,7 @@ NS_ASSUME_NONNULL_BEGIN
                             complete:(RequestComplete)complete;
 
 /**
- * 初始化SDK
+ * 设置初始化参数
  * @note 调用后只保存初始化参数，不做激活等流程
  * @param productId 产品id
  * @param channelId 渠道id
