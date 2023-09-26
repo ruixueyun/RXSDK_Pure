@@ -13,6 +13,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol RXLoginDelegate <NSObject>
+
 /**
  * 登录回调
  * @param response 返回数据，登录失败返回nil
@@ -43,22 +44,24 @@ NS_ASSUME_NONNULL_BEGIN
  * 初始化后会 SDK 会自动激活
  * @param productId 产品id
  * @param channelId 渠道id
- * @param cpid 客户端id
- * @param ipv4Url 获取ipv4域名
+ * @param cpid 瑞雪为每个项目分配的一个唯一 ID
  * @param baseUrlList 请求域名队列
+ * @param complete 初始化结果回调
  */
 - (void)initWithProductId:(NSString *)productId
                 channelId:(NSString *)channelId
                      cpid:(NSString *)cpid
-                  ipv4Url:(NSString *)ipv4Url
-              baseUrlList:(NSArray *)baseUrlList;
+              baseUrlList:(NSArray *)baseUrlList
+                 complete:(RequestComplete)complete;
 
 /**
  * 初始化SDK
  * @param profile 初始化配置表，需要符合 jsonString 格式
+ * @param complete 初始化结果回调
  * @note 注意：此方法和 initWithProductId 只会生效一种，后调用的会将前一份数据覆盖
  */
-- (void)initWithProfile:(NSString *)profile;
+- (void)initWithProfile:(NSString *)profile
+               complete:(RequestComplete)complete;
 
 /**
  * 用户激活
@@ -77,15 +80,15 @@ NS_ASSUME_NONNULL_BEGIN
  * @note 调用后只保存初始化参数，不做激活等流程
  * @param productId 产品id
  * @param channelId 渠道id
- * @param cpid 客户端id
- * @param ipv4Url 获取ipv4域名
+ * @param cpid 瑞雪为每个项目分配的一个唯一 ID
  * @param baseUrlList 请求域名队列
+ * @param complete 初始化结果回调
  */
 - (void)setInitParamsWithProductId:(NSString *)productId
                          channelId:(NSString *)channelId
                               cpid:(NSString *)cpid
-                           ipv4Url:(NSString *)ipv4Url
-                       baseUrlList:(NSArray *)baseUrlList;
+                       baseUrlList:(NSArray *)baseUrlList
+                          complete:(RequestComplete)complete;
 
 /**
  * 登录请求

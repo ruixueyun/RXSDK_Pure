@@ -20,7 +20,8 @@ static NSInteger RXNetworkError_timeOut = 1131;          // 超时错误，连�
 
 /* 初始化错误码 */
 static NSInteger RXInitError_default = 2000;     // 初始化参数错误
-static NSInteger RXInitError_third = 2002;      // 三方初始化错误，或未初始化
+static NSInteger RXInitError_init = 2001;        // SDK初始化错误，或未初始化
+static NSInteger RXInitError_third = 2002;       // 三方初始化错误，或未初始化
 
 
 /* 登录错误码 */

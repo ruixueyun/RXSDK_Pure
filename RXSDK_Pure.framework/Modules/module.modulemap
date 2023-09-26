@@ -1,7 +1,7 @@
 framework module RXSDK_Pure {
   umbrella header "RXSDK_Pure.h"
-
   export *
+
   module * { export * }
 }
 
