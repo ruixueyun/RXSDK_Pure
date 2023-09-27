@@ -110,7 +110,6 @@ typedef void(^ShareCallBack)(BOOL success);
  * @param transmits 透传参数，原样返回， 请使用key=value形式，并对值使用urlencode，返回时会原样返回  非必须
  * @param scheduling_event 上报结果  YES 成功   NO 失败
  * @param scheduling_type 上报类型  ad 广告   share 分享
- * @param scheduling_strategy_id 调度策略id
  * @param properties 自定义属性
  */
 - (void)shareSchedulingReportWithFunc:(NSString *)func
@@ -119,7 +118,6 @@ typedef void(^ShareCallBack)(BOOL success);
                             transmits:(NSString * _Nullable)transmits
                      scheduling_event:(BOOL)scheduling_event
                       scheduling_type:(NSString *)scheduling_type
-               scheduling_strategy_id:(NSString *)scheduling_strategy_id
                            properties:(NSDictionary * _Nullable)properties
                              complete:(RequestComplete)complete;
 
