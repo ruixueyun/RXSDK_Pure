@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/RXDestroyAccountService.h</key>
 		<data>
-		tgFQ7sxgYiBnY2eLc1qzDAVl038=
+		ILXDSbjmHTha7kcOvVkmGNeHCWY=
 		</data>
 		<key>Headers/RXError.h</key>
 		<data>
@@ -35,6 +35,10 @@
 		<key>Headers/RXErrorTool.h</key>
 		<data>
 		ZJnBni53M8sRy2ihzcv1cH5M+uU=
+		</data>
+		<key>Headers/RXFeedbackService.h</key>
+		<data>
+		2OMDHY2afc75zM6xSekw1etvj7k=
 		</data>
 		<key>Headers/RXLogService.h</key>
 		<data>
@@ -54,7 +58,7 @@
 		</data>
 		<key>Headers/RXSDK_Pure.h</key>
 		<data>
-		uiINn37OlTaYnfgOUqSR021HQ/4=
+		P/jNzQXoQhA0450rbCR0jr3blJA=
 		</data>
 		<key>Headers/RXService.h</key>
 		<data>
@@ -158,7 +162,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mRw+dpe6XrRUemBkxsF2hAzCpQVv79x5fUpPmvsPUJ8=
+			S7Rh4EMsp/1TUrRX53zSQBnRleu0lWlpdoA1bAP04Vw=
 			</data>
 		</dict>
 		<key>Headers/RXError.h</key>
@@ -173,6 +177,13 @@
 			<key>hash2</key>
 			<data>
 			QOYPNm7KMDxFRRW0GplCOjIrJhIuF9XdUhxkc9X3Wc8=
+			</data>
+		</dict>
+		<key>Headers/RXFeedbackService.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			76W5lfqBgREQbF5gebJSKRb4jQBUedTcT9arYvQdURg=
 			</data>
 		</dict>
 		<key>Headers/RXLogService.h</key>
@@ -207,7 +218,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			O7E8VQp6Q8yvN3CCpOH4uQZbpyAFccN+YNunhW8Zr08=
+			7UH+j+2hKqHfWIDPJs1kTLFjW9LLQlzCU26bp8cG1FM=
 			</data>
 		</dict>
 		<key>Headers/RXService.h</key>
