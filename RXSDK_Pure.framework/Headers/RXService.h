@@ -91,6 +91,11 @@ NS_ASSUME_NONNULL_BEGIN
                           complete:(RequestComplete)complete;
 
 /**
+ * 设置子渠道id
+ */
+- (void)setSubChannelId:(NSString *)subChannelId;
+
+/**
  * 登录请求
  * @param extDic 扩展字段，可传nil
  * ！验证码登录需传captchacode  #NSString类型
