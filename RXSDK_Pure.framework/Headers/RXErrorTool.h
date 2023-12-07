@@ -35,11 +35,12 @@ static NSInteger RXLoginError_passwordFit = 3102;         // 新旧密码不一�
 
 /* 支付错误码 */
 static NSInteger RXPayError_default = 4000;         // 支付参数错误
-static NSInteger RXPayError_cancel = 4001;         // 支付取消
+static NSInteger RXPayError_cancel = 4001;          // 支付取消
 static NSInteger RXPayError_repeat = 4100;          // 重复下单
 static NSInteger RXPayError_iapFail = 4200;         // 苹果支付异常
 static NSInteger RXPayError_repayFail = 4201;       // 补单失败
 static NSInteger RXPayError_noProducts = 4202;      // 没有商品
+static NSInteger RXPayError_ipaError = 4203;        // 苹果回调失败code0
 
 
 /* 分享错误码 */
