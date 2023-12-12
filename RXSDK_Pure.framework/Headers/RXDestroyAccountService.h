@@ -35,12 +35,28 @@ typedef enum : NSUInteger {
 - (void)destroyAccountWithIDCard:(NSString *)IDCard
                         realname:(NSString *)realname
                           cpdata:(NSString * _Nullable)cpdata
-                        complete:(RequestComplete)complete;
+                        complete:(RequestComplete)complete DEPRECATED_MSG_ATTRIBUTE("use deregisterWithRealname:idCard:cpdata:complete instead");
+
+/**
+ * 申请注销账号
+ * @param idCard 身份证  必须
+ * @param realname 真实姓名  必须
+ * @param cpdata CP自定义数据 非必须
+ */
+- (void)deregisterWithRealname:(NSString *)realname
+                        idCard:(NSString *)idCard
+                        cpdata:(NSString * _Nullable)cpdata
+                      complete:(RequestComplete)complete;
 
 /**
  * 撤销注销申请
  */
-- (void)repealDestroyAccountWithComplete:(RequestComplete)complete;
+- (void)repealDestroyAccountWithComplete:(RequestComplete)complete DEPRECATED_MSG_ATTRIBUTE("use deregisterCancelWithComplete: instead");
+
+/**
+ * 撤销注销申请
+ */
+- (void)deregisterCancelWithComplete:(RequestComplete)complete;
 
 @end
 
