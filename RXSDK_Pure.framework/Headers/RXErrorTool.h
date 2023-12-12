@@ -56,6 +56,8 @@ static NSInteger RXLimitError_closeView = 6010;     // 关闭窗口
 static NSInteger RXLimitError_locationFail = 6020;  // 定位失败
 static NSInteger RXLimitError_noWechat = 6101;      // 微信未安装
 
+/* 数据上报 */
+static NSInteger RXTrackError_byteLimit = 7001;      // 文件超过最大限制
 
 /* 通用错误码 */
 static NSInteger RXThirdError_default = 8000;       // 未知三方错误码

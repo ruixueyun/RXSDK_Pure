@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface RXFeedbackService : NSObject
 
+@property (nonatomic, assign) NSInteger feedbackId;  // 反馈id
+@property (nonatomic, copy) NSString *logPath;  // 反馈id
+
 /**
  * 获取SDK实例（单例）
  */
@@ -46,6 +49,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)satisfactionEvaluationWithParams:(NSDictionary *)params
                                 complete:(RequestComplete)complete;
+
+/**
+ * 上报反馈日志
+ * @note 客服后台创建反馈时生效
+ * @param data 文件二进制
+ */
+- (void)reportFeedbackLogWithData:(NSData *)data
+                         complete:(RequestComplete)complete;
 
 @end
 

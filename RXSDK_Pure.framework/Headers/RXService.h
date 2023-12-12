@@ -12,6 +12,22 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ * 全局通用回调type类型
+ */
+static NSInteger feedbakc_report = 10001; // 上报用户反馈
+
+@protocol RXPublicDelegate <NSObject>
+
+/**
+ * 全局通用回调
+ * @param type 回调类型
+ * @param response 回调数据
+ */
+- (void)rxPublicCallback:(NSInteger)type response:(NSDictionary *)response;
+
+@end
+
 @protocol RXLoginDelegate <NSObject>
 
 /**
@@ -33,6 +49,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface RXService : NSObject
 
 @property (nonatomic, weak) id <RXLoginDelegate> loginDelegate;
+@property (nonatomic, weak) id <RXPublicDelegate> publicDelegate;
 
 /**
  * 获取SDK实例（单例）
