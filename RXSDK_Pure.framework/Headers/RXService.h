@@ -129,7 +129,7 @@ static NSInteger feedbakc_report = 10001; // 上报用户反馈
                password:(NSString * _Nullable)password
             sign_fields:(NSArray * _Nullable)sign_fields
               loginType:(LoginType)loginType
-           migrate_args:(id _Nullable)migrate_args DEPRECATED_MSG_ATTRIBUTE("use loginWithExtDic:username:password:captchaCode:loginType:loginOpenId:signFields:migrateArgs instead");
+           migrate_args:(id _Nullable)migrate_args DEPRECATED_MSG_ATTRIBUTE("use loginWithLoginType:username:password:captchaCode:loginOpenId:extDic:signFields:migrateArgs instead");
 
 /**
  * 二次登录
@@ -140,7 +140,7 @@ static NSInteger feedbakc_report = 10001; // 上报用户反馈
  */
 - (void)loginWithLoginOpenId:(NSString *)loginOpenId
                  sign_fields:(NSArray * _Nullable)sign_fields
-                      extDic:(NSMutableDictionary * __nullable)extDic DEPRECATED_MSG_ATTRIBUTE("use loginWithExtDic:username:password:captchaCode:loginType:loginOpenId:signFields:migrateArgs instead");
+                      extDic:(NSMutableDictionary * __nullable)extDic DEPRECATED_MSG_ATTRIBUTE("use loginWithLoginType:username:password:captchaCode:loginOpenId:extDic:signFields:migrateArgs instead");
 
 /**
  * 苹果登录
@@ -148,7 +148,7 @@ static NSInteger feedbakc_report = 10001; // 上报用户反馈
  * @param sign_fields 指定对登录成功后返回的特定字段, 使用 CPKEY 计算签名. CP 服务器可重新计算签名并与登录返回的签名比对, 作为对瑞雪登录数据的校验. 支持的字段包括: nickname, avatar, openid, region, sex, age, 计算签名的逻辑会对指定字段进行排序, 此处传参与顺序无关。类型为字符串数组 @[@"nickname",@"avatar"]  非必须
  */
 - (void)loginReq_appleWithMigrate_args:(id _Nullable)migrate_args
-                           sign_fields:(NSArray * _Nullable)sign_fields DEPRECATED_MSG_ATTRIBUTE("use loginWithExtDic:username:password:captchaCode:loginType:loginOpenId:signFields:migrateArgs instead");
+                           sign_fields:(NSArray * _Nullable)sign_fields DEPRECATED_MSG_ATTRIBUTE("use loginWithLoginType:username:password:captchaCode:loginOpenId:extDic:signFields:migrateArgs instead");
 
 /**
  * 登录请求

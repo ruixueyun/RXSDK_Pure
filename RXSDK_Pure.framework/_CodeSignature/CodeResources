@@ -42,7 +42,11 @@
 		</data>
 		<key>Headers/RXLogService.h</key>
 		<data>
-		tNszmb6q4wcOtliuFpxN0rs9crA=
+		V6gPKvFG2teHGHE1oFqkoLKreaA=
+		</data>
+		<key>Headers/RXLoginUIModel.h</key>
+		<data>
+		CxSd0UBrliwz+dedl4THTLlzovg=
 		</data>
 		<key>Headers/RXPayService.h</key>
 		<data>
@@ -52,17 +56,21 @@
 		<data>
 		qnX9wGFC4KryzB9AiOU9CwErlMg=
 		</data>
+		<key>Headers/RXPublicService.h</key>
+		<data>
+		RuTrX5eJysqJjeDgyEfN8qOSHvM=
+		</data>
 		<key>Headers/RXSDK_Pure-Swift.h</key>
 		<data>
 		OQ44QE89l4UOqEAESLpsnfU7CVM=
 		</data>
 		<key>Headers/RXSDK_Pure.h</key>
 		<data>
-		P/jNzQXoQhA0450rbCR0jr3blJA=
+		k4x7dkek3K6aUs0p8l93bH5q1Mc=
 		</data>
 		<key>Headers/RXService.h</key>
 		<data>
-		3AboaujVVYnqnJZZsGSmPTdcvl4=
+		3HUO6mhP8MeO0sIxDCIwYdHvpik=
 		</data>
 		<key>Headers/RXShareService.h</key>
 		<data>
@@ -190,7 +198,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fJonRvogwIbJ5Hb8TY8BG51XPueuF/ICIXbT8SyT/9Q=
+			gmL3nshmHppzgPdRY9p+lhN60tgTwf1ity+AY3qy3n0=
+			</data>
+		</dict>
+		<key>Headers/RXLoginUIModel.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Lv/zUZom3h5z4S1W5JygerYz9WMY3W/6napw8KgznGs=
 			</data>
 		</dict>
 		<key>Headers/RXPayService.h</key>
@@ -207,6 +222,13 @@
 			+Oml8DNxXVh15zR6znevI6E9EinDdYW/Frn4NBBsV4s=
 			</data>
 		</dict>
+		<key>Headers/RXPublicService.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1QwDPevqbktzHFtxk9WPbI241x46rjPIp13IR3c7JXs=
+			</data>
+		</dict>
 		<key>Headers/RXSDK_Pure-Swift.h</key>
 		<dict>
 			<key>hash2</key>
@@ -218,14 +240,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7UH+j+2hKqHfWIDPJs1kTLFjW9LLQlzCU26bp8cG1FM=
+			JND5HdVtUK/BjTj21wRcQXYdH26Z2Mx1FJCfj1ogAog=
 			</data>
 		</dict>
 		<key>Headers/RXService.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			34x2+qqIEkCZ89Zbzd1yP1dPt1lGM4N7mZnWPNL1xus=
+			98LvJgM4aHysIN0V/PbU4w0+IeWgObBHendwCWqSKvQ=
 			</data>
 		</dict>
 		<key>Headers/RXShareService.h</key>

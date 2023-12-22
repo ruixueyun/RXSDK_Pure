@@ -47,7 +47,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (BOOL)addLogWithEvent:(NSString *)event
              distinctId:(NSString * _Nullable)distinctId
-             properties:(NSDictionary * _Nullable)properties;
+             properties:(NSDictionary * _Nullable)properties DEPRECATED_MSG_ATTRIBUTE("use dataTrackWithEvent:distinctId:properties instead");
 
 /**
  * 数据埋点（逐条上报）
@@ -59,6 +59,19 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)addLogSingleWithEvent:(NSString *)event
                    distinctId:(NSString * _Nullable)distinctId
                    properties:(NSDictionary * _Nullable)properties;
+
+/**
+ * 数据埋点（批量上报）
+ * @note 需要在初始化后调用
+ * @param event 埋点标识
+ * @param distinctId 用户唯一标识
+ * ！！注：登录后SDK会将openID保存，distinctId传空默认为openID。首次登录前需先调用getDistinctId获取distinctId作为标识。
+ * ！！登录前的埋点行为可先调用[[RXService sharedSDK] getOpenID];查看本地是否存有openID，如果没有则调用getDistinctId获取distinctId作为标识。避免丢失埋点事件！！
+ * @param properties 自定义属性
+ */
+- (BOOL)dataTrackWithEvent:(NSString *)event
+                distinctId:(NSString * _Nullable)distinctId
+                properties:(NSDictionary * _Nullable)properties;
 
 /**
  * 设置公共属性
