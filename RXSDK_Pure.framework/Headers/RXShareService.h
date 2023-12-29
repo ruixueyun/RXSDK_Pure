@@ -10,7 +10,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef void(^NewShareCallBack)(NSDictionary *response, RX_CommonRequestError *error);
 typedef void(^ShareCallBack)(BOOL success);
 
 @interface RXShareService : NSObject
@@ -35,40 +34,9 @@ typedef void(^ShareCallBack)(BOOL success);
                            complete:(RequestComplete)complete;
 
 /**
- * 分享
- * 调用后根据 platform 自动拉起对应平台的分享
- * @note 如果需要自定义分享数据请使用  获取分享信息+对应平台拉起分享接口
- * @param func 埋点标识  必须
- * @param platform 分享平台
- * @note 平台类型说明：
- * ！wechat
- * ！facebook
- * ！line
- * ！messenger
- * ！system
- * @param report 是否自动上报，默认自动上报
- * @param region 地区码 非必须
- * @param transmits 透传参数，原样返回， 请使用key=value形式，并对值使用urlencode，返回时会原样返回  非必须
- * @param ext 扩展字段，拼接url用  非必须
- */
-- (void)shareWithFunc:(NSString *)func
-             platform:(NSString *)platform
-               region:(NSString *)region
-               report:(BOOL)report
-            transmits:(NSString * _Nullable)transmits
-                  ext:(NSDictionary * _Nullable)ext
-             complete:(RequestComplete)complete;
-
-/**
  * 获取分享信息
  * @param func 埋点标识  必须
- * @param platform 分享平台 
- * @note 平台类型说明：
- * ！wechat
- * ！facebook
- * ！line
- * ！messenger
- * ！system
+ * @param platform 分享平台 wechat
  * @param region 地区码 非必须
  * @param transmits 透传参数，原样返回， 请使用key=value形式，并对值使用urlencode，返回时会原样返回  非必须
  * @param ext 扩展字段，拼接url用  非必须
@@ -81,15 +49,9 @@ typedef void(^ShareCallBack)(BOOL success);
                     complete:(RequestComplete)complete DEPRECATED_MSG_ATTRIBUTE("use getShareInfoWithFunc:platform:region:transmits:ext:readCache:complete instead");
 
 /**
- * 获取分享信息
+ * 获取分享信息 New
  * @param func 埋点标识  必须
- * @param platform 分享平台
- * @note 平台类型说明：
- * ！wechat
- * ！facebook
- * ！line
- * ！messenger
- * ！system
+ * @param platform 分享平台 wechat
  * @param region 地区码 非必须
  * @param transmits 透传参数，原样返回， 请使用key=value形式，并对值使用urlencode，返回时会原样返回  非必须
  * @param ext 扩展字段，拼接url用  非必须
@@ -106,13 +68,7 @@ typedef void(^ShareCallBack)(BOOL success);
 /**
  * 系统分享（直接调用，不需要获取分享信息）
  * @param func 埋点标识  必须
- * @param platform 分享平台
- * @note 平台类型说明：
- * ！wechat
- * ！facebook
- * ！line
- * ！messenger
- * ！system
+ * @param platform 分享平台 wechat
  * @param region 地区码  非必须
  * @param transmits 透传参数，原样返回， 请使用key=value形式，并对值使用urlencode，返回时会原样返回  非必须
  * @param ext 扩展字段，拼接url用  非必须
@@ -122,7 +78,7 @@ typedef void(^ShareCallBack)(BOOL success);
                      region:(NSString *)region
                   transmits:(NSString * _Nullable)transmits
                         ext:(NSDictionary * _Nullable)ext
-                   complete:(ShareCallBack)complete DEPRECATED_MSG_ATTRIBUTE("use shareWithFunc:platform:region:report:transmits:ext:complete instead");
+                   complete:(ShareCallBack)complete;
 
 /**
  * 系统分享
