@@ -50,7 +50,7 @@
 		</data>
 		<key>Headers/RXPublicHeader.h</key>
 		<data>
-		qnX9wGFC4KryzB9AiOU9CwErlMg=
+		SH2zAXyYJqs5BzsDXqrfRcp5YyI=
 		</data>
 		<key>Headers/RXSDK_Pure-Swift.h</key>
 		<data>
@@ -58,11 +58,15 @@
 		</data>
 		<key>Headers/RXSDK_Pure.h</key>
 		<data>
-		P/jNzQXoQhA0450rbCR0jr3blJA=
+		bViV7e5R3ZG2gBcfL3ix7436HQs=
+		</data>
+		<key>Headers/RXSdkInitConfig.h</key>
+		<data>
+		gtWWRzFhSJwxXha7sJbb+3mU+jk=
 		</data>
 		<key>Headers/RXService.h</key>
 		<data>
-		0AXWJw4wOgj7C6eiZbk3A8+ZOZk=
+		vmwl3vmDHV3RLQqOoxgaHmM+eAo=
 		</data>
 		<key>Headers/RXShareService.h</key>
 		<data>
@@ -204,7 +208,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+Oml8DNxXVh15zR6znevI6E9EinDdYW/Frn4NBBsV4s=
+			VdRI2MUyiCe9lB8RHCGE/G5uoq0WH5qincHuKiQ2t2c=
 			</data>
 		</dict>
 		<key>Headers/RXSDK_Pure-Swift.h</key>
@@ -218,14 +222,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7UH+j+2hKqHfWIDPJs1kTLFjW9LLQlzCU26bp8cG1FM=
+			UtFUFnOTqvaim8sykjammePbCab4YM0cx+GXuKE4u8I=
+			</data>
+		</dict>
+		<key>Headers/RXSdkInitConfig.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RZOiPMHtP3Z2k33SwYmhZS62qBg3FbRSrFAikPrJwAI=
 			</data>
 		</dict>
 		<key>Headers/RXService.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XCeTCAC7izfQPAjswxjHKgTqzfOgqM7iP1Jwg34B0rA=
+			vahGCu2sOQBpiAxsrsPxU2pFysLeR3/XGVynwkAFPWw=
 			</data>
 		</dict>
 		<key>Headers/RXShareService.h</key>

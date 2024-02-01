@@ -11,6 +11,7 @@
 
 
 #import "RX_CommonRequestError.h"
+#import "RXSdkInitConfig.h"
 
 typedef enum {
     RegistTypeAccount = 1, // 账号注册

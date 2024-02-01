@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "RXPublicHeader.h"
 #import "RXError.h"
+#import "RXSdkInitConfig.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -50,11 +51,20 @@ static NSInteger feedbakc_report = 10001; // 上报用户反馈
 
 @property (nonatomic, weak) id <RXLoginDelegate> loginDelegate;
 @property (nonatomic, weak) id <RXPublicDelegate> publicDelegate;
+@property (nonatomic, strong) RXSdkInitConfig *sdkConfig;
 
 /**
  * 获取SDK实例（单例）
  */
 + (instancetype)sharedSDK;
+
+/**
+ * 初始化SDK
+ * 初始化后会 SDK 会自动激活
+ * @param config 初始化配置
+ */
+- (void)initWithConfig:(RXSdkInitConfig *)config
+              complete:(RequestComplete)complete;
 
 /**
  * 初始化SDK
