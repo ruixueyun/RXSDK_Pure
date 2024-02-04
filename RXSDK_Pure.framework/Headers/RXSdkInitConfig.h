@@ -46,6 +46,11 @@ NS_ASSUME_NONNULL_BEGIN
  * @note 默认为 “用户协议和隐私政策”
  */
 @property (nonatomic, copy) NSString *agreementTitle;
+/**
+ * 是否允许获取ua，YES 允许  NO 不允许
+ * @note 获取ua会导致线程短暂阻塞，禁止获取后 ua 固定为 "IOS"，默认 YES 允许
+ */
+@property (nonatomic, assign) BOOL getUserAgentVisible;
 
 @end
 
