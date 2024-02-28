@@ -76,6 +76,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (NSString *)getDistinctId;
 
+/**
+ * 获取日志
+ * @note 记录登录和支付关键节点的日志，存在本地，默认最大 200 条，超过 200 条清空当前缓存重新记录
+ */
+- (NSString *)getSDKLog;
+
 @end
 
 NS_ASSUME_NONNULL_END
