@@ -52,6 +52,10 @@
 		<data>
 		qIzmKwFHGOpRP/kxmSv6qbOpdlc=
 		</data>
+		<key>Headers/RXLoginUIModel.h</key>
+		<data>
+		CxSd0UBrliwz+dedl4THTLlzovg=
+		</data>
 		<key>Headers/RXPayService.h</key>
 		<data>
 		Dtd1AjxyePfdsqhnFmZWFQ0nVy8=
@@ -66,7 +70,7 @@
 		</data>
 		<key>Headers/RXSDK_Pure.h</key>
 		<data>
-		v9OQgqgXZ1X5ZZsftESrvIzJT9U=
+		giCdAakM33E981hr8yHE0p1eye4=
 		</data>
 		<key>Headers/RXSdkInitConfig.h</key>
 		<data>
@@ -223,6 +227,13 @@
 			wt64PPqFu9+VPG+6K8VNtsbPpMbYFa0IaHU1E9wxLfg=
 			</data>
 		</dict>
+		<key>Headers/RXLoginUIModel.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Lv/zUZom3h5z4S1W5JygerYz9WMY3W/6napw8KgznGs=
+			</data>
+		</dict>
 		<key>Headers/RXPayService.h</key>
 		<dict>
 			<key>hash2</key>
@@ -248,7 +259,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			heb8Gq0e0jrG8CSQckvcOwarwJQZArSteaDueQGD4YM=
+			uY9i79onCHcnFkmp++3Ar5Dx0KlwEHG6KQ5Nlq4BW/A=
 			</data>
 		</dict>
 		<key>Headers/RXSdkInitConfig.h</key>
