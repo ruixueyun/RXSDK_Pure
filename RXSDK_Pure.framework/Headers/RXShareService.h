@@ -7,9 +7,12 @@
 
 #import <Foundation/Foundation.h>
 #import "RXPublicHeader.h"
+#import "RXShareConfig.h"
+#import "RXCustomShareConfig.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void(^NewShareCallBack)(NSDictionary *response, RX_CommonRequestError *error);
 typedef void(^ShareCallBack)(BOOL success);
 
 @interface RXShareService : NSObject
@@ -34,41 +37,57 @@ typedef void(^ShareCallBack)(BOOL success);
                            complete:(RequestComplete)complete;
 
 /**
- * 获取分享信息
- * @param func 埋点标识  必须
- * @param platform 分享平台 wechat
- * @param region 地区码 非必须
- * @param transmits 透传参数，原样返回， 请使用key=value形式，并对值使用urlencode，返回时会原样返回  非必须
- * @param ext 扩展字段，拼接url用  非必须
+ * 一键分享
+ * @param config 分享配置
  */
-- (void)getShareInfoWithFunc:(NSString *)func
-                    platform:(NSString *)platform
-                      region:(NSString *)region
-                   transmits:(NSString * _Nullable)transmits
-                         ext:(NSDictionary * _Nullable)ext
-                    complete:(RequestComplete)complete DEPRECATED_MSG_ATTRIBUTE("use getShareInfoWithFunc:platform:region:transmits:ext:readCache:complete instead");
+- (void)share:(RXShareConfig *)config
+     complete:(RequestComplete)complete;
 
 /**
- * 获取分享信息 New
+ * 自定义分享
+ * @param config 分享配置
+ */
+- (void)shareCustom:(RXCustomShareConfig *)config
+           complete:(RequestComplete)complete;
+
+/**
+ * 获取分享信息
  * @param func 埋点标识  必须
- * @param platform 分享平台 wechat
+ * @param platform 分享平台 
+ * @note 平台类型说明：
+ * ！wechat
+ * ！facebook
+ * ！line
+ * ！messenger
+ * ！system
  * @param region 地区码 非必须
  * @param transmits 透传参数，原样返回， 请使用key=value形式，并对值使用urlencode，返回时会原样返回  非必须
  * @param ext 扩展字段，拼接url用  非必须
- * @param readCache 是否读取缓存，YES 读取缓存   NO 不读取缓存，建议读取缓存
  */
 - (void)getShareInfoWithFunc:(NSString *)func
                     platform:(NSString *)platform
                       region:(NSString *)region
                    transmits:(NSString * _Nullable)transmits
                          ext:(NSDictionary * _Nullable)ext
-                   readCache:(BOOL)readCache
                     complete:(RequestComplete)complete;
+
+/**
+ * 获取分享信息
+ * @param config 分享配置
+ */
+- (void)getShareInfoWithConfig:(RXShareConfig *)config
+                      complete:(RequestComplete)complete;
 
 /**
  * 系统分享（直接调用，不需要获取分享信息）
  * @param func 埋点标识  必须
- * @param platform 分享平台 wechat
+ * @param platform 分享平台
+ * @note 平台类型说明：
+ * ！wechat
+ * ！facebook
+ * ！line
+ * ！messenger
+ * ！system
  * @param region 地区码  非必须
  * @param transmits 透传参数，原样返回， 请使用key=value形式，并对值使用urlencode，返回时会原样返回  非必须
  * @param ext 扩展字段，拼接url用  非必须
@@ -78,7 +97,7 @@ typedef void(^ShareCallBack)(BOOL success);
                      region:(NSString *)region
                   transmits:(NSString * _Nullable)transmits
                         ext:(NSDictionary * _Nullable)ext
-                   complete:(ShareCallBack)complete;
+                   complete:(ShareCallBack)complete DEPRECATED_MSG_ATTRIBUTE("use shareWithFunc:platform:region:report:transmits:ext:complete instead");
 
 /**
  * 系统分享
