@@ -8,7 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RXSDK_Pure'
-  s.version          = '3.4.27'
+  # s.version          = '3.4.27'
+    s.version          = '3.3.200'
   s.summary          = 'ruixue main framework.'
 
 # This description is used to generate tags and improve searc results.
@@ -39,6 +40,8 @@ TODO: Add long description of the pod here.
   # }
   
   s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
+  
+  s.resource_bundles = { 'RXSDK_Pure' => ['PrivacyInfo.xcprivacy'] }
   
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'AdSupport', 'iAd', 'Foundation', 'UIKit', 'AuthenticationServices'
