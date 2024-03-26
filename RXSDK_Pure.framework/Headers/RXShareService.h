@@ -7,9 +7,12 @@
 
 #import <Foundation/Foundation.h>
 #import "RXPublicHeader.h"
+#import "RXShareConfig.h"
+#import "RXCustomShareConfig.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void(^NewShareCallBack)(NSDictionary *response, RX_CommonRequestError *error);
 typedef void(^ShareCallBack)(BOOL success);
 
 @interface RXShareService : NSObject
@@ -18,6 +21,20 @@ typedef void(^ShareCallBack)(BOOL success);
  * 获取SDK实例（单例）
  */
 + (instancetype)sharedSDK;
+
+/**
+ * 一键分享
+ * @param config 分享配置
+ */
+- (void)share:(RXShareConfig *)config
+     complete:(RequestComplete)complete;
+
+/**
+ * 自定义分享
+ * @param config 分享配置
+ */
+- (void)shareCustom:(RXCustomShareConfig *)config
+           complete:(RequestComplete)complete;
 
 /**
  * 分享调度初始化

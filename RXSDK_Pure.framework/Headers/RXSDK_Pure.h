@@ -28,3 +28,5 @@ FOUNDATION_EXPORT const unsigned char RXSDK_PureVersionString[];
 #import <RXSDK_Pure/RXStoreKitService.h>
 #import <RXSDK_Pure/RXFeedbackService.h>
 #import <RXSDK_Pure/RXSdkInitConfig.h>
+#import <RXSDK_Pure/RXShareConfig.h>
+#import <RXSDK_Pure/RXCustomShareConfig.h>
