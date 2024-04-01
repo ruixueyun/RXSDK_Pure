@@ -48,6 +48,10 @@ NS_ASSUME_NONNULL_BEGIN
  * 分享到好友还是朋友圈   0 好友 1 朋友圈
  */
 @property (nonatomic, assign) NSInteger shareScene;
+/**
+ * 客户端透传数据
+ */
+@property (nonatomic, strong) NSDictionary *game_info;
 
 @end
 

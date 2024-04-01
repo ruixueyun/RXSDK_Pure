@@ -72,6 +72,10 @@ NS_ASSUME_NONNULL_BEGIN
  * 二维码坐标 height
  */
 @property (nonatomic, assign) NSInteger height;
+/**
+ * 客户端透传数据
+ */
+@property (nonatomic, strong) NSDictionary *game_info;
 
 @end
 

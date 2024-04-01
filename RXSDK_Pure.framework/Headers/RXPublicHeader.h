@@ -33,6 +33,7 @@ typedef enum {
     LoginTypeCapCode,  // 验证码登录
     LoginTypeLine,     // line登录
     LoginTypeZalo,     // zalo登录
+    LoginTypeTikTok,   // tiktok登录
     LoginTypeDefault   // 自定义登录
 } LoginType;
 
