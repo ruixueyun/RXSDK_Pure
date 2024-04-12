@@ -12,6 +12,10 @@
 		<data>
 		oRWxY67jIvvw0qBJ27pFjuvYIkg=
 		</data>
+		<key>Headers/NSObject+RXAddition.h</key>
+		<data>
+		IRl18ZAL5UN7NblIcFFHsTaWQp4=
+		</data>
 		<key>Headers/RXApiService.h</key>
 		<data>
 		rjMIp3dPI0fJFw0xlsnNpWSCD24=
@@ -26,7 +30,7 @@
 		</data>
 		<key>Headers/RXCustomShareConfig.h</key>
 		<data>
-		EJKBD6kPOopG/gOC65cCnH6IfJE=
+		BlJ8MUIGva5INy6aEZv0r4QeD7I=
 		</data>
 		<key>Headers/RXDestroyAccountService.h</key>
 		<data>
@@ -52,9 +56,13 @@
 		<data>
 		Dtd1AjxyePfdsqhnFmZWFQ0nVy8=
 		</data>
+		<key>Headers/RXPrivateService.h</key>
+		<data>
+		0ejjLu849K2GZIukuTvyE5kaoqM=
+		</data>
 		<key>Headers/RXPublicHeader.h</key>
 		<data>
-		FkF9ecn+tv6FGhBRo4ZEzDEK6zA=
+		7R37Y904KEIdgttkgRM+5J81T1o=
 		</data>
 		<key>Headers/RXSDK_Pure-Swift.h</key>
 		<data>
@@ -62,11 +70,11 @@
 		</data>
 		<key>Headers/RXSDK_Pure.h</key>
 		<data>
-		q4N26QdqllsVsPXSZOGJ+/SE/1E=
+		Q1t+c4Swkm8xyc0jWZp83ixmxwY=
 		</data>
 		<key>Headers/RXSdkInitConfig.h</key>
 		<data>
-		7orl03o/HvbW3f9925XEmo8euAE=
+		1Xwj2wQzs7/Qj7owTydHV7p9FaU=
 		</data>
 		<key>Headers/RXService.h</key>
 		<data>
@@ -153,6 +161,13 @@
 			5t+QtqePEwJes9PxjwNO+R7ynaLZQDuO/yzuJlvYUdg=
 			</data>
 		</dict>
+		<key>Headers/NSObject+RXAddition.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/HvcYp8dilQGmqYzz6LXrPpteWwG9bLe1LiHJhjx/Yo=
+			</data>
+		</dict>
 		<key>Headers/RXApiService.h</key>
 		<dict>
 			<key>hash2</key>
@@ -178,7 +193,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2s341rwBj8mya7o1/PIdqurt2phwU5ZvhEV0EH3/p9M=
+			hVtEMryYSmcDDs5Rcq7FUJK7sl9fQAVMAm0SfUjCv0c=
 			</data>
 		</dict>
 		<key>Headers/RXDestroyAccountService.h</key>
@@ -223,11 +238,18 @@
 			8EADfbDXJgPlwChXTr454V66S7MZZJ3uCVZAuORugRs=
 			</data>
 		</dict>
+		<key>Headers/RXPrivateService.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BuEjatdlIbTlw5bVr9lbl3WMbJhpRHwRMZuUS2tXl5Y=
+			</data>
+		</dict>
 		<key>Headers/RXPublicHeader.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wEC9fWJG7C1RjkbhQ1DyIHkG1HBfq4iyxGAwovpYNDE=
+			DRpM9ACniH+T5T9OXLVM6nbWvILav+mxpAkYPDc6i18=
 			</data>
 		</dict>
 		<key>Headers/RXSDK_Pure-Swift.h</key>
@@ -241,14 +263,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KfHILe+PQqBN63JWy6VZnLk9eEfCBD/g6Xlnu306Zcs=
+			1OMCq2xMGUinU2CQQsEFrMGZ3T0kNwdecRQFzxgZk14=
 			</data>
 		</dict>
 		<key>Headers/RXSdkInitConfig.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KVi8QVkNli7J5n+Fm9CKpy/9YUadsMQz5WQbrVzxXLI=
+			kCd9/kNoBwKs+E9YFEc+C6+gJsL3U6NUYr1MWosBgP8=
 			</data>
 		</dict>
 		<key>Headers/RXService.h</key>

@@ -34,6 +34,9 @@ typedef enum {
     LoginTypeLine,     // line登录
     LoginTypeZalo,     // zalo登录
     LoginTypeTikTok,   // tiktok登录
+    LoginTypeSnapChat, // snapChat登录
+    LoginTypeInstagram,// instagram登录
+    LoginTypeReddit,   // reddit登录
     LoginTypeDefault   // 自定义登录
 } LoginType;
 

@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, copy) NSString *isLogEnable;
 /**
- * 首次启动是否展示用用户隐私授权页面，YES展示，NO不展示
+ * 首次启动是否展示用户隐私授权页面，YES展示，NO不展示
  * @note 默认NO不展示
  */
 @property (nonatomic, assign) BOOL usePrivacy;

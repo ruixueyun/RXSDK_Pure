@@ -41,6 +41,20 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, copy) NSString *image;
 /**
+ * url或本地路径
+ * @note 多图
+ */
+@property (nonatomic, copy) NSArray *images;
+/**
+ * url或本地路径
+ */
+@property (nonatomic, copy) NSString *video;
+/**
+ * url或本地路径
+ * @note 多视频
+ */
+@property (nonatomic, copy) NSArray *videos;
+/**
  * 分享链接
  */
 @property (nonatomic, copy) NSString *url;
