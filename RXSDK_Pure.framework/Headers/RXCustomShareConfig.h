@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * 分享平台
- * wechat、system、facebook、messenger、line、tiktok
+ * wechat、system、facebook、messenger、line、tiktok、reddit
  */
 @property (nonatomic, copy) NSString *platform;
 /**
@@ -44,7 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
  * url或本地路径
  * @note 多图
  */
-@property (nonatomic, copy) NSArray *images;
+@property (nonatomic, copy) NSArray *atlas;
 /**
  * url或本地路径
  */
@@ -90,6 +90,8 @@ NS_ASSUME_NONNULL_BEGIN
  * 客户端透传数据
  */
 @property (nonatomic, strong) NSDictionary *game_info;
+
++ (RXCustomShareConfig *)shareConfigWithShareInfo:(NSDictionary *)shareInfo;
 
 @end
 

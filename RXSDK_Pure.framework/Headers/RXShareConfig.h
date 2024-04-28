@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *func;
 /**
  * 分享平台
- * wechat、system、facebook、messenger、line、tiktok、zalo
+ * wechat、system、facebook、messenger、line、tiktok、zalo、reddit
  */
 @property (nonatomic, copy) NSString *platform;
 /**

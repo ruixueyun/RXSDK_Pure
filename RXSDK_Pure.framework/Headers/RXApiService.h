@@ -231,7 +231,12 @@ typedef enum : NSUInteger {
 /**
  * 获取设备码
  */
-- (NSString *)getDeviceIDInKeychain;
+- (NSString *)getDeviceIDInKeychain DEPRECATED_MSG_ATTRIBUTE("use getDeviceCode instead");
+
+/**
+ * 获取设备码
+ */
+- (NSString *)getDeviceCode;
 
 /**
  * 获取当前时区与UTC时差
@@ -247,6 +252,12 @@ typedef enum : NSUInteger {
  * 刷新token
  */
 - (void)refreshTokenWithComplete:(void(^)(NSDictionary *response, RX_CommonRequestError *error))complete;
+
+/**
+ * 获取idfa
+ */
++ (NSString *)getIDFA;
+
 
 @end
 
