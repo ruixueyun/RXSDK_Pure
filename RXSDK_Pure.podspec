@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RXSDK_Pure'
-  s.version          = '3.4.37'
+  s.version          = '3.4.39'
   s.summary          = 'ruixue main framework.'
 
 # This description is used to generate tags and improve searc results.
@@ -48,5 +48,6 @@ TODO: Add long description of the pod here.
 #
   s.platform = :ios, '12.0'
   s.dependency 'RXLanguageKit'
+  s.dependency 'RXPublicToolKit'
   
 end
