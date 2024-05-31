@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *func;
 /**
  * 分享平台
- * wechat、system、facebook、messenger、line、tiktok、zalo、reddit
+ * wechat、system、facebook、messenger、line、tiktok、zalo
  */
 @property (nonatomic, copy) NSString *platform;
 /**
@@ -52,6 +52,11 @@ NS_ASSUME_NONNULL_BEGIN
  * 客户端透传数据
  */
 @property (nonatomic, strong) NSDictionary *game_info;
+
+/**
+ * 扩展字段，拼接url用  非必须
+ */
+@property (nonatomic, strong) NSDictionary *ext;
 
 @end
 

@@ -53,7 +53,13 @@ typedef void(^ShareCallBack)(BOOL success);
 /**
  * 获取分享信息
  * @param func 埋点标识  必须
- * @param platform 分享平台 wechat
+ * @param platform 分享平台 
+ * @note 平台类型说明：
+ * ！wechat
+ * ！facebook
+ * ！line
+ * ！messenger
+ * ！system
  * @param region 地区码 非必须
  * @param transmits 透传参数，原样返回， 请使用key=value形式，并对值使用urlencode，返回时会原样返回  非必须
  * @param ext 扩展字段，拼接url用  非必须
@@ -63,10 +69,10 @@ typedef void(^ShareCallBack)(BOOL success);
                       region:(NSString *)region
                    transmits:(NSString * _Nullable)transmits
                          ext:(NSDictionary * _Nullable)ext
-                    complete:(RequestComplete)complete DEPRECATED_MSG_ATTRIBUTE("use getShareInfoWithFunc:platform:region:transmits:ext:readCache:complete instead");
+                    complete:(RequestComplete)complete DEPRECATED_MSG_ATTRIBUTE("use getShareInfoWithConfig:complete instead");
 
 /**
- * 获取分享信息 New
+ * 获取分享信息 
  * @param func 埋点标识  必须
  * @param platform 分享平台 wechat
  * @param region 地区码 非必须
@@ -80,12 +86,26 @@ typedef void(^ShareCallBack)(BOOL success);
                    transmits:(NSString * _Nullable)transmits
                          ext:(NSDictionary * _Nullable)ext
                    readCache:(BOOL)readCache
-                    complete:(RequestComplete)complete;
+                    complete:(RequestComplete)complete DEPRECATED_MSG_ATTRIBUTE("use getShareInfoWithConfig:complete instead");
+
+/**
+ * 获取分享信息
+ * @param config 分享配置
+ */
+- (void)getShareInfoWithConfig:(RXShareConfig *)config
+                      complete:(RequestComplete)complete;
+
 
 /**
  * 系统分享（直接调用，不需要获取分享信息）
  * @param func 埋点标识  必须
- * @param platform 分享平台 wechat
+ * @param platform 分享平台
+ * @note 平台类型说明：
+ * ！wechat
+ * ！facebook
+ * ！line
+ * ！messenger
+ * ！system
  * @param region 地区码  非必须
  * @param transmits 透传参数，原样返回， 请使用key=value形式，并对值使用urlencode，返回时会原样返回  非必须
  * @param ext 扩展字段，拼接url用  非必须
@@ -95,7 +115,7 @@ typedef void(^ShareCallBack)(BOOL success);
                      region:(NSString *)region
                   transmits:(NSString * _Nullable)transmits
                         ext:(NSDictionary * _Nullable)ext
-                   complete:(ShareCallBack)complete;
+                   complete:(ShareCallBack)complete DEPRECATED_MSG_ATTRIBUTE("use share:complete instead");
 
 /**
  * 系统分享
@@ -117,7 +137,7 @@ typedef void(^ShareCallBack)(BOOL success);
  */
 - (void)shareReportWithDistinctId:(NSString *)distinctId
                        properties:(NSDictionary * _Nullable)properties
-                         complete:(RequestComplete)complete DEPRECATED_MSG_ATTRIBUTE("use shareSchedulingReportWithFunc:platform:region:transmits:scheduling_event:scheduling_type:scheduling_strategy_id:complete instead");
+                         complete:(RequestComplete)complete DEPRECATED_MSG_ATTRIBUTE("use shareSchedulingReportWithFunc:platform:region:transmits:scheduling_event:scheduling_type:properties:complete: instead");
 
 /**
  * 分享/广告结果上报

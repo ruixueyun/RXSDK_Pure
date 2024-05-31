@@ -31,3 +31,5 @@ FOUNDATION_EXPORT const unsigned char RXSDK_PureVersionString[];
 #import <RXSDK_Pure/RXShareConfig.h>
 #import <RXSDK_Pure/RXCustomShareConfig.h>
 #import <RXSDK_Pure/RXPrivateService.h>
+#import <RXSDK_Pure/RXDeregisterConfig.h>
+#import <RXSDK_Pure/RXLoginUIModel.h>

@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * 分享平台
- * wechat、system、facebook、messenger、line、tiktok、reddit
+ * wechat、system、facebook、messenger、line、tiktok
  */
 @property (nonatomic, copy) NSString *platform;
 /**
@@ -86,12 +86,18 @@ NS_ASSUME_NONNULL_BEGIN
  * 二维码坐标 height
  */
 @property (nonatomic, assign) NSInteger height;
+
 /**
  * 客户端透传数据
  */
 @property (nonatomic, strong) NSDictionary *game_info;
 
 + (RXCustomShareConfig *)shareConfigWithShareInfo:(NSDictionary *)shareInfo;
+
+/**
+ * 扩展字段，拼接url用  非必须
+ */
+@property (nonatomic, strong) NSDictionary *ext;
 
 @end
 
