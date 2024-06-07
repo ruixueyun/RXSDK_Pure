@@ -37,6 +37,11 @@ NS_ASSUME_NONNULL_BEGIN
                          maxCount:(NSInteger)maxCount;
 
 /**
+ * 是否为测试数据，YES 为测试数据，NO 为正式数据，默认 NO
+ */
+- (void)setTrackEnv:(BOOL)env;
+
+/**
  * 数据埋点（批量上报）
  * @note 需要在初始化后调用
  * @param event 埋点标识
