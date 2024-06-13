@@ -167,6 +167,7 @@ static NSInteger feedbakc_report = 10001; // 上报用户反馈
  * @param username 非账号登录传空，账号注册为账号，手机注册为手机号，邮箱注册为邮箱
  * @param password 非账号登录传空
  * @param captchaCode 验证码，登录方式为验证码时必传，其他登录方式可传空
+ * @param permissions 登录获取的权限数组，FaceBook、Line时必传，其他登录方式可传空
  * @param loginOpenId 二次登录openId，nil或空为普通登录
  * @param extDic 扩展字段，可传nil
  * ！断线重连 ext 中可传 reconnect_login = YES
@@ -177,6 +178,7 @@ static NSInteger feedbakc_report = 10001; // 上报用户反馈
                   username:(NSString * _Nullable)username
                   password:(NSString * _Nullable)password
                captchaCode:(NSString * _Nullable)captchaCode
+               permissions:(NSArray * _Nullable)permissions
                loginOpenId:(NSString *)loginOpenId
                     extDic:(NSMutableDictionary * _Nullable)extDic
                 signFields:(NSArray * _Nullable)signFields
