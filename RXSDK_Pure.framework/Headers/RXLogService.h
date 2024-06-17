@@ -66,6 +66,17 @@ NS_ASSUME_NONNULL_BEGIN
                    properties:(NSDictionary * _Nullable)properties;
 
 /**
+ * 数据埋点（逐条上报）
+ * @note 需要在初始化后调用，首次登录事件上报
+ * @param event 埋点标识
+ * @param distinctId 用户唯一标识，传空默认为openID
+ * @param properties 自定义属性
+ */
+- (BOOL)addLogSingleFirstLoginWithEvent:(NSString *)event
+                             distinctId:(NSString * _Nullable)distinctId
+                             properties:(NSMutableDictionary * _Nullable)properties;
+
+/**
  * 数据埋点（批量上报）
  * @note 需要在初始化后调用
  * @param event 埋点标识

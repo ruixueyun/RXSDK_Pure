@@ -30,6 +30,7 @@ typedef NS_ENUM(NSInteger, RequestMethod) {
 @property (nonatomic, assign) BOOL isSetQueryStringSerialization; //是否序列化请求 body请求 默认YES
 @property (nonatomic, assign) BOOL ssl;//是YES则自动转https,YES则不转
 @property (nonatomic, assign) BOOL isGzip;
+@property (nonatomic, assign) BOOL whiteList; // 白名单
 @property (nonatomic, assign) NSInteger failedTimes; // 失败次数
 
 - (instancetype) initWithApiName:(NSString *)apiName andParams:(NSDictionary * __nullable)parmas;

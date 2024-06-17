@@ -49,4 +49,11 @@ typedef enum : NSUInteger {
 
 typedef void(^RequestComplete)(NSDictionary * _Nullable response, RX_CommonRequestError * _Nullable error);
 
+
+#pragma mark -- track key
+static NSString * _Nullable const rxlog_version_check_process = @"#version_check_process";  // 版本检查
+static NSString * _Nullable const rxlog_login_page_show = @"#login_page_show";              // 展示登录 UI
+static NSString * _Nullable const rxlog_agreement_process = @"#agreement_process";          // 隐私协议
+static NSString * _Nullable const rxlog_login_process = @"#login_process";                  // 登录流程
+
 #endif /* RXPublicHeader_h */
