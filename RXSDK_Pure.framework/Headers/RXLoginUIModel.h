@@ -97,6 +97,12 @@ NS_ASSUME_NONNULL_BEGIN
  * @note 使用google登录必传
  */
 @property (nonatomic, strong) NSString *googleClientid;
+/**
+ * FaceBook、Line登录权限数组
+ * @note 使用FaceBook、Line登录必传
+ */
+@property (nonatomic, strong) NSArray *permissionsArray;
+
 
 @end
 
