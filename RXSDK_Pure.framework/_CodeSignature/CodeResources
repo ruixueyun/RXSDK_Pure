@@ -130,11 +130,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		BTzHAZlxGUldEFmr5iK3XnP7pNo=
+		fd9TNNgJnLZk5Q5Wd0pDk6qjPjk=
 		</data>
 		<key>Modules/RXSDK_Pure.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		1Lv1brRSzfI873Y//6af4GCOQ4M=
+		HpeyhKIOzwvzQw9+99f1N0f0QQI=
 		</data>
 		<key>Modules/RXSDK_Pure.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -146,7 +146,7 @@
 		</data>
 		<key>Modules/RXSDK_Pure.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		JdFLK/qkWiuY55UgoOg1ZnMHcnk=
+		CrvLXXCMx2uYjgq1N/o88Azphl8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -380,7 +380,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			baVCUyW3T5cYFJn++xg0f0e4LLpahKTONY61ExWFG6A=
+			9lfz2SJhje9hUCepIKqNHdug75zJsBEvVJIrzGjEMrI=
 			</data>
 		</dict>
 		<key>Modules/RXSDK_Pure.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -401,7 +401,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lKO7+JEFgbHHKliFr5kprmhA7XPaKe596TPcoKZbrlE=
+			8eTiQiVk1NJ9KhP/leaegsCaJQgpRovOp0iMBEvdgIk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
