@@ -86,18 +86,20 @@ NS_ASSUME_NONNULL_BEGIN
  * 二维码坐标 height
  */
 @property (nonatomic, assign) NSInteger height;
-
+/**
+ * 二维码白边，默认 0
+ */
+@property (nonatomic, assign) NSInteger borderSize;
 /**
  * 客户端透传数据
  */
 @property (nonatomic, strong) NSDictionary *game_info;
-
-+ (RXCustomShareConfig *)shareConfigWithShareInfo:(NSDictionary *)shareInfo;
-
 /**
  * 扩展字段，拼接url用  非必须
  */
 @property (nonatomic, strong) NSDictionary *ext;
+
++ (RXCustomShareConfig *)shareConfigWithShareInfo:(NSDictionary *)shareInfo;
 
 @end
 
