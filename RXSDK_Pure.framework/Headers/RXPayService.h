@@ -83,6 +83,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)getProductInfoWithProductIdArr:(NSArray *)productIdArr
                               complete:(void(^)(NSArray<SKProduct *> *productInfoList))complete;
 
+/**
+ * 获取初始化保存的计费点
+ */
+- (NSDictionary *)getProductInfo;
+
 @end
 
 NS_ASSUME_NONNULL_END
