@@ -20,10 +20,6 @@
 		<data>
 		qCbefUc4/yTLZrR3re1aCR6d3xU=
 		</data>
-		<key>Headers/RXBusinessService.h</key>
-		<data>
-		PktcC9ADqzIvcJq70+JS8QxwXZ4=
-		</data>
 		<key>Headers/RXConfig.h</key>
 		<data>
 		vp99XxXw7FjlCwnltE4tvmdMzCs=
@@ -82,7 +78,7 @@
 		</data>
 		<key>Headers/RXSDK_Pure.h</key>
 		<data>
-		eouLKuIw0hl22N67TRdQn9q+OdY=
+		NpW54qyjOgzyP3CEs07lafu+Ezg=
 		</data>
 		<key>Headers/RXSdkInitConfig.h</key>
 		<data>
@@ -94,11 +90,11 @@
 		</data>
 		<key>Headers/RXShareConfig.h</key>
 		<data>
-		bpA1xju/I+SMs/9ZuWbtrjm4R7g=
+		FyEWVKYySEyTr4CGh0bf8LSPgHU=
 		</data>
 		<key>Headers/RXShareService.h</key>
 		<data>
-		WL5u26XXx2DyUfuxaryWHc+us+s=
+		rsQZuwGBdD1bgy01l80i05D/2NI=
 		</data>
 		<key>Headers/RXStoreKitService.h</key>
 		<data>
@@ -134,7 +130,7 @@
 		</data>
 		<key>Modules/RXSDK_Pure.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		HpeyhKIOzwvzQw9+99f1N0f0QQI=
+		BmZhBo9xRFoZ63M1h0GLc5Q8YVc=
 		</data>
 		<key>Modules/RXSDK_Pure.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -155,6 +151,10 @@
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
 		qunPaOvK2DS3ITsX2KyLRZv6bp4=
+		</data>
+		<key>PrivateHeaders/RXBusinessService.h</key>
+		<data>
+		PktcC9ADqzIvcJq70+JS8QxwXZ4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -185,13 +185,6 @@
 			<key>hash2</key>
 			<data>
 			cbHRN3hrgikUsqz1cwbDLhJxyE5zdP3fb9rb5uxMyrU=
-			</data>
-		</dict>
-		<key>Headers/RXBusinessService.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			qDySW2FedepLmcsjW/keOOJVeRYRBDuTYCHI1wgTYUc=
 			</data>
 		</dict>
 		<key>Headers/RXConfig.h</key>
@@ -296,7 +289,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jhgYCPSrgSqepL3vQs3vOHePmtFnMj4b+UJyIlub7M8=
+			PzRNBXfEI8NHUaz1f7viowvXQK8KvYH/6QJZ1aBs464=
 			</data>
 		</dict>
 		<key>Headers/RXSdkInitConfig.h</key>
@@ -317,14 +310,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bs3iJdsrQFZkIg38RbrtJeLvttVotbG9//Zfqu05tQk=
+			BUC0k0pc3bW0EWas4hHMoZe9u59Tes/gqin9q4b8VO8=
 			</data>
 		</dict>
 		<key>Headers/RXShareService.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pmLuh4wlhzW+OLB2Sw1LT+p97Smvkon/0ndVxvd84ws=
+			v/WL6WCdOmqVXgfP+rQr9mQUgX0J/ViPFEymOxo3O6E=
 			</data>
 		</dict>
 		<key>Headers/RXStoreKitService.h</key>
@@ -380,7 +373,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9lfz2SJhje9hUCepIKqNHdug75zJsBEvVJIrzGjEMrI=
+			qer3N7UtTX5rSnn3bzXpW/Kd3l1tVhR8CvXm31fBgys=
 			</data>
 		</dict>
 		<key>Modules/RXSDK_Pure.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -416,6 +409,13 @@
 			<key>hash2</key>
 			<data>
 			R06fLLkXlXg6gozQUpR+AGZ2p6vFUZykUZ63pPQs9hM=
+			</data>
+		</dict>
+		<key>PrivateHeaders/RXBusinessService.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qDySW2FedepLmcsjW/keOOJVeRYRBDuTYCHI1wgTYUc=
 			</data>
 		</dict>
 	</dict>

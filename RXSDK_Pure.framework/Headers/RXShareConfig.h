@@ -52,11 +52,24 @@ NS_ASSUME_NONNULL_BEGIN
  * 客户端透传数据
  */
 @property (nonatomic, strong) NSDictionary *game_info;
-
 /**
- * 扩展字段，拼接url用  非必须
+ * 扩展字段，拼接url用
  */
 @property (nonatomic, strong) NSDictionary *ext;
+/**
+ * 是否使用短链接  YES 使用短链接，NO 不使用短链接，默认 NO
+ * @note 在 link 分享类型时使用短链接 SDK 会将最终的分享 url 替换为短链接
+ * @note 在 image 分享类型时使用短链接 SDK 会将原始的长链接转成短链接后生成二维码并拼接到图片中
+ */
+@property (nonatomic, assign) BOOL useShortUrl;
+/**
+ * 是否自动上报分享结果  YES 自动上报，NO 不自动上报，默认 YES
+ */
+@property (nonatomic, assign) BOOL autoReport;
+/**
+ * 使用自动分享上报时可以写入自定义数据，手动上报时该属性不生效
+ */
+@property (nonatomic, strong) NSDictionary *properties;
 
 @end
 

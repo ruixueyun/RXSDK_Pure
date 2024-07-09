@@ -160,9 +160,26 @@ typedef void(^ShareCallBack)(BOOL success);
 
 /**
  * 获取自动重定向短链接
+ * @note 仅作为生成短链接使用
  * @param url 要生成短链接的url
  */
 - (void)getShortUrl:(NSString *)url
+           complete:(RequestComplete)complete;
+
+/**
+ * 获取自动重定向短链接
+ * @note 支持生成可以解析 og 标签（图片、标题、描述）的短链接
+ * @param url 要生成短链接的url
+ * @param title 标题
+ * @param content 描述
+ * @param image 图片地址
+ * @param ext 透传参数
+ */
+- (void)getShortUrl:(NSString *)url
+              title:(NSString *)title
+            content:(NSString *)content
+              image:(NSString *)image
+                ext:(NSDictionary *)ext
            complete:(RequestComplete)complete;
 
 @end
