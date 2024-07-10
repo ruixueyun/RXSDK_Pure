@@ -102,7 +102,10 @@ NS_ASSUME_NONNULL_BEGIN
  * @note 使用FaceBook、Line登录必传
  */
 @property (nonatomic, strong) NSArray *permissionsArray;
-
+/**
+ * 是否隐藏邮箱注册按钮，YES 隐藏  NO 不隐藏，默认 NO
+ */
+@property (nonatomic, assign) BOOL closeEmailRegister;
 
 @end
 
