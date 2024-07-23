@@ -106,6 +106,11 @@ NS_ASSUME_NONNULL_BEGIN
  * 是否隐藏邮箱注册按钮，YES 隐藏  NO 不隐藏，默认 NO
  */
 @property (nonatomic, assign) BOOL closeEmailRegister;
+/**
+ * 是否为审核模式
+ * @note 审核模式只展示苹果登录，且和正常样式不同
+ */
+@property (nonatomic, assign) BOOL isAudit;
 
 @end
 
