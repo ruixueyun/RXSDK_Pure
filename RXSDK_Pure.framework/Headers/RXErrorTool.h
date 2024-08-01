@@ -54,7 +54,7 @@ static NSInteger RXLimitError_default = 6000;       // 隐私协议拒绝
 static NSInteger RXLimitError_notOpen = 6001;       // 权限被拒绝或未开启
 static NSInteger RXLimitError_closeView = 6010;     // 关闭窗口
 static NSInteger RXLimitError_locationFail = 6020;  // 定位失败
-static NSInteger RXLimitError_noApp = 6100;  // 定位失败
+static NSInteger RXLimitError_noApp = 6100;         // 未安装应用
 static NSInteger RXLimitError_noWechat = 6101;      // 微信未安装
 
 /* 数据上报 */
