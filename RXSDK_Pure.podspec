@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RXSDK_Pure'
-  s.version          = '3.5.14'
+  s.version          = '3.5.15'
   #s.version          = '3.0.201'
   s.summary          = 'ruixue main framework.'
 
