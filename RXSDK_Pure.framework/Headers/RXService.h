@@ -241,6 +241,13 @@ static NSInteger feedbakc_report = 10001; // 上报用户反馈
  */
 - (void)setPasswordStrength:(RXPasswordStrength)type;
 
+
+/**
+ * 设置自定义错误码信息
+ */
+- (void)configErrorMsg:(NSDictionary *)msgDic;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -72,7 +72,7 @@ static NSInteger RXError_default = 9000;            // 未知错误
 + (NSString *)getRXErrorMsg:(NSInteger)code;
 
 /**
- * 设置自定义错误码信息
+ * 设置自定义错误码信息,由RXService调用
  */
 + (void)configErrorMsg:(NSDictionary *)msgDic;
 
