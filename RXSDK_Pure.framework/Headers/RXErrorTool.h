@@ -71,6 +71,18 @@ static NSInteger RXError_default = 9000;            // 未知错误
 
 + (NSString *)getRXErrorMsg:(NSInteger)code;
 
+/**
+ * 设置自定义错误码信息
+ */
++ (void)configErrorMsg:(NSDictionary *)msgDic;
+
+/**
+ * 获取自定义error信息, 有$code$、$msg$时替换为对应的code、msg
+ * code 错误码
+ * networkMsg 网络请求错误信息，仅限于网络请求场景使用此参数，其他场景此参数传空
+ */
++ (NSString *)getCustomRXErrorMsg:(NSInteger)code withNetWorkErrorMsg:(NSString *)networkMsg;
+
 @end
 
 NS_ASSUME_NONNULL_END
