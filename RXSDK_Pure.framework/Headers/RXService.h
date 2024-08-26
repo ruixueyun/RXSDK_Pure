@@ -244,6 +244,7 @@ static NSInteger feedbakc_report = 10001; // 上报用户反馈
 
 /**
  * 设置自定义错误码信息
+ * @param msgDic 设置自定义错误码的字典
  */
 - (void)configErrorMsg:(NSDictionary *)msgDic;
 

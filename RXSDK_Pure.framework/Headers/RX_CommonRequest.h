@@ -17,6 +17,9 @@ typedef NS_ENUM(NSInteger, RequestMethod) {
     RequestMethod_Delete
 };
 
+typedef void(^DNSRequestSuccessBlock)(NSURLSessionDataTask * _Nonnull, id _Nullable);
+typedef void(^DNSRequestFailBlock)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull);
+
 @interface RX_CommonRequest : NSObject
 
 @property (nonatomic, copy) NSString * apiName;

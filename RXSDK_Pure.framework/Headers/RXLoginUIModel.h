@@ -53,7 +53,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL isHistoryViewEnable;
 /**
  * 未实名用户登录成功后是否需要强制实名认证，默认强制
- * 注：强制实名后登录数据将在实名认证成功后返回
+ * @note 强制实名后登录数据将在实名认证成功后返回
  */
 @property (nonatomic, assign) BOOL needRealAuth;
 /**
@@ -61,8 +61,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, assign) BOOL canCloseRealAuth;
 /**
+ * 实名认证地区
+ * @note 海外根据不同地区展示不同样式的实名认证 UI，默认 姓名+身份证样式，目前支持 VN（越南地区样式）
+ */
+@property (nonatomic, strong) NSString *realAuthRegion;
+/**
  * 验证码登录的新用户是否弹出设置密码，默认不弹出
- * 注：弹出设置密码后登录数据将在设置成功或关闭设置页面后返回
+ * @note 弹出设置密码后登录数据将在设置成功或关闭设置页面后返回
  */
 @property (nonatomic, assign) BOOL setFirstNeedSetPassword;
 /**
