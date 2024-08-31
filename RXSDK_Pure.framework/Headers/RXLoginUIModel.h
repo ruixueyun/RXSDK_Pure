@@ -10,8 +10,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface RXLoginUIModel : NSObject
+typedef enum : NSUInteger {
+    LoginModeNormal = 0, // 常规模式
+    LoginModeQuick = 1,   // 快速模式
+} LoginMode;
 
+@interface RXLoginUIModel : NSObject
+/**
+ * 登录模式
+ */
+@property (nonatomic, assign) LoginMode loginMode;
 /**
  * @note 要配置的登录类型，按照数组顺序展示
  * wechat          微信
