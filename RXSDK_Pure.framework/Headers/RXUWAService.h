@@ -40,6 +40,15 @@ typedef void (^IOSOnPerformanceCallback)(NSString *data);
  */
 - (void)uploadUWAInfo:(NSString *)infoString;
 
+/**
+ * 获取uwa上报的用户属性的不同，并同步到本地
+ */
+- (NSDictionary *)getUwaInfoCompareWithDict:(NSDictionary *)dict;
+
+/**
+ * 获取sdk上报的属性的不同，并同步到本地
+ */
+- (NSDictionary *)getSDKInfoCompareWithDict:(NSDictionary *)dict;
 
 @end
 
