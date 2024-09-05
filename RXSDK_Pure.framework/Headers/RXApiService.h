@@ -429,6 +429,13 @@ typedef enum : NSUInteger {
  */
 - (void)exchangePromoCDKEY:(NSString *)cdkey complete:(void(^)(NSDictionary * _Nullable response, RX_CommonRequestError * _Nullable error))complete;
 
+/**
+ * 获取公告列表
+ * limit 返回公告条数，数量范围 1-100，超过100则只返回最近100条
+ */
+- (void)getAnnouncementWithLimit:(int)limit complete:(void(^)(NSDictionary * _Nullable response, RX_CommonRequestError * _Nullable error))complete;
+
+
 @end
 
 NS_ASSUME_NONNULL_END
