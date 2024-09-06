@@ -435,6 +435,47 @@ typedef enum : NSUInteger {
  */
 - (void)getAnnouncementWithLimit:(int)limit complete:(void(^)(NSDictionary * _Nullable response, RX_CommonRequestError * _Nullable error))complete;
 
+//获取当前本地的全量公告
+- (NSArray *)getLocalAnnouncement;
+
+//获取本地公告是否已读记录
+- (NSDictionary *)getLocalAnnouncementReadList;
+
+//同步公告是否已读记录到本地
+- (void)syncLocalAnnouncementRecord:(NSDictionary *)dict;
+
+
+/**
+ * 获取邮箱列表
+ * cpUserID 游戏用户id
+ */
+- (void)getEmailListWithCpUserID:(NSString *)cpUserID complete:(void(^)(NSDictionary * _Nullable response, RX_CommonRequestError * _Nullable error))complete;
+
+/**
+ * 获取邮箱详情
+ * cpUserID 游戏用户id
+ * emailID 邮件id
+ */
+- (void)getEmailDetailWithCpUserID:(NSString *)cpUserID emailID:(NSInteger)emailID complete:(void(^)(NSDictionary * _Nullable response, RX_CommonRequestError * _Nullable error))complete;
+
+/**
+ * 领取道具
+ * cpUserID 游戏用户id
+ * type 传1为领取当前礼物，需要同时传emailID；传2，为一键领取所有礼物，无需传emailID，或传0即可
+ * emailID 邮箱id
+ */
+- (void)receivePropsWithCpUserID:(NSString *)cpUserID type:(NSInteger)type emailID:(NSInteger)emailID complete:(void(^)(NSDictionary * _Nullable response, RX_CommonRequestError * _Nullable error))complete;
+
+/**
+ * 删除邮件
+ * cpUserID 游戏用户id
+ * type 传1为删除当前邮件，需要同时传emailID；传2，为一键删除所有邮件，无需传emailID，或传0即可
+ * emailID 邮箱id
+ */
+- (void)deleteEmailWithCpUserID:(NSString *)cpUserID type:(NSInteger)type emailID:(NSInteger)emailID complete:(void(^)(NSDictionary * _Nullable response, RX_CommonRequestError * _Nullable error))complete;
+
+
+
 
 @end
 

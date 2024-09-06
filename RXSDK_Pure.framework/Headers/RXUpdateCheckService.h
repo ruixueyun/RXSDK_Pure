@@ -31,6 +31,23 @@ NS_ASSUME_NONNULL_BEGIN
                          complete:(RequestComplete)complete;
 
 /**
+ * 大厅更新检查 - 展示维护公告（GET版本，不返回下载地址）
+ * @param region 地区码  非必须
+ * @param client_version 客户端大厅当前版本  非必须
+ * @param type 脚本类型，默认lua，可选json，u3d等  非必须
+ * @param isShow 是否展示维护公告，默认不展示
+ * @param json 输出文件后缀，默认lua，可选json  非必须
+ * @param linkCallBack 点击链接时，由此返回对应链接
+ */
+- (void)checkUpdate_AppWithRegion:(NSString * _Nullable)region
+                   client_version:(NSString * _Nullable)client_version
+                             type:(NSString * _Nullable)type
+                             json:(NSString * _Nullable)json
+                           isShow:(BOOL)isShow
+                     linkCallBack:(void(^)(NSString *link))linkCallBack
+                         complete:(RequestComplete)complete;
+
+/**
  * 大厅更新检查（POST版本，返回下载地址）
  * @param region 地区码  非必须
  * @param client_version 客户端大厅当前版本  非必须
@@ -45,6 +62,27 @@ NS_ASSUME_NONNULL_BEGIN
                        activities:(NSDictionary * _Nullable)activities
                              type:(NSString * _Nullable)type
                              json:(NSString * _Nullable)json
+                         complete:(RequestComplete)complete;
+
+/**
+ * 大厅更新检查 - 展示维护公告（POST版本，返回下载地址）
+ * @param region 地区码  非必须
+ * @param client_version 客户端大厅当前版本  非必须
+ * @param games key客户端游戏id value版本  非必须
+ * @param activities key客户端活动别名 value版本  非必须
+ * @param type 脚本类型，默认lua，可选json，u3d等  非必须
+ * @param json 输出文件后缀，默认lua，可选json  非必须
+ * @param isShow 是否展示维护公告，默认不展示
+ * @param linkCallBack 点击链接时，由此返回对应链接
+ */
+- (void)checkUpdate_AppWithRegion:(NSString * _Nullable)region
+                   client_version:(NSString * _Nullable)client_version
+                            games:(NSDictionary * _Nullable)games
+                       activities:(NSDictionary * _Nullable)activities
+                             type:(NSString * _Nullable)type
+                             json:(NSString * _Nullable)json
+                           isShow:(BOOL)isShow
+                     linkCallBack:(void(^)(NSString *link))linkCallBack
                          complete:(RequestComplete)complete;
 
 /**
