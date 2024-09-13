@@ -19,6 +19,7 @@ typedef NS_ENUM(NSInteger, RequestMethod) {
 
 typedef void(^DNSRequestSuccessBlock)(NSURLSessionDataTask * _Nonnull, id _Nullable);
 typedef void(^DNSRequestFailBlock)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull);
+typedef void(^ProcessBlock)(float process);
 
 @interface RX_CommonRequest : NSObject
 
@@ -46,6 +47,14 @@ typedef void(^DNSRequestFailBlock)(NSURLSessionDataTask * _Nullable, NSError * _
               requestType:(NSString *)requestType
              SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull, id _Nullable))successBlock
                ErrorBlock:(void (^)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull))errorBlock;
+
++ (void)rx_uploadRequestWithUrl:(NSString *)urlString
+                     parameters:(nullable id)parameters
+                        headers:(nullable NSDictionary <NSString *, NSString *> *)headers
+                    requestType:(NSString *)requestType
+                   processBlock:(ProcessBlock)processBlock
+                   SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull, id _Nullable))successBlock
+                     ErrorBlock:(void (^)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull))errorBlock;
 
 @end
 

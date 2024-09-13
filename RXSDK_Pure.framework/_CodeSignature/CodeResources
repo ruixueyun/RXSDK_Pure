@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/RXApiService.h</key>
 		<data>
-		tinqbtaLcJoBiKjQRj0woRBAVHM=
+		kHwdD8Y+h51G0ePYngmi97FSn74=
 		</data>
 		<key>Headers/RXConfig.h</key>
 		<data>
@@ -60,6 +60,10 @@
 		<data>
 		bmONiwlQ1lpTeCr1K5dyi108HCA=
 		</data>
+		<key>Headers/RXOSSPutManager.h</key>
+		<data>
+		O3Fb8MzCr4slwCx1RH+HAG5nXck=
+		</data>
 		<key>Headers/RXPayService.h</key>
 		<data>
 		SyC0A7JfuN/dH+1P1M5bOQ1pMIM=
@@ -78,7 +82,7 @@
 		</data>
 		<key>Headers/RXSDK_Pure.h</key>
 		<data>
-		OT1/GnXzimZm9qLsO0L9sJhxj/M=
+		5IAjXGiX1Pe1suCc4Bf8VDCATJI=
 		</data>
 		<key>Headers/RXSdkInitConfig.h</key>
 		<data>
@@ -110,7 +114,7 @@
 		</data>
 		<key>Headers/RX_CommonNetworkExcute.h</key>
 		<data>
-		DqJWo+v66kBz8ff1ETQzR2KNla0=
+		XAV16Dulq5qBLCPaeoYQKyn/8tw=
 		</data>
 		<key>Headers/RX_CommonNetworkExcuteManager.h</key>
 		<data>
@@ -118,7 +122,7 @@
 		</data>
 		<key>Headers/RX_CommonRequest.h</key>
 		<data>
-		1eKnWQomJfbZ4eeua6sQevIYe8w=
+		abxeg5ExEOnxJKavnjnWEh4+iBQ=
 		</data>
 		<key>Headers/RX_CommonRequestConfigure.h</key>
 		<data>
@@ -188,7 +192,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4HVgT69NPrRoEnqOs1kGny16GLMO3/iLe34Kllw/Btw=
+			RbuYMP6o9WW2NZOhkmJkUNsd4TzyT5r3OY/e7t2/cpA=
 			</data>
 		</dict>
 		<key>Headers/RXConfig.h</key>
@@ -261,6 +265,13 @@
 			0MUsqSJchATGAGE6vzD3kiF7Idf5aR2bLxleoF6I3Bk=
 			</data>
 		</dict>
+		<key>Headers/RXOSSPutManager.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yjMDrPdnodtg85m6MTJCkb4abTflj/BfV1w2bNxQoUs=
+			</data>
+		</dict>
 		<key>Headers/RXPayService.h</key>
 		<dict>
 			<key>hash2</key>
@@ -293,7 +304,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			htPiu/fK5jlwyOz78CmX6X1FtXDp4qcC5zOx9wigy/Y=
+			EGgH8DPBXZEIoZNb2blpHwPx7KrqOFacxdgiA3IzglE=
 			</data>
 		</dict>
 		<key>Headers/RXSdkInitConfig.h</key>
@@ -349,7 +360,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lRpgtGTCXRus5zBkLpR+rLn3NRTb70nXJFDQNC75KQQ=
+			U4U6Vu4uw3GW6XjD5iJTackTi0Cf/x9aAeKoYD5w+ek=
 			</data>
 		</dict>
 		<key>Headers/RX_CommonNetworkExcuteManager.h</key>
@@ -363,7 +374,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4jdojq3PcIDYQLZY59tGbZsTR2PMquOjGiXn4vo/5q0=
+			ub/ukLyRugeAW4w50GPcBFIEQP4S3wEKXse3b542lQo=
 			</data>
 		</dict>
 		<key>Headers/RX_CommonRequestConfigure.h</key>

@@ -83,6 +83,18 @@ NS_ASSUME_NONNULL_BEGIN
               failure:(RequestFailed)failure;
 
 /**
+ PUT 请求
+ @param request 请求的URL参数信息
+ @param success 成功返回
+ @param process 上传进度
+ @param failure 失败返回
+ */
+- (void)beginUploadRequest:(RX_CommonRequest *)request
+                   process:(void(^)(float process))process
+                   success:(RequestSuccess)success
+                   failure:(RequestFailed)failure;
+
+/**
  多个请求
 
  @param array 数组

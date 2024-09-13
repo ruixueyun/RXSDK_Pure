@@ -435,14 +435,25 @@ typedef enum : NSUInteger {
  */
 - (void)getAnnouncementWithLimit:(int)limit complete:(void(^)(NSDictionary * _Nullable response, RX_CommonRequestError * _Nullable error))complete;
 
-//获取当前本地的全量公告
+/**
+ * 获取当前本地保存的全量公告(国内外UI SDK内部逻辑调用)
+ */
 - (NSArray *)getLocalAnnouncement;
 
-//获取本地公告是否已读记录
+/**
+ * 获取本地公告是否已读记录(国内外UI SDK内部逻辑调用)
+ */
 - (NSDictionary *)getLocalAnnouncementReadList;
 
-//同步公告是否已读记录到本地
+/**
+ * 同步公告是否已读记录到本地(国内外UI SDK内部逻辑调用)
+ */
 - (void)syncLocalAnnouncementRecord:(NSDictionary *)dict;
+
+/**
+ * 保存全量公告数据以及本地是否已读未读记录(主库内部逻辑调用)
+ */
+- (void)getLocalAnnouncementAndSetReadOrNotRecord;
 
 
 /**
@@ -474,6 +485,36 @@ typedef enum : NSUInteger {
  */
 - (void)deleteEmailWithCpUserID:(NSString *)cpUserID type:(NSInteger)type emailID:(NSInteger)emailID complete:(void(^)(NSDictionary * _Nullable response, RX_CommonRequestError * _Nullable error))complete;
 
+
+/**
+ * 创建反馈
+ * content 反馈内容，必填
+ * attachments 附件地址数组，非必填
+ * phone 手机号，必填
+ * tags 游戏透传标识
+ *
+ */
+- (void)feedbackCreateWithContent:(NSString *)content attachments:(NSArray *)attachmentsArray phone:(NSString *)phone tags:(NSArray *)tagArray complete:(void(^)(NSDictionary * _Nullable response, RX_CommonRequestError * _Nullable error))complete;
+
+/**
+ * 获取反馈列表
+ * page 页数，必填
+ * size 每页个数，必填
+ * status 状态，1 未处理 2已处理，0为不传，获取所有状态
+ */
+- (void)getFeedbackListWithPage:(int)page size:(int)size status:(int)status complete:(void(^)(NSDictionary * _Nullable response, RX_CommonRequestError * _Nullable error))complete;
+
+/**
+ * 获取反馈详情
+ * feedbackID 反馈id
+ */
+- (void)getFeedbackDetailWithFeedbackID:(int)feedbackID complete:(void(^)(NSDictionary * _Nullable response, RX_CommonRequestError * _Nullable error))complete;
+
+/**
+ * 领取反馈回复中的道具
+ * feedbackID 反馈id
+ */
+- (void)feedbackGetpropWithFeedbackID:(int)feedbackID complete:(void(^)(NSDictionary * _Nullable response, RX_CommonRequestError * _Nullable error))complete;
 
 
 
