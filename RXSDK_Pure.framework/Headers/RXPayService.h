@@ -19,8 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)sharedSDK;
 
 /**
- * 是否开启storeKit2，默认不开启
- * ！storeKit2 限制 iOS15 以上使用
+ * 是否开启storeKit2，默认开启
+ * ！storeKit2 限制 iOS15 及以上使用
  */
 - (void)setOpenStoreKit2:(BOOL)openStoreKit2;
 

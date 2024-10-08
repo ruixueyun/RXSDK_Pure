@@ -34,3 +34,4 @@ FOUNDATION_EXPORT const unsigned char RXSDK_PureVersionString[];
 #import <RXSDK_Pure/RXLoginUIModel.h>
 #import <RXSDK_Pure/RXUWAService.h>
 #import <RXSDK_Pure/RXOSSPutManager.h>
+#import <RXSDK_Pure/RXLogManager.h>
