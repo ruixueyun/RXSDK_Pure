@@ -49,9 +49,9 @@ NS_ASSUME_NONNULL_BEGIN
                             errorInfo:(NSDictionary *)errorInfo;
 
 
-#pragma mark - 将 三方返回的 登录、支付、分享，以及一些客户端错误码上报到大数据中
+#pragma mark - 将 三方返回的 登录、分享，以及一些客户端错误码上报到大数据中
 /**
- * 将三方返回的 登录、支付、分享，以及一些客户端错误码上报到大数据中，此方法仅上传请求底层，报错后瑞雪code < 2000的网络错误
+ * 将三方返回的 登录、分享，以及一些客户端错误码上报到大数据中，此方法仅上传请求底层，报错后瑞雪code < 2000的网络错误
  * request 请求对象
  * parameters 请求参数
  * headers 请求头
@@ -68,7 +68,7 @@ NS_ASSUME_NONNULL_BEGIN
                          error:(NSError * _Nullable)error;
 
 /**
- * 将 三方返回的 登录、支付、分享，以及一些客户端错误码上报到大数据中
+ * 将 三方返回的 登录、分享，以及一些客户端错误码上报到大数据中
  * @param headerDic 请求头
  * @param bodyDic 请求体
  * @param action 动作
