@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
  * 设置重复下单间隔，单位秒（s），默认300s
  * 防止结果回调前重复下单导致订单验证错误
  */
-- (void)setPayInterval:(NSInteger)interval;
+- (void)setInterval:(NSInteger)interval;
 
 /**
  * iap
@@ -44,7 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
     @"transmit_args" : @"客户端透传参数 非必传"
  }
  */
-- (void)pay:(NSDictionary *)dict complete:(RequestComplete)complete;
+- (void)iap:(NSDictionary *)dict complete:(RequestComplete)complete;
 
 /**
  * iap
@@ -72,7 +72,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @param maxCount 最大重试数，默认5次
  */
 - (void)reFailOrderWithMaxCount:(NSInteger)maxCount
-                          complete:(RequestComplete)complete;
+                       complete:(RequestComplete)complete;
 
 /**
  * 查询商品信息
