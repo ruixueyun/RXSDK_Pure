@@ -62,6 +62,29 @@ typedef enum : NSUInteger {
                    complete:(RequestComplete)complete;
 
 /**
+ * 发送验证码
+ * @param type 验证码类型
+ * @param target 发送的目标（手机或邮箱），传空或nil默认为当前绑定的手机或邮箱
+ * @param randstr 图形验证随机串，可传空
+ * @param ticket 图形验证凭证，可传空
+ * @param purpose 用途
+ * ！register           // 注册
+ * ！bindphone      // 绑定手机
+ * ！unbindphone  // 解绑手机
+ * ！resetpwd        // 重置密码
+ * ！changepwd    // 修改密码
+ * ！bindemail       // 绑定邮箱
+ * ！unbindemail   // 解绑邮箱
+ * ！login               // 登录
+ */
+- (void)sendCaptchaWithType:(CaptchaType)type
+                     target:(NSString *)target
+                    purpose:(NSString *)purpose
+                     ticket:(NSString *)ticket
+                    randstr:(NSString *)randstr
+                   complete:(RequestComplete)complete;
+
+/**
  * 校验验证码
  * @note 建议使用新方法，旧方法如出现问题在以后的版本不再维护
  * @param type 验证码类型
