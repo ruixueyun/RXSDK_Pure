@@ -516,7 +516,12 @@ typedef enum : NSUInteger {
  */
 - (void)feedbackGetpropWithFeedbackID:(int)feedbackID complete:(void(^)(NSDictionary * _Nullable response, RX_CommonRequestError * _Nullable error))complete;
 
-
+/**
+ * 图形验证 UI
+ * @param appid 图形验证码 appid
+ */
+- (void)captchaVerifyUIWithAppid:(NSString *)appid
+                        complete:(RequestComplete)complete;
 
 @end
 
