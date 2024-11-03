@@ -546,6 +546,11 @@ typedef enum : NSUInteger {
 - (void)captchaVerifyUIWithAppid:(NSString *)appid
                         complete:(RequestComplete)complete;
 
+/**
+ * login_openid 是否失效，YES 失效，NO 有效
+ */
+- (BOOL)loginOpenidExpireInvalid;
+
 @end
 
 NS_ASSUME_NONNULL_END
