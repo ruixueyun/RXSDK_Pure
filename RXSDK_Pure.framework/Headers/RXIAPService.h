@@ -19,12 +19,6 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)sharedSDK;
 
 /**
- * 是否开启storeKit2，默认开启
- * ！storeKit2 限制 iOS15 及以上使用
- */
-- (void)setOpenStoreKit2:(BOOL)openStoreKit2;
-
-/**
  * 设置重复下单间隔，单位秒（s），默认300s
  * 防止结果回调前重复下单导致订单验证错误
  */
