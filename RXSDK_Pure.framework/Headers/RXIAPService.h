@@ -80,6 +80,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (NSDictionary *)getProductInfo;
 
+/**
+ * 获取地区 货币符号
+ * @param productId 商品 id
+ */
+- (void)getLocaleIdentifierWithProductId:(NSString *)productId
+                                complete:(RequestComplete)complete;
+
 @end
 
 NS_ASSUME_NONNULL_END
