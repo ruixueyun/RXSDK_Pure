@@ -78,6 +78,10 @@ typedef enum : NSUInteger {
  */
 @property (nonatomic, strong) NSDictionary *setCustomParams;
 /**
+ * 自定义透传参数
+ */
+@property (nonatomic, strong) NSDictionary *setCustomExt;
+/**
  * 微信appid
  * @note 使用微信登录必传
  */
@@ -87,6 +91,11 @@ typedef enum : NSUInteger {
  * @note 使用一键登录必传
  */
 @property (nonatomic, strong) NSString *quickphoneKey;
+/**
+ * 快速开始登录方式显示名称
+ * @note 默认显示 “快速开始”
+ */
+@property (nonatomic, strong) NSString *guestTitle;
 /**
  * google登录客户端秘钥
  * @note 使用google登录必传

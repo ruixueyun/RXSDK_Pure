@@ -98,6 +98,10 @@ NS_ASSUME_NONNULL_BEGIN
  * 扩展字段，拼接url用  非必须
  */
 @property (nonatomic, strong) NSDictionary *ext;
+/**
+ * 自定义透传参数
+ */
+@property (nonatomic, strong) NSDictionary *setCustomExt;
 
 + (RXCustomShareConfig *)shareConfigWithShareInfo:(NSDictionary *)shareInfo;
 

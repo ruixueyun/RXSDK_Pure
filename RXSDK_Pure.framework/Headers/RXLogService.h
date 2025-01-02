@@ -55,6 +55,17 @@ NS_ASSUME_NONNULL_BEGIN
              properties:(NSDictionary * _Nullable)properties DEPRECATED_MSG_ATTRIBUTE("use dataTrackWithEvent:distinctId:properties instead");
 
 /**
+ * 数据埋点（逐条上报）有回调
+ * @param event 埋点标识
+ * @param distinctId 用户唯一标识，传空默认为openID
+ * @param properties 自定义属性
+ */
+- (BOOL)addLogSingleWithEvent:(NSString *)event
+                   distinctId:(NSString * _Nullable)distinctId
+                   properties:(NSDictionary * _Nullable)properties
+                     complete:(RequestComplete)complete;
+
+/**
  * 数据埋点（逐条上报）
  * @note 需要在初始化后调用
  * @param event 埋点标识

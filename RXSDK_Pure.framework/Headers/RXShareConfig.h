@@ -57,6 +57,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, strong) NSDictionary *ext;
 /**
+ * 自定义透传参数
+ */
+@property (nonatomic, strong) NSDictionary *setCustomExt;
+/**
  * 是否使用短链接  YES 使用短链接，NO 不使用短链接，默认 NO
  * @note 在 link 分享类型时使用短链接 SDK 会将最终的分享 url 替换为短链接
  * @note 在 image 分享类型时使用短链接 SDK 会将原始的长链接转成短链接后生成二维码并拼接到图片中
