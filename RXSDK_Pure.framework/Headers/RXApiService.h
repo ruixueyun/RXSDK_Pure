@@ -581,7 +581,7 @@ typedef enum : NSUInteger {
                             areaName:(NSString *)areaName
                           areaStatus:(NSString *)areaStatus
                             areaType:(NSString *)areaType
-                           extension:(NSArray *)extension
+                           extension:(NSDictionary *)extension
                             complete:(RequestComplete)complete;
 
 /**
@@ -596,7 +596,7 @@ typedef enum : NSUInteger {
                         areaName:(NSString *)areaName
                       areaStatus:(NSString *)areaStatus
                         areaType:(NSString *)areaType
-                       extension:(NSArray *)extension
+                       extension:(NSDictionary *)extension
                         complete:(RequestComplete)complete;
 
 /**
@@ -666,7 +666,7 @@ typedef enum : NSUInteger {
                                  complete:(RequestComplete)complete;
 
 /**
- * 删除游戏区服
+ * 删除游戏角色
  * @param areaId 区服 id
  * @param characterId 角色id
  * @param cpUserId 游戏用户 id
