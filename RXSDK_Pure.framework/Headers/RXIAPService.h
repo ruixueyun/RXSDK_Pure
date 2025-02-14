@@ -62,6 +62,12 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)checkHasFailedOrder;
 
 /**
+ * storekit2 查询
+ */
+- (void)sk2UnfinishUncompletedTransactionsWithOrderInfo:(NSDictionary *)orderInfo
+                                         completeHandle:(RequestComplete)handle;
+
+/**
  * 补单
  * @param maxCount 最大重试数，默认5次
  */
