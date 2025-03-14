@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/RXApiService.h</key>
 		<data>
-		WWRr9U/g37PawofMNSMyydoyJXE=
+		1MxRnUOVPAcM7cj2xrLEpyQGRcA=
 		</data>
 		<key>Headers/RXConfig.h</key>
 		<data>
@@ -78,11 +78,11 @@
 		</data>
 		<key>Headers/RXSDK_Pure-Swift.h</key>
 		<data>
-		o9tpgA2yU3QD+gqh1NkejZXzvA0=
+		JumXJVdvACDSx8rSKVNllJ+YoiU=
 		</data>
 		<key>Headers/RXSDK_Pure.h</key>
 		<data>
-		RNBVKOkFTfH4HKKuGwuVyK5FZdc=
+		CuR2MtlGH3JL4tPBQXAp4rQj8VY=
 		</data>
 		<key>Headers/RXSdkInitConfig.h</key>
 		<data>
@@ -110,7 +110,11 @@
 		</data>
 		<key>Headers/RXUpdateCheckService.h</key>
 		<data>
-		LiGn5nZCKWM3hUgMcXC9JHg+Ncs=
+		3F979hY9y+PI6B+cj26vHpTRZ/4=
+		</data>
+		<key>Headers/RXUserActionLogManager.h</key>
+		<data>
+		hxBNEu6lgovSAPNjdcVnC0kpFOg=
 		</data>
 		<key>Headers/RX_CommonNetworkExcute.h</key>
 		<data>
@@ -134,23 +138,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		fd9TNNgJnLZk5Q5Wd0pDk6qjPjk=
+		jMxW6ulbLylQjznwg6G3m0stbhM=
 		</data>
 		<key>Modules/RXSDK_Pure.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		EJKUb1nceEJMyLDxpxsGN+JcjiE=
+		2ZdOfpV3rE1h4+yUtPRff+aMX5I=
 		</data>
 		<key>Modules/RXSDK_Pure.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		FSPnLbho3G+LL9smI3XgVOqBIQ4=
+		gcwBsH4BgyFY4sVtNt+/xOKS3vY=
 		</data>
 		<key>Modules/RXSDK_Pure.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		Y3CEyoGHEYyKlKVf51eqZp8RJRM=
+		SLwtFkDk0reSVHo84nvD3ChEleo=
 		</data>
 		<key>Modules/RXSDK_Pure.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		YOz7tht5/5KnK6aBIr8U3DB3cAs=
+		l0xbq1KWzjN1HIN31XFpAL6JTDE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -192,7 +196,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GIRUOPAdQuucZANzNjth0SeAV7gnp0WrCRWNU71Gyvs=
+			YWXVmU/KYnplEu6VNI7MRhBuOb3AZ+bWPCZy/8iZ/Yw=
 			</data>
 		</dict>
 		<key>Headers/RXConfig.h</key>
@@ -297,14 +301,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uEyznlLBIrOhyz8WEAEWxM0z8bfKG3v5/1+XIsQb+jM=
+			xdzgTzI08xos7QdJMv5NdlCWxvXmY82Seol/Gg284Es=
 			</data>
 		</dict>
 		<key>Headers/RXSDK_Pure.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OJpCnuy642mbpuxsvp5VYLRXM46wybdCURLw6jcASeo=
+			+G/td0+cIyV2byM5EaTtaGXI3YFZF40lhY50XwWH0/g=
 			</data>
 		</dict>
 		<key>Headers/RXSdkInitConfig.h</key>
@@ -353,7 +357,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AG8vQbLNSuES3IMYR4NV162C8+K6R7e8jOTHYfVrMmQ=
+			9BCAPYLI9PlHm5ZaQMIn5f9H0h70L3kM7qGkByJMj+c=
+			</data>
+		</dict>
+		<key>Headers/RXUserActionLogManager.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RWAl4B/4oOwncqdY+j97wgSrFyRsQ6HB69fQ2Msay6I=
 			</data>
 		</dict>
 		<key>Headers/RX_CommonNetworkExcute.h</key>
@@ -395,28 +406,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GtcRthbp3MWYt+/PHs9ByYz9qo+YJgDK9Fp9O/OeSU8=
+			LH99dzMbQqNZkxCWzf4MukvODFDP5iauIb7REr5OTMk=
 			</data>
 		</dict>
 		<key>Modules/RXSDK_Pure.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
+			Qnesa0n4URGWAopawg9bGx36dUwkYV00BoCJ8LFzlyg=
 			</data>
 		</dict>
 		<key>Modules/RXSDK_Pure.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YC8luMRHwdWUgzmEp2KT02HaKJmA1et4sS6SpGNR/zo=
+			z5mu1o6tF4K4Aij2N92VE2DTFDq1ChdppYwwPRocIhY=
 			</data>
 		</dict>
 		<key>Modules/RXSDK_Pure.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TFGvYnQuiziQXhSqwV6d5yCjRTPtwuFHYRXBKW1TG5I=
+			Gvy1X5X8aNl/AUmRFxkmH0aNkbA/2rGTdcwkiUh7CQ0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -703,6 +703,17 @@ typedef enum : NSUInteger {
                               characterId:(NSString *)characterId
                                  complete:(RequestComplete)complete;
 
+/**
+ * 用户行为统计
+ */
+- (void)trackUserActionWithDistinctId:(NSString * _Nullable)distinctId
+                           properties:(NSDictionary * _Nullable)properties;
+
+/**
+ * 终止用户行为统计
+ */
+- (void)stopTrackUserAction;
+
 @end
 
 NS_ASSUME_NONNULL_END

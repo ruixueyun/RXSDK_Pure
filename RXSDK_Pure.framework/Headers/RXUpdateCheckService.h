@@ -18,6 +18,12 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)sharedSDK;
 
 /**
+ * 版本检查
+ */
+- (void)updateGameVersionWithInfo:(NSDictionary *)info
+                         complete:(RequestComplete)complete;
+
+/**
  * 大厅更新检查（GET版本，不返回下载地址）
  * @param region 地区码  非必须
  * @param client_version 客户端大厅当前版本  非必须
