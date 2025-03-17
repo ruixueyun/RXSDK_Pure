@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RXSDK_Pure'
-  s.version          = '3.6.21'
+  s.version          = '3.6.22'
   #s.version          = '3.0.301'
   s.summary          = 'ruixue main framework.'
 
@@ -50,5 +50,6 @@ TODO: Add long description of the pod here.
   s.platform = :ios, '12.0'
   s.dependency 'RXLanguageKit'
   s.dependency 'RXPublicToolKit'
+  s.dependency 'SocketRocket'
   
 end
