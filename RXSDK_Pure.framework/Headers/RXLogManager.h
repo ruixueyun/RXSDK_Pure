@@ -92,6 +92,31 @@ NS_ASSUME_NONNULL_BEGIN
                             thirdmsg:(NSString *)thirdmsg
                              traceid:(NSString *)traceid;
 
+/**
+ * 将 三方返回的 登录、分享，以及一些客户端错误码上报到大数据中
+ * @param headerDic 请求头
+ * @param bodyDic 请求体
+ * @param action 动作
+ * @param url 请求地址
+ * @param type 三方类型
+ * @param code 错误码
+ * @param msg 错误信息
+ * @param thirdcode 三方错误码
+ * @param thirdmsg 三方错误信息
+ * @param traceid 唯一标识
+ */
+- (void)trackErrorPrivateMsgWithRequestHeader:(NSDictionary *)headerDic
+                                      bodyDic:(NSDictionary *)bodyDic
+                                       action:(NSString *)action
+                                          url:(NSString *)url
+                                         code:(NSInteger)code
+                                          msg:(NSString *)msg
+                                    thirdType:(NSString *)type
+                                    thirdcode:(NSInteger)thirdcode
+                                     thirdmsg:(NSString *)thirdmsg
+                                      traceid:(NSString *)traceid
+                                   properties:(NSDictionary *)properties;
+
 @end
 
 NS_ASSUME_NONNULL_END

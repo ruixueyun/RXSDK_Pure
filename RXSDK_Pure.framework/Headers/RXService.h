@@ -248,6 +248,7 @@ static NSInteger feedbakc_report = 10001; // 上报用户反馈
  */
 - (void)configErrorMsg:(NSDictionary *)msgDic;
 
+- (NSDictionary *)getConfigData;
 
 @end
 

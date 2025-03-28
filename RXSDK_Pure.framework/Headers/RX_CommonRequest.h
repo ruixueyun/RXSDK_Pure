@@ -45,7 +45,7 @@ typedef void(^ProcessBlock)(float process);
                parameters:(nullable id)parameters
                   headers:(nullable NSDictionary <NSString *, NSString *> *)headers
               requestType:(NSString *)requestType
-             SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull, id _Nullable))successBlock
+             SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull, id _Nullable, NSURLResponse * _Nullable urlResponse))successBlock
                ErrorBlock:(void (^)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull))errorBlock;
 
 + (void)rx_uploadRequestWithUrl:(NSString *)urlString
