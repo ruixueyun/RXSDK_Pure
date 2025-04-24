@@ -241,6 +241,18 @@ static NSInteger feedbakc_report = 10001; // 上报用户反馈
  */
 - (void)setPasswordStrength:(RXPasswordStrength)type;
 
+/**
+ * 设置商品 id 和 超时时间
+ * @param productId  商品 id
+ * @param timeout 超时时间，默认 2 秒
+ */
+- (void)setIAPProductId:(NSString *)productId timeout:(NSInteger)timeout;
+
+/**
+ * 设置游戏登录配置
+ * @note 仅数据上报用
+ */
+- (void)setGameLoginConfig:(NSDictionary *)gameLoginConfig;
 
 /**
  * 设置自定义错误码信息

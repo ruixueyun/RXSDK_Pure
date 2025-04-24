@@ -89,8 +89,10 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * 获取地区 货币符号
  * @param productId 商品 id
+ * @param timeout 请求超时时间，默认 2 秒，小于 0 为默认时间
  */
 - (void)getLocaleIdentifierWithProductId:(NSString *)productId
+                                 timeout:(NSInteger)timeout
                                 complete:(RequestComplete)complete;
 
 @end
