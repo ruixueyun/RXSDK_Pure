@@ -705,7 +705,6 @@ typedef enum : NSUInteger {
 
 /**
  * 查询游戏角色信息
- * @note 订制功能
  */
 - (void)searchGameAccountWithComplete:(RequestComplete)complete;
 

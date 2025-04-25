@@ -249,16 +249,12 @@ static NSInteger feedbakc_report = 10001; // 上报用户反馈
 - (void)setIAPProductId:(NSString *)productId timeout:(NSInteger)timeout;
 
 /**
- * 设置游戏登录配置
- * @note 仅数据上报用
- */
-- (void)setGameLoginConfig:(NSDictionary *)gameLoginConfig;
-
-/**
  * 设置游戏角色 id
- * @note 仅数据上报用
+ * @param roleId 游戏角色 id
+ * @param regionTag 区服信息
  */
-- (void)setGameRoleId:(NSString *)gameRoleId;
+- (void)setGameInfoWithRoleId:(NSString *)roleId
+                    regionTag:(NSString *)regionTag;
 
 /**
  * 设置自定义错误码信息
