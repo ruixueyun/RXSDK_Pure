@@ -704,6 +704,12 @@ typedef enum : NSUInteger {
                                  complete:(RequestComplete)complete;
 
 /**
+ * 查询游戏角色信息
+ * @note 订制功能
+ */
+- (void)searchGameAccountWithComplete:(RequestComplete)complete;
+
+/**
  * 用户行为统计
  */
 - (void)trackUserActionWithDistinctId:(NSString * _Nullable)distinctId

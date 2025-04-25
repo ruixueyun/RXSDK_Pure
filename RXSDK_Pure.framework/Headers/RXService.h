@@ -255,6 +255,12 @@ static NSInteger feedbakc_report = 10001; // 上报用户反馈
 - (void)setGameLoginConfig:(NSDictionary *)gameLoginConfig;
 
 /**
+ * 设置游戏角色 id
+ * @note 仅数据上报用
+ */
+- (void)setGameRoleId:(NSString *)gameRoleId;
+
+/**
  * 设置自定义错误码信息
  * @param msgDic 设置自定义错误码的字典
  */
