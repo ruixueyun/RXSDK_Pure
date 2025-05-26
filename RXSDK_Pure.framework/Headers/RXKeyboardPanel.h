@@ -3,11 +3,17 @@
 
 @protocol RXKeyboardPanelDelegate <NSObject>
 @optional
+// 键盘弹出
 - (void)rxKeyboardPanelDidShow;
+// 键盘隐藏
 - (void)rxKeyboardPanelDidHide;
+// 输入监听
 - (void)rxKeyboardPanelDidInput:(NSString *)input;
+// 删除监听
 - (void)rxKeyboardPanelDidDelete;
+// 点击完成监听
 - (void)rxKeyboardPanelDidFinish:(NSString *)result;
+// 取消监听
 - (void)rxKeyboardPanelDidCancel;
 @end
 
