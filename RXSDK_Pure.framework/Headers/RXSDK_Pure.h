@@ -36,3 +36,5 @@ FOUNDATION_EXPORT const unsigned char RXSDK_PureVersionString[];
 #import <RXSDK_Pure/RXOSSPutManager.h>
 #import <RXSDK_Pure/RXLogManager.h>
 #import <RXSDK_Pure/RXUserActionLogManager.h>
+#import <RXSDK_Pure/RXKeyboard.h>
+#import <RXSDK_Pure/RXKeyboardPanel.h>

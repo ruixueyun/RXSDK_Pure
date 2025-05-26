@@ -74,6 +74,15 @@ typedef enum : NSUInteger {
  */
 @property (nonatomic, assign) BOOL setLoginContinue;
 /**
+ * 未实名用户登录成功后是否需要强制实名认证，默认强制
+ * 注：强制实名后登录数据将在实名认证成功后返回
+ */
+@property (nonatomic, assign) BOOL needRealAuth;
+/**
+ * 实名认证是否可关闭，默认可关闭
+ */
+@property (nonatomic, assign) BOOL canCloseRealAuth;
+/**
  * 自定义参数
  */
 @property (nonatomic, strong) NSDictionary *setCustomParams;

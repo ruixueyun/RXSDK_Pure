@@ -367,10 +367,23 @@ typedef enum : NSUInteger {
  * @note 建议使用新方法，旧方法如出现问题在以后的版本不再维护
  * @param realName 真实姓名  必须
  * @param idCard 身份证  必须
+ * @param isFastAuth 是否快速认证，YES 快速认证 NO 普通认证，默认 NO
  */
 - (void)approveWithRealName:(NSString *)realName
                      idCard:(NSString *)idCard
+                 isFastAuth:(BOOL)isFastAuth
                    complete:(RequestComplete)complete DEPRECATED_MSG_ATTRIBUTE("use realAuthWithRealName:idCard:complete instead");
+
+/**
+ * 实名认证
+ * @param realName 真实姓名  必须
+ * @param idCard 身份证  必须
+ * @param isFastAuth 是否快速认证，YES 快速认证 NO 普通认证，默认 NO
+ */
+- (void)realAuthWithRealName:(NSString *)realName
+                      idCard:(NSString *)idCard
+                  isFastAuth:(BOOL)isFastAuth
+                    complete:(RequestComplete)complete;
 
 /**
  * 实名认证

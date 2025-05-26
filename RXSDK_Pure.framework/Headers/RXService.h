@@ -53,6 +53,9 @@ static NSInteger feedbakc_report = 10001; // 上报用户反馈
 @property (nonatomic, weak) id <RXPublicDelegate> publicDelegate;
 @property (nonatomic, strong) RXSdkInitConfig *sdkConfig;
 
+@property (nonatomic, readonly, assign) BOOL isUseFastAuth;
+@property (nonatomic, readonly, assign) BOOL useCustomKeyboard;
+
 /**
  * 获取SDK实例（单例）
  */
