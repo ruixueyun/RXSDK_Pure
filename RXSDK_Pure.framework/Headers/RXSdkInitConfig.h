@@ -46,11 +46,14 @@ NS_ASSUME_NONNULL_BEGIN
  * @note 默认为 “用户协议和隐私政策”
  */
 @property (nonatomic, copy) NSString *agreementTitle;
-
 /**
  * 是否打开DNS，YES打开，NO关闭，默认为NO
  */
 @property (nonatomic, assign) BOOL isUseDNS;
+/**
+ * 是否开启竞速，YES打开，NO关闭，默认为NO
+ */
+@property (nonatomic, assign) BOOL openRacing;
 
 @end
 

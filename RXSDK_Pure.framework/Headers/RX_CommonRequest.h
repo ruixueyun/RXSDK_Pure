@@ -35,6 +35,7 @@ typedef void(^ProcessBlock)(float process);
 @property (nonatomic, assign) BOOL ssl;//是YES则自动转https,YES则不转
 @property (nonatomic, assign) BOOL isGzip;
 @property (nonatomic, assign) BOOL whiteList; // 白名单
+@property (nonatomic, assign) BOOL needRetry; // 白名单
 @property (nonatomic, assign) NSInteger failedTimes; // 失败次数
 
 - (instancetype) initWithApiName:(NSString *)apiName andParams:(NSDictionary * __nullable)parmas;
