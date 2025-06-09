@@ -737,6 +737,11 @@ typedef enum : NSUInteger {
  */
 - (void)getServiceChatUnreadCount:(RequestComplete)complete;
 
+/**
+ * 清空客服消息未读数
+ */
+- (void)clearServiceChatUnreadCount:(RequestComplete)complete;
+
 @end
 
 NS_ASSUME_NONNULL_END
