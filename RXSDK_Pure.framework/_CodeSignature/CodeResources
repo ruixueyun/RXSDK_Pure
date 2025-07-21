@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AppleLogin.h</key>
 		<data>
-		ysjFEeWJSDd7L0IxczjQNhDJ5kc=
+		jC6SX6EMg13P7M7iEMS+T2Gqwo4=
 		</data>
 		<key>Headers/CHDownImage.h</key>
 		<data>
@@ -150,7 +150,7 @@
 		</data>
 		<key>Modules/RXSDK_Pure.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		4KE0jcUvVTK828u/irH7Tfk6IW0=
+		ZmQhyj5iNgBAtAJY4WaJaC/1Guo=
 		</data>
 		<key>Modules/RXSDK_Pure.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -162,7 +162,7 @@
 		</data>
 		<key>Modules/RXSDK_Pure.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		UTXE+5LVoDBIhSRZrH4vVpJzrBY=
+		l66ozIorVbvGB2XJ3iSwIc2qHGg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -219,7 +219,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GPYghTOVN+Zzx2UvAR+3rbgC3YyiV/wlvaYH6H1s838=
+			I6q+WoXRnLJkTqN1IhDcIQERWGX8OFMTwZa2FnpHElw=
 			</data>
 		</dict>
 		<key>Headers/CHDownImage.h</key>
@@ -464,7 +464,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Xkz87n9uIZUNxraU4gbLOGxXh1gjwzN8Gkecva9iN3M=
+			ku78HtqGe4mG8bMVjDE8n7zfo6T6I/hUiBy0uZeM21I=
 			</data>
 		</dict>
 		<key>Modules/RXSDK_Pure.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -485,7 +485,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ri6jw10m5zuZNc9b0opgVhh9TGUpP/s8dIyRy7H3bkI=
+			g6mpFF2OPEYAK57+79pacQW+YQ+GAsGLWVcaNq4p4uk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

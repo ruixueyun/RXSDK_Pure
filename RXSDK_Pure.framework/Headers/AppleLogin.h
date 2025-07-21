@@ -23,9 +23,6 @@ typedef NS_ENUM(NSUInteger, AppleLoginType) {
 
 ///  Apple登录
 /// @param user 选填，已存user可以直接快速验证，没有传nil ，断网可验证。
-/// @param view <#view description#>
-/// @param rect <#rect description#>
-/// @param block <#block description#>
 - (void)singInLogin:(NSString *)user block:(void(^)(NSInteger state,NSString *msg,id data))block;
 @end
  
