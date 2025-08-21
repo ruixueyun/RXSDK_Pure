@@ -50,6 +50,5 @@ TODO: Add long description of the pod here.
   s.platform = :ios, '12.0'
   s.dependency 'RXLanguageKit'
   s.dependency 'RXPublicToolKit'
-  s.dependency 'SocketRocket'
   
 end
