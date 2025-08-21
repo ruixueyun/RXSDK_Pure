@@ -742,6 +742,19 @@ typedef enum : NSUInteger {
  */
 - (void)clearServiceChatUnreadCount:(RequestComplete)complete;
 
+/**
+ * 查询订单状态
+ * @note 暂不支持
+ * @param orderNo 瑞雪订单号
+ */
+- (void)tradeQueryWithOrderNo:(NSString *)orderNo
+                     complete:(RequestComplete)complete;
+
+/**
+ * 获取临时公告
+ */
+- (void)getTempNotice:(RequestComplete)complete;
+
 @end
 
 NS_ASSUME_NONNULL_END

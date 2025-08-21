@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/RXApiService.h</key>
 		<data>
-		HkOripAH2uiMZk6Dap3i3RM91FM=
+		AJWaBTnxKozV7AHTM2hI3amejTU=
 		</data>
 		<key>Headers/RXConfig.h</key>
 		<data>
@@ -162,7 +162,7 @@
 		</data>
 		<key>Modules/RXSDK_Pure.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		l66ozIorVbvGB2XJ3iSwIc2qHGg=
+		chJPXAYlGUbPC/XEM98UuYRf8nw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -240,7 +240,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1LW6eY8NzEtSkZ04DFtYpVfXngViU2NMXWZTZR8VxmU=
+			nkZiULSzeaHrZ/Wt2or3yDjoh/Cte7c5SZcK+XEx0x4=
 			</data>
 		</dict>
 		<key>Headers/RXConfig.h</key>
@@ -485,7 +485,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			g6mpFF2OPEYAK57+79pacQW+YQ+GAsGLWVcaNq4p4uk=
+			626OCOUTubRXbAu/SMruuESZcVkRT8uT515ulKz3XfE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
