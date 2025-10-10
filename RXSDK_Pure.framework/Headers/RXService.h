@@ -293,6 +293,16 @@ static NSInteger feedbakc_report = 10001; // 上报用户反馈
 
 - (NSDictionary *)getConfigData;
 
+/**
+ * 获取启动参数
+ */
+- (NSDictionary *)getLaunchOptions;
+
+/**
+ * 获取启动参数 SceneDelegate
+ */
+- (UISceneConnectionOptions *)getConnectOptions;
+
 @end
 
 NS_ASSUME_NONNULL_END

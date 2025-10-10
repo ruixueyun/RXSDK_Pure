@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -54,6 +55,14 @@ NS_ASSUME_NONNULL_BEGIN
  * 是否开启竞速，YES打开，NO关闭，默认为NO
  */
 @property (nonatomic, assign) BOOL openRacing;
+/**
+ * 启动参数
+ */
+@property (nonatomic, strong) NSDictionary *launchOptions;
+/**
+ * 启动参数，使用 SceneDelegate 需要传，非 SceneDelegate 不传
+ */
+@property (nonatomic, strong, nullable) UISceneConnectionOptions *connectionOptions;
 
 @end
 

@@ -72,6 +72,10 @@
 		<data>
 		Q2n3ifu+2zXafz/DxRDDXcx2P5w=
 		</data>
+		<key>Headers/RXNotificationCenter.h</key>
+		<data>
+		XwdVFihPKXy/EzoCRGmc0hQF58I=
+		</data>
 		<key>Headers/RXOSSPutManager.h</key>
 		<data>
 		O3Fb8MzCr4slwCx1RH+HAG5nXck=
@@ -94,11 +98,11 @@
 		</data>
 		<key>Headers/RXSdkInitConfig.h</key>
 		<data>
-		EsYH3r+agdnPoXzgSieCvylVvdw=
+		8qxFuT5iaEgnZKU00f6TXOo+bLE=
 		</data>
 		<key>Headers/RXService.h</key>
 		<data>
-		5q/UPihAxWsSyQRi2yo/fkchSkE=
+		MjL1/JZtvrvjVQT+3O4w3SalMns=
 		</data>
 		<key>Headers/RXShareConfig.h</key>
 		<data>
@@ -111,6 +115,10 @@
 		<key>Headers/RXStoreKitService.h</key>
 		<data>
 		iHheYm/mxueNuRb/+1jRybuPpYU=
+		</data>
+		<key>Headers/RXSubPackage.h</key>
+		<data>
+		TVmVxE6LW2EGnSBmRTMjViYycxg=
 		</data>
 		<key>Headers/RXUWAService.h</key>
 		<data>
@@ -334,6 +342,13 @@
 			LVbznBIv9UWW30vK4TswZypg5n5SDblmU9DiPrlWgR0=
 			</data>
 		</dict>
+		<key>Headers/RXNotificationCenter.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1qiQBKMuMuixEQaulhvnr9APXQ9xpCXDRrTOIwIeHZI=
+			</data>
+		</dict>
 		<key>Headers/RXOSSPutManager.h</key>
 		<dict>
 			<key>hash2</key>
@@ -373,14 +388,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IgrXWHw6H8gGQ7b3nzL5NAbLMihlbLkYyEpf+0hBEQQ=
+			Y4Pkj5KC21Z2ipXEO/DkhKyFridbIEknCN8UU3D5L6g=
 			</data>
 		</dict>
 		<key>Headers/RXService.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MCf8Hwu9x3pmJ8oUclZ262ehcvs1iSwzEEwKUd3OwPs=
+			DmpBGspatXaRronYOCgR30a+HyY75g9kadjqHL+zIJg=
 			</data>
 		</dict>
 		<key>Headers/RXShareConfig.h</key>
@@ -402,6 +417,13 @@
 			<key>hash2</key>
 			<data>
 			nzVZR75cTN9Wa1y0USsuI0y5NkmOpmMaSo2lJzeoWH8=
+			</data>
+		</dict>
+		<key>Headers/RXSubPackage.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EiVwuyhsHJFi+SG9oFCx+RsC7ITAX5G+UR4P0uHbIwE=
 			</data>
 		</dict>
 		<key>Headers/RXUWAService.h</key>
