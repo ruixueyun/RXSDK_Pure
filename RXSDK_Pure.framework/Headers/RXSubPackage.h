@@ -72,6 +72,15 @@ NS_ASSUME_NONNULL_BEGIN
 /** UWA  **/
 @property (nonatomic, assign) BOOL aUWA;
 
+/** RXGPM  **/
+@property (nonatomic, assign) BOOL aRXGPM;
+
+/** RXList  **/
+@property (nonatomic, assign) BOOL aRXList;
+
+/** RXAB  **/
+@property (nonatomic, assign) BOOL aRXAB;
+
 @end
 
 NS_ASSUME_NONNULL_END

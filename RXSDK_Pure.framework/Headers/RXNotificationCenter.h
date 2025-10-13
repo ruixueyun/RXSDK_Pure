@@ -48,10 +48,18 @@ static NSString *const rxUserDefault_asa = @"rxUserDefault_asa";
 
 static NSString *const rxUserDefault_ui_showPrivacy = @"rxUserDefault_ui_showPrivacy";
 static NSString *const rxUserDefault_ui_hidehud = @"rxUserDefault_ui_hidehud";
+static NSString *const rxUserDefault_ui_gonggao = @"rxUserDefault_ui_gonggao";
 
 static NSString *const rxUserDefault_osui_hidehud = @"rxUserDefault_osui_hidehud";
+static NSString *const rxUserDefault_osui_gonggao = @"rxUserDefault_osui_gonggao";
 
 static NSString *const rxUserDefault_uwa_gpm = @"rxUserDefault_uwa_gpm";
+
+static NSString *const rxUserDefault_rx_gpm = @"rxUserDefault_rx_gpm";
+
+static NSString *const rxUserDefault_alist = @"rxUserDefault_alist";
+
+static NSString *const rxUserDefault_ab = @"rxUserDefault_ab";
 
 
 typedef void(^DNSRequestSuccessBlock)(NSURLSessionDataTask * _Nonnull, id _Nullable);
