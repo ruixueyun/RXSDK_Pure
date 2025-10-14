@@ -52,6 +52,8 @@ static NSString *const rxUserDefault_ui_gonggao = @"rxUserDefault_ui_gonggao";
 
 static NSString *const rxUserDefault_osui_hidehud = @"rxUserDefault_osui_hidehud";
 static NSString *const rxUserDefault_osui_gonggao = @"rxUserDefault_osui_gonggao";
+static NSString *const rxUserDefault_osui_sync_fb = @"rxUserDefault_osui_sync_fb";
+static NSString *const rxUserDefault_osui_sync_line = @"rxUserDefault_osui_sync_line";
 
 static NSString *const rxUserDefault_uwa_gpm = @"rxUserDefault_uwa_gpm";
 
