@@ -271,6 +271,12 @@ static NSInteger feedbakc_report = 10001; // 上报用户反馈
 - (void)setPasswordStrength:(RXPasswordStrength)type;
 
 /**
+ * 设置密码正则
+ * 需要先将密码强度设置为自定义
+ */
+- (void)setPwdPattern:(NSString *)pattern;
+
+/**
  * 设置商品 id 和 超时时间
  * @param productId  商品 id
  * @param timeout 超时时间，默认 2 秒
