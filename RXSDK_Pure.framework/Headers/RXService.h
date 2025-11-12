@@ -309,6 +309,12 @@ static NSInteger feedbakc_report = 10001; // 上报用户反馈
  */
 - (UISceneConnectionOptions *)getConnectOptions;
 
+/**
+ * 设置当前地区
+ * @param area 地区码
+ */
+- (void)setArea:(NSString *)area;
+
 @end
 
 NS_ASSUME_NONNULL_END

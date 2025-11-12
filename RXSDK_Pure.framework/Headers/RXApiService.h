@@ -272,11 +272,19 @@ typedef enum : NSUInteger {
  * @param nickname 用户昵称 非必传
  * @param sex 性别 1男 0女 非必传
  * @param region 地区码 非必传
+ * @param ext 透传参数 非必传
  */
 - (void)updateUserInfo:(NSString *)avatarUrl
               nickname:(NSString *)nickname
                    sex:(NSString *)sex
                 region:(NSString *)region
+              complete:(RequestComplete)complete;
+
+- (void)updateUserInfo:(NSString *)avatarUrl
+              nickname:(NSString *)nickname
+                   sex:(NSString *)sex
+                region:(NSString *)region
+                   ext:(NSDictionary *)ext
               complete:(RequestComplete)complete;
 
 /**

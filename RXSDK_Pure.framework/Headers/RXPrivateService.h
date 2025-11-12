@@ -24,6 +24,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)postLoginError:(NSDictionary *)error
              loginType:(LoginType)loginType;
 
+/**
+ * 获取请求地区
+ */
+- (NSString *)getRequestArea;
+
 @end
 
 NS_ASSUME_NONNULL_END
