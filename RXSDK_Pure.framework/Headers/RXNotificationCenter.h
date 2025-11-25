@@ -63,6 +63,8 @@ static NSString *const rxUserDefault_alist = @"rxUserDefault_alist";
 
 static NSString *const rxUserDefault_ab = @"rxUserDefault_ab";
 
+static NSString *const rxUserDefault_oi = @"rxUserDefault_openinstall";
+
 
 typedef void(^DNSRequestSuccessBlock)(NSURLSessionDataTask * _Nonnull, id _Nullable);
 typedef void(^DNSRequestFailBlock)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull);
