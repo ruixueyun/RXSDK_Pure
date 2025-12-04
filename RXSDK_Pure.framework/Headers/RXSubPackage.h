@@ -84,6 +84,9 @@ NS_ASSUME_NONNULL_BEGIN
 /** RXOpeninstall  **/
 @property (nonatomic, assign) BOOL aRXOpeninstall;
 
+/** RXGDT  **/
+@property (nonatomic, assign) BOOL aRXGDT;
+
 @end
 
 NS_ASSUME_NONNULL_END

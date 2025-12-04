@@ -65,6 +65,9 @@ static NSString *const rxUserDefault_ab = @"rxUserDefault_ab";
 
 static NSString *const rxUserDefault_oi = @"rxUserDefault_openinstall";
 
+static NSString *const rxUserDefault_gdt_init = @"rxUserDefault_gdt_init";
+static NSString *const rxUserDefault_gdt_register = @"rxUserDefault_gdt_register";
+static NSString *const rxUserDefault_gdt_login = @"rxUserDefault_gdt_login";
 
 typedef void(^DNSRequestSuccessBlock)(NSURLSessionDataTask * _Nonnull, id _Nullable);
 typedef void(^DNSRequestFailBlock)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull);
