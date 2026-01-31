@@ -29,6 +29,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (NSString *)getRequestArea;
 
+/**
+ * 绑定账号
+ */
+- (void)bindThirdAccountWithMethod:(NSString *)method
+                               ext:(NSDictionary *)ext
+                          complete:(RequestComplete)complete;
+
 @end
 
 NS_ASSUME_NONNULL_END

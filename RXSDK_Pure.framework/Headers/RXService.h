@@ -315,6 +315,12 @@ static NSInteger feedbakc_report = 10001; // 上报用户反馈
  */
 - (void)setArea:(NSString *)area;
 
+/**
+ * 绑定账号
+ */
+- (void)bindAccountWithExt:(NSDictionary *)ext
+                  complete:(RequestComplete)complete;
+
 @end
 
 NS_ASSUME_NONNULL_END

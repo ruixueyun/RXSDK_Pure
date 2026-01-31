@@ -16,7 +16,6 @@ FOUNDATION_EXPORT const unsigned char RXSDK_PureVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <RXSDK_Pure/PublicHeader.h>
 
 #import <RXSDK_Pure/RXService.h>
-#import <RXSDK_Pure/RXSDK.h>
 #import <RXSDK_Pure/RXApiService.h>
 #import <RXSDK_Pure/RXShareService.h>
 #import <RXSDK_Pure/RXPublicHeader.h>

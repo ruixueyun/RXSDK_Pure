@@ -29,9 +29,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, copy) NSArray *baseUrlList;
 /**
- * 日志开关，debug默认开启，release默认关闭
+ * 日志开关，true debug 模式，false release 模式，默认 debug
  */
-@property (nonatomic, copy) NSString *isLogEnable;
+@property (nonatomic, assign) bool isLogEnable;
 /**
  * 首次启动是否展示用户隐私授权页面，YES展示，NO不展示
  * @note 默认NO不展示
