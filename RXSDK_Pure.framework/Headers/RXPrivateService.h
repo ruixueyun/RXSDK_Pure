@@ -36,6 +36,30 @@ NS_ASSUME_NONNULL_BEGIN
                                ext:(NSDictionary *)ext
                           complete:(RequestComplete)complete;
 
+/**
+ * 处理 URL Scheme 回调
+ * @param app 应用实例
+ * @param url 回调 URL
+ * @param options 附加参数
+ * @return 是否成功处理
+ * @note 需在 AppDelegate 的 application:openURL:options: 方法中调用
+ */
+- (BOOL)application:(UIApplication *)app
+            openURL:(NSURL *)url
+            options:(NSDictionary<NSString *, id> *)options;
+
+/**
+ * 处理 Universal Link 回调
+ * @param application 应用实例
+ * @param userActivity 用户活动对象
+ * @param restorationHandler 恢复处理回调
+ * @return 是否成功处理
+ * @note 需在 AppDelegate 的 application:continueUserActivity:restorationHandler: 方法中调用
+ */
+- (BOOL)application:(UIApplication *)application
+continueUserActivity:(NSUserActivity *)userActivity
+  restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler;
+
 @end
 
 NS_ASSUME_NONNULL_END

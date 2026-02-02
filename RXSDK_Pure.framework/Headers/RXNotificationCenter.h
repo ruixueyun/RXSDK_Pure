@@ -46,6 +46,9 @@ static NSString *const rxUserDefault_login_ins = @"rxUserDefault_login_ins";
 
 static NSString *const rxUserDefault_bind_w = @"rxUserDefault_bind_w";
 
+static NSString *const rxUserDefault_openurl = @"rxUserDefault_openurl";
+static NSString *const rxUserDefault_ulink = @"rxUserDefault_ulink";
+
 static NSString *const rxUserDefault_asa = @"rxUserDefault_asa";
 
 static NSString *const rxUserDefault_ui_showPrivacy = @"rxUserDefault_ui_showPrivacy";
