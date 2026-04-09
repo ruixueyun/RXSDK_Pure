@@ -403,6 +403,15 @@ typedef enum : NSUInteger {
                     complete:(RequestComplete)complete;
 
 /**
+ * 获取 IIFAA 支付宝授权跳转地址（快速实名）
+ * @param appName 应用名称  必须
+ * @param thirdPartSchema 第三方回调 schema  必须
+ */
+- (void)getIIFAARedirectURLWithAppName:(NSString *)appName
+                       thirdPartSchema:(NSString *)thirdPartSchema
+                              complete:(RequestComplete)complete;
+
+/**
  * 查询用户拥有的账号
  * 当用户无法提供正常的凭证登录某些账号时，可以调用本接口，提供该账号相关的其他用户信息进行查询，然后通过其他接口创建新的账号绑定这个旧账号的用户
  * @param method 登录方式，对应"登录/绑定三方账号" 接口参数中的 method 字段。

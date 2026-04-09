@@ -311,6 +311,8 @@ SWIFT_CLASS("_TtC10RXSDK_Pure16StoreKit2Manager") SWIFT_AVAILABILITY(ios,introdu
 - (void)fetchProductsWithOrderInfo:(NSString * _Nonnull)orderInfo completionHandler:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completionHandler;
 /// 检查并结束所有未完成的交易
 - (void)finishUncompletedTransactionsWithCompletion:(void (^ _Nonnull)(NSArray<NSString *> * _Nullable))completion;
+/// 订阅补单：先查未完成交易，再查当前活跃订阅权益，确保已 finish 但服务端验证失败的订阅也能拿到凭证
+- (void)restoreSubscriptionReceiptsWithCompletion:(void (^ _Nonnull)(NSArray<NSString *> * _Nullable))completion;
 - (void)purchaseProductsWithUid:(NSString * _Nonnull)uid completionHandler:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nullable, NSError * _Nullable))completionHandler;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end

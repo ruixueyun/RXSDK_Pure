@@ -78,7 +78,7 @@ typedef void(^ShareCallBack)(BOOL success);
  * @param region 地区码 非必须
  * @param transmits 透传参数，原样返回， 请使用key=value形式，并对值使用urlencode，返回时会原样返回  非必须
  * @param ext 扩展字段，拼接url用  非必须
- * @param readCache 是否读取缓存，YES 读取缓存   NO 不读取缓存，建议读取缓存
+ * @param readCache 是否读取缓存，YES 读取缓存   NO 不读取缓存，默认不取缓存
  */
 - (void)getShareInfoWithFunc:(NSString *)func
                     platform:(NSString *)platform
