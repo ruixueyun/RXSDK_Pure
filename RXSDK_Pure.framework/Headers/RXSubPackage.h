@@ -51,6 +51,9 @@ NS_ASSUME_NONNULL_BEGIN
 /** Reddit  **/
 @property (nonatomic, assign) BOOL aReddit;
 
+/** VK  **/
+@property (nonatomic, assign) BOOL aVK;
+
 /** Instagram  **/
 @property (nonatomic, assign) BOOL aInstagram;
 

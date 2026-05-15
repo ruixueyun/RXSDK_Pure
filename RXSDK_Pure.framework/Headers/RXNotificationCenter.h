@@ -43,8 +43,12 @@ static NSString *const rxUserDefault_login_zalo = @"rxUserDefault_login_zalo";
 static NSString *const rxUserDefault_login_snapchat = @"rxUserDefault_login_snapchat";
 static NSString *const rxUserDefault_login_reddit = @"rxUserDefault_login_reddit";
 static NSString *const rxUserDefault_login_ins = @"rxUserDefault_login_ins";
+static NSString *const rxUserDefault_login_vk = @"rxUserDefault_login_vk";
 
 static NSString *const rxUserDefault_bind_w = @"rxUserDefault_bind_w";
+static NSString *const rxUserDefault_bind_fb = @"rxUserDefault_bind_fb";
+static NSString *const rxUserDefault_bind_google = @"rxUserDefault_bind_google";
+static NSString *const rxUserDefault_bind_vk = @"rxUserDefault_bind_vk";
 
 static NSString *const rxUserDefault_openurl = @"rxUserDefault_openurl";
 static NSString *const rxUserDefault_ulink = @"rxUserDefault_ulink";

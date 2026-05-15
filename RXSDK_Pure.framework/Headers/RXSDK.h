@@ -374,6 +374,13 @@ continueUserActivity:(NSUserActivity *)userActivity
                        thirdPartSchema:(NSString *)thirdPartSchema
                               complete:(RXSDKRequestComplete)complete;
 
+/**
+ * 查询 IIFAA 认证结果（快速实名）
+ * @param retryCount 310039 错误重试次数，传 0 不重试
+ */
+- (void)getIIFAAResultWithRetryCount:(NSInteger)retryCount
+                            complete:(RXSDKRequestComplete)complete;
+
 #pragma mark - ==================== 设备信息 ====================
 
 /**
@@ -1050,6 +1057,21 @@ continueUserActivity:(NSUserActivity *)userActivity
  */
 - (void)getFriendRankListWithRank_id:(NSString *)rank_id
                             complete:(RXSDKRequestComplete)complete;
+
+/**
+ * 绑定账号
+ * @param ext 说明
+ * -- "scene" :
+ *  --- "bind" 红包绑定微信账号场景
+ *  --- "authorization" 绑定三方账号场景，默认
+ * -- "method" :
+ *  --- "wechat"
+ *  --- "facebook"
+ *  --- "google"
+ *  --- "apple"
+ */
+- (void)bindAccountWithExt:(NSDictionary *)ext
+                  complete:(RequestComplete)complete;
 
 @end
 

@@ -31,6 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
  * - LoginTypeZalo: Zalo 登录
  * - LoginTypeTikTok: TikTok 登录
  * - LoginTypeSnapChat: SnapChat 登录
+ * - LoginTypeVK: VK 登录
  */
 @property (nonatomic, assign) LoginType loginType;
 

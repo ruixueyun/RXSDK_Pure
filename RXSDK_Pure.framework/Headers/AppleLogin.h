@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "RXPublicHeader.h"
  
 NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSUInteger, AppleLoginType) {
@@ -24,6 +25,12 @@ typedef NS_ENUM(NSUInteger, AppleLoginType) {
 ///  Apple登录
 /// @param user 选填，已存user可以直接快速验证，没有传nil ，断网可验证。
 - (void)singInLogin:(NSString *)user block:(void(^)(NSInteger state,NSString *msg,id data))block;
+
+/**
+ * 绑定 Apple 账号
+ */
+- (void)bindAccountWithExt:(NSDictionary *)ext
+                  complete:(RequestComplete)complete;
 @end
  
 NS_ASSUME_NONNULL_END

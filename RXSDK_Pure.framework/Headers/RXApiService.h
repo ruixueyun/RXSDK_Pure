@@ -412,6 +412,18 @@ typedef enum : NSUInteger {
                               complete:(RequestComplete)complete;
 
 /**
+ * 查询 IIFAA 认证结果（快速实名），默认 310039 错误重试 3 次
+ */
+- (void)getIIFAAResult:(RequestComplete)complete;
+
+/**
+ * 查询 IIFAA 认证结果（快速实名）
+ * @param retryCount 310039 错误重试次数，传 0 不重试
+ */
+- (void)getIIFAAResultWithRetryCount:(NSInteger)retryCount
+                            complete:(RequestComplete)complete;
+
+/**
  * 查询用户拥有的账号
  * 当用户无法提供正常的凭证登录某些账号时，可以调用本接口，提供该账号相关的其他用户信息进行查询，然后通过其他接口创建新的账号绑定这个旧账号的用户
  * @param method 登录方式，对应"登录/绑定三方账号" 接口参数中的 method 字段。

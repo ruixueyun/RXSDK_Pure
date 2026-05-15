@@ -318,7 +318,14 @@ static NSInteger feedbakc_report = 10001; // 上报用户反馈
 /**
  * 绑定账号
  * @param ext 说明
- * -- "method" : "wechat"  登录方式，暂时只支持微信
+ * -- "scene" :
+ *  --- "bind" 红包绑定微信账号场景
+ *  --- "authorization" 绑定三方账号场景，默认
+ * -- "method" :
+ *  --- "wechat"
+ *  --- "facebook"
+ *  --- "google"
+ *  --- "apple"
  */
 - (void)bindAccountWithExt:(NSDictionary *)ext
                   complete:(RequestComplete)complete;
