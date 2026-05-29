@@ -253,6 +253,13 @@ typedef enum : NSUInteger {
 - (void)getUserInfoWithComplete:(RequestComplete)complete;
 
 /**
+ * 获取指定用户信息
+ * @param params 请求参数 map
+ */
+- (void)getUserInfoByFieldWithParams:(NSDictionary *)params
+                            complete:(RequestComplete)complete;
+
+/**
  * 修改用户信息
  * @note 建议使用新方法，旧方法如出现问题在以后的版本不再维护
  * @param avatarUrl 头像url 非必传

@@ -318,6 +318,13 @@ continueUserActivity:(NSUserActivity *)userActivity
 - (void)getUserInfoWithComplete:(RXSDKRequestComplete)complete;
 
 /**
+ * 获取指定用户信息
+ * @param params 请求参数 map
+ */
+- (void)getUserInfoByFieldWithParams:(NSDictionary *)params
+                            complete:(RXSDKRequestComplete)complete;
+
+/**
  * 修改用户信息
  */
 - (void)updateUserInfo:(NSString *)avatarUrl
