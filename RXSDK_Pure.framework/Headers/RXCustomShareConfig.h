@@ -71,6 +71,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, assign) NSInteger shareScene;
 /**
+ * 微信朋友圈是否展示 content，默认 NO
+ * @note 朋友圈只支持展示 title，设置 YES 时会将 title 内容替换为 content 内容
+ */
+@property (nonatomic, assign) BOOL show_content_in_circle;
+/**
  * 二维码坐标 x
  */
 @property (nonatomic, assign) NSInteger x;

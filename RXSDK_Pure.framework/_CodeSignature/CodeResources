@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/RXCustomShareConfig.h</key>
 		<data>
-		Il+Dso75s3+3022yBpOk2g8ZYyU=
+		ge+H036Uc53ZGg1WVdxO1zWJcxI=
 		</data>
 		<key>Headers/RXDeregisterConfig.h</key>
 		<data>
@@ -114,7 +114,7 @@
 		</data>
 		<key>Headers/RXShareConfig.h</key>
 		<data>
-		y8VnddBM7aD53x+9n1jmsc74v9U=
+		gmY0u0UfU/jk776Q6Vax39wAYiY=
 		</data>
 		<key>Headers/RXShareService.h</key>
 		<data>
@@ -162,11 +162,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		SpCmG/rXf5ySTKcuhYGNgQJb3Dk=
+		AfskoYnlux1pzqMVTZcUBoDR13w=
 		</data>
 		<key>Modules/RXSDK_Pure.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		g9Nvv1DusE2V3kVIbroOkPP6/Iw=
+		ZtbtBbo6wEhdkSd1Z/O9I3s2IE4=
 		</data>
 		<key>Modules/RXSDK_Pure.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -178,7 +178,7 @@
 		</data>
 		<key>Modules/RXSDK_Pure.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		3uC7SM/7NC0m+IJSXe5nq+u/pwQ=
+		7nv+lcUdF1nxRsSTCS5kM6RkdDU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -270,7 +270,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iAK9sdiYB00g8zzj1i5blzKX/OrtmA8SDwOfsDrDcKk=
+			WMXZ6lX9eA+Dl2Ji05j9J4dH8vpE3VEyrE8SeTns3Qk=
 			</data>
 		</dict>
 		<key>Headers/RXDeregisterConfig.h</key>
@@ -424,7 +424,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WnFiUbRbMFjjgkZHf26feT6vXDtZ46/7sKByuGXMrFA=
+			wlLXSExbX/v5xcm3nRRZupm6/5dSjGs0xcdJmU9LJPI=
 			</data>
 		</dict>
 		<key>Headers/RXShareService.h</key>
@@ -508,7 +508,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RNRxi7DPUqrcStiyAJWsfo5icfMJM2L3PL7h3l2wEK0=
+			9QODaP2YqH5CyqKOXzxpE6JH82jvTAB/kbRGavCmuQ8=
 			</data>
 		</dict>
 		<key>Modules/RXSDK_Pure.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -529,7 +529,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZmS5/9qBhb3DPXh0vAVzc4/CMNtHDsKUO4U3byie6nU=
+			ebDvCMxvKAYecDrIANP8NObnHmFzrn3Ji6O+Z03KPBQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
