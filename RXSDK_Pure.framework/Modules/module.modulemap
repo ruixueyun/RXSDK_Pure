@@ -7,5 +7,4 @@ framework module RXSDK_Pure {
 
 module RXSDK_Pure.Swift {
   header "RXSDK_Pure-Swift.h"
-  requires objc
 }

@@ -388,6 +388,15 @@ continueUserActivity:(NSUserActivity *)userActivity
 - (void)getIIFAAResultWithRetryCount:(NSInteger)retryCount
                             complete:(RXSDKRequestComplete)complete;
 
+/**
+ * 查询 IIFAA 认证结果（快速实名）
+ * @param source 业务场景，deregister 表示注销场景，传空表示正常认证逻辑
+ * @param retryCount 310039 错误重试次数，传 0 不重试
+ */
+- (void)getIIFAAResultWithSource:(NSString *)source
+                      retryCount:(NSInteger)retryCount
+                        complete:(RXSDKRequestComplete)complete;
+
 #pragma mark - ==================== 设备信息 ====================
 
 /**

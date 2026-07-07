@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)sharedSDK;
 
 /**
- * 版本检查
+ * 版本检查 v2
  */
 - (void)updateGameVersionWithInfo:(NSDictionary *)info
                          complete:(RequestComplete)complete;
