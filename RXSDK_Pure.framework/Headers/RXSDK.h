@@ -64,6 +64,7 @@ typedef void(^RXSDKShareCallBack)(BOOL success);
  * @param options 附加参数
  * @return 是否成功处理
  * @note 需在 AppDelegate 的 application:openURL:options: 方法中调用
+ *       采用 UIScene 生命周期时改用 scene:openURLContexts:
  */
 - (BOOL)application:(UIApplication *)app
             openURL:(NSURL *)url
@@ -76,10 +77,40 @@ typedef void(^RXSDKShareCallBack)(BOOL success);
  * @param restorationHandler 恢复处理回调
  * @return 是否成功处理
  * @note 需在 AppDelegate 的 application:continueUserActivity:restorationHandler: 方法中调用
+ *       采用 UIScene 生命周期时改用 scene:continueUserActivity:
  */
 - (BOOL)application:(UIApplication *)application
 continueUserActivity:(NSUserActivity *)userActivity
   restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler;
+
+/**
+ * 处理冷启动时随 Scene 传入的 URL Scheme / Universal Link
+ * @param scene 当前连接的 Scene
+ * @param session Scene 会话
+ * @param connectionOptions 连接参数
+ * @note 采用 UIScene 生命周期时，需在 SceneDelegate 的 scene:willConnectToSession:options: 方法中调用
+ */
+- (void)scene:(UIScene *)scene
+willConnectToSession:(UISceneSession *)session
+      options:(UISceneConnectionOptions *)connectionOptions API_AVAILABLE(ios(13.0));
+
+/**
+ * 处理 URL Scheme 回调（UIScene 生命周期）
+ * @param scene 当前 Scene
+ * @param URLContexts URL 上下文集合
+ * @return 是否成功处理
+ * @note 采用 UIScene 生命周期时，需在 SceneDelegate 的 scene:openURLContexts: 方法中调用
+ */
+- (BOOL)scene:(UIScene *)scene openURLContexts:(NSSet<UIOpenURLContext *> *)URLContexts API_AVAILABLE(ios(13.0));
+
+/**
+ * 处理 Universal Link 回调（UIScene 生命周期）
+ * @param scene 当前 Scene
+ * @param userActivity 用户活动对象
+ * @return 是否成功处理
+ * @note 采用 UIScene 生命周期时，需在 SceneDelegate 的 scene:continueUserActivity: 方法中调用
+ */
+- (BOOL)scene:(UIScene *)scene continueUserActivity:(NSUserActivity *)userActivity API_AVAILABLE(ios(13.0));
 
 #pragma mark - ==================== 登录 ====================
 

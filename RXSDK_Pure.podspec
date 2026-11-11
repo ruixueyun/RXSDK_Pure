@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RXSDK_Pure'
-  s.version          = '4.0.10'
+  s.version          = '4.1.0'
   #s.version          = '3.8.0.0002'
   s.summary          = 'ruixue main framework.'
 
@@ -29,7 +29,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/ruixueyun/RXSDK_Pure.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '12.0'
+  s.ios.deployment_target = '15.0'
 
    s.source_files = '*.framework/Headers/*.{h,m,plist}'
   
@@ -47,7 +47,7 @@ TODO: Add long description of the pod here.
   s.frameworks = 'AdSupport', 'iAd', 'Foundation', 'UIKit', 'AuthenticationServices'
   s.libraries = 'sqlite3', 'c++', 'c++abi', 'z'
 #
-  s.platform = :ios, '12.0'
+  s.platform = :ios, '15.0'
   s.dependency 'RXLanguageKit'
   
 end
