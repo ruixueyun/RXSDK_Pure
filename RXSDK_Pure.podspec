@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RXSDK_Pure'
-  s.version          = '4.1.3'
+  s.version          = '4.0.0.1000'
   #s.version          = '3.8.0.0002'
   s.summary          = 'ruixue main framework.'
 
@@ -31,15 +31,13 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '15.0'
 
-   s.source_files = '*.framework/Headers/*.{h,m,plist}'
+   s.source_files = 'RXSDK_Pure.xcframework/ios-arm64/RXSDK_Pure.framework/Headers/*.{h,m,plist}'
   
-   s.vendored_frameworks = '*.framework'
+   s.vendored_frameworks = '*.xcframework'
   
   # s.resource_bundles = {
   #   'RXSDK' => ['RXSDK/Assets/*.png']
   # }
-  
-  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
   
   # s.resource_bundles = { 'RXSDK_Pure' => ['PrivacyInfo.xcprivacy'] }
   
@@ -48,6 +46,6 @@ TODO: Add long description of the pod here.
   s.libraries = 'sqlite3', 'c++', 'c++abi', 'z'
 #
   s.platform = :ios, '15.0'
-  s.dependency 'RXLanguageKit'
   
+  s.dependency 'RXLanguageKit', '4.0.0.1000'
 end

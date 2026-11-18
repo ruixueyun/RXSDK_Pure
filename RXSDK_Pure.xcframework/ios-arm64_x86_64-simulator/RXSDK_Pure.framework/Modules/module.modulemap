@@ -1,0 +1,10 @@
+framework module RXSDK_Pure {
+  umbrella header "RXSDK_Pure.h"
+  export *
+
+  module * { export * }
+}
+
+module RXSDK_Pure.Swift {
+  header "RXSDK_Pure-Swift.h"
+}

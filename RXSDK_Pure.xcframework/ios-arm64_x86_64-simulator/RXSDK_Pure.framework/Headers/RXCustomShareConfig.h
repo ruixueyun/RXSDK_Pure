@@ -1,0 +1,115 @@
+//
+//  RXCustomShareConfig.h
+//  RXSDK
+//
+//  Created by 陈汉 on 2024/3/7.
+//
+
+#import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface RXCustomShareConfig : NSObject
+
+/**
+ * 分享平台
+ * wechat、system、facebook、messenger、line、tiktok
+ */
+@property (nonatomic, copy) NSString *platform;
+/**
+ * 三方 appid
+ */
+@property (nonatomic, copy) NSString *thirdAppid;
+/**
+ * iOS唤醒协议
+ */
+@property (nonatomic, copy) NSString *iOSScheme;
+/**
+ * android唤醒协议
+ */
+@property (nonatomic, copy) NSString *androidScheme;
+/**
+ * 由cp控制是否使用游戏协议，如传0则在落地页上操作不会尝试打开应用，直接跳转到对应商店，如传1则会尝试打开应用
+ */
+@property (nonatomic, copy) NSString *useScheme;
+/**
+ * 分享类型，text/image/landing/link/video
+ */
+@property (nonatomic, copy) NSString *materialType;
+/**
+ * url或本地路径
+ */
+@property (nonatomic, copy) NSString *image;
+/**
+ * url或本地路径
+ * @note 多图
+ */
+@property (nonatomic, copy) NSArray *atlas;
+/**
+ * url或本地路径
+ */
+@property (nonatomic, copy) NSString *video;
+/**
+ * url或本地路径
+ * @note 多视频
+ */
+@property (nonatomic, copy) NSArray *videos;
+/**
+ * 分享链接
+ */
+@property (nonatomic, copy) NSString *url;
+/**
+ * 分享标题
+ */
+@property (nonatomic, copy) NSString *title;
+/**
+ * 分享描述
+ */
+@property (nonatomic, copy) NSString *content;
+/**
+ * 分享到好友还是朋友圈   0 好友 1 朋友圈
+ */
+@property (nonatomic, assign) NSInteger shareScene;
+/**
+ * 微信朋友圈是否展示 content，默认 NO
+ * @note 朋友圈只支持展示 title，设置 YES 时会将 title 内容替换为 content 内容
+ */
+@property (nonatomic, assign) BOOL show_content_in_circle;
+/**
+ * 二维码坐标 x
+ */
+@property (nonatomic, assign) NSInteger x;
+/**
+ * 二维码坐标 y
+ */
+@property (nonatomic, assign) NSInteger y;
+/**
+ * 二维码坐标 width
+ */
+@property (nonatomic, assign) NSInteger width;
+/**
+ * 二维码坐标 height
+ */
+@property (nonatomic, assign) NSInteger height;
+/**
+ * 二维码白边，默认 0
+ */
+@property (nonatomic, assign) NSInteger borderSize;
+/**
+ * 客户端透传数据
+ */
+@property (nonatomic, strong) NSDictionary *game_info;
+/**
+ * 扩展字段，拼接url用  非必须
+ */
+@property (nonatomic, strong) NSDictionary *ext;
+/**
+ * 自定义透传参数
+ */
+@property (nonatomic, strong) NSDictionary *setCustomExt;
+
++ (RXCustomShareConfig *)shareConfigWithShareInfo:(NSDictionary *)shareInfo;
+
+@end
+
+NS_ASSUME_NONNULL_END
