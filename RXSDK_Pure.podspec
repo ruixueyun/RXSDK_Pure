@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RXSDK_Pure'
-  s.version          = '4.1.3'
+  s.version          = '4.0.0.1001'
   #s.version          = '3.8.0.0002'
   s.summary          = 'ruixue main framework.'
 
@@ -48,6 +48,6 @@ TODO: Add long description of the pod here.
   s.libraries = 'sqlite3', 'c++', 'c++abi', 'z'
 #
   s.platform = :ios, '15.0'
-  s.dependency 'RXLanguageKit'
+  s.dependency 'RXLanguageKit', '4.0.0.1001'
   
 end
